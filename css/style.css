@@ -1464,7 +1464,7 @@ body.modal {
 
 .arlo_tm_modalbox_news .description_wrap .image {
     position: relative;
-    max-height: 450px;
+    min-height: 450px;
     z-index: -1;
     margin-bottom: 40px
 }
