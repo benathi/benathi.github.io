@@ -27,6 +27,14 @@
   </head>
 
   <body>
+    <div id="preloader" class="preloader">
+      <div class="loader-inner ball-scale-multiple">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    </div>
+  
     <div class="arlo_tm_all_wrap" data-magic-cursor="" data-color="crimson">
       <div class="arlo_tm_modalbox_news">
         <div class="box_inner">
@@ -912,7 +920,7 @@
                 </div>
             </div>
         </div>
-        
+
       <div class="arlo_tm_section" id="contact">
         <div class="arlo_tm_contact">
           <div class="container">
@@ -1784,5 +1792,10 @@
     <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/init.js"></script>
+    <script>
+      $(window).on("load", function(){
+        $(".preloader").fadeOut(1000);
+      });
+    </script>
   </body>
 </html>
