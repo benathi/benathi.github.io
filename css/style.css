@@ -668,7 +668,8 @@ h6 {
     color: #009D9C;
     display: inline-block;
     font-family: poppins;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 28px;
     text-transform: uppercase;
     margin-bottom: 4px
 }
