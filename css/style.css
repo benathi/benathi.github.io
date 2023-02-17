@@ -748,6 +748,10 @@ h6 {
     font-style: italic
 }
 
+.arlo_tm_about .right .text a {
+    color: #009D9C;
+}
+
 .arlo_tm_about .about_short_contact_wrap {
     width: 100%;
     height: auto;
@@ -861,7 +865,20 @@ h6 {
     clear: both;
     float: left;
     background-color: #f9f9f9;
-    padding: 140px 0 138px
+    padding: 50px 0 100px
+}
+
+.blogs_inner {
+    width: 100%;
+    text-align: center;
+}
+
+.blogs_inner img {
+    max-width: 380px;
+}
+
+.date a {
+    font-weight: bold;
 }
 
 .arlo_tm_services .service_inner {
@@ -1730,8 +1747,36 @@ body.modal {
 
 .arlo_tm_copyright .social ul li .svg {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(236deg) brightness(102%) contrast(101%);
-    width: 18px;
-    height: 18px
+    width: 20px;
+    height: 20px
+}
+
+#blogs {
+    padding: 0px 0px 100px 0px;
+}
+
+.arlo_tm_about .social ul {
+    margin: 0px 0px 25px 0px;
+    list-style-type: none
+}
+
+.arlo_tm_about .social ul li {
+    margin: 0 15px 0 0;
+    display: inline-block
+}
+
+.arlo_tm_about .social ul li:last-child {
+    margin-right: 0
+}
+
+.arlo_tm_about .social ul li a {
+    text-decoration: none;
+    color: #fff
+}
+
+.arlo_tm_about .social ul li .svg {
+    width: 22px;
+    height: 22px
 }
 
 /* .mouse-cursor {
