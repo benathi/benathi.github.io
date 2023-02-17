@@ -507,7 +507,8 @@ h6 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: #132121;
+    /* background-color: #7ea7a7; */
     z-index: 1
 }
 
@@ -1464,7 +1465,6 @@ body.modal {
 
 .arlo_tm_modalbox_news .description_wrap .image {
     position: relative;
-    max-height: 450px;
     z-index: -1;
     margin-bottom: 40px
 }
