@@ -379,9 +379,7 @@
                   </div>
                   <div class="description">
                     <p>
-                      Incorporated subword information to a mixture of Gaussian representation,
-                      improving the semantic representation of out-of-vocabulary words as well as
-                      foreign languages (via latin roots).
+                      We introduce Probabilistic FastText, a new model for word embeddings that can capture multiple word senses, sub-word structure, and uncertainty information. In particular, we represent each word with a Gaussian mixture density, where the mean of a mixture component is given by the sum of n-grams. This representation allows the model to share statistical strength across sub-word structures (e.g. Latin roots), producing accurate representations of rare, misspelt, or even unseen words. Moreover, each component of the mixture can capture a different word sense. Probabilistic FastText outperforms both FastText, which has no probabilistic model, and dictionary-level probabilistic embeddings, which do not incorporate subword structures, on several word-similarity benchmarks, including English RareWord and foreign language datasets. We also achieve state-of-art performance on benchmarks that measure ability to discern different meanings. Thus, the proposed model is the first to achieve multi-sense representations while having enriched semantics on rare words.
                     </p>
                     <!-- <div class="share">
                       <span>Share:</span>
@@ -412,18 +410,16 @@
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Probabilistic FastText for Multi-Sense Word Embeddings</a>
+                      <a href="#">Adversarial Deep Averaging Networks for Cross-Lingual Domain Adaptation</a>
                     </h3>
                     <p class="date">
-                      By <a href="#">Ben Athiwaratkun</a>, Andrew Gordon Wilson, Anima Anandkumar
+                      Xilun Chen, Yu Sun, <a href="#">Ben Athiwaratkun</a>, Claire Cardie, Kilian Weinberger
 
                     </p>
                   </div>
                   <div class="description">
                     <p>
-                      Incorporated subword information to a mixture of Gaussian representation,
-                      improving the semantic representation of out-of-vocabulary words as well as
-                      foreign languages (via latin roots).
+                      In recent years great success has been achieved in sentiment classification for English, thanks in part to the availability of copious annotated resources. Unfortunately, most languages do not enjoy such an abundance of labeled data. To tackle the sentiment classification problem in low-resource languages without adequate annotated data, we propose an Adversarial Deep Averaging Network (ADAN) to transfer the knowledge learned from labeled data on a resource-rich source language to low-resource languages where only unlabeled data exists. ADAN has two discriminative branches: a sentiment classifier and an adversarial language discriminator. Both branches take input from a shared feature extractor to learn hidden representations that are simultaneously indicative for the classification task and invariant across languages. Experiments on Chinese and Arabic sentiment classification demonstrate that ADAN significantly outperforms state-of-the-art systems.
                     </p>
                     <!-- <div class="share">
                       <span>Share:</span>
@@ -463,9 +459,7 @@
                   </div>
                   <div class="description">
                     <p>
-                      Demonstrated that semi-supervised learning can lead to multiple consistent
-                      explanations of the unlabeled data and found that weight averaging can significantly
-                      bridge the gap, achieving SOTA in all resource levels for CIFAR-10 and CIFAR-100.
+                      Presently the most successful approaches to semi-supervised learning are based on consistency regularization, whereby a model is trained to be robust to small perturbations of its inputs and parameters. To understand consistency regularization, we conceptually explore how loss geometry interacts with training procedures. The consistency loss dramatically improves generalization performance over supervised-only training; however, we show that SGD struggles to converge on the consistency loss and continues to make large steps that lead to changes in predictions on the test data. Motivated by these observations, we propose to train consistency-based methods with Stochastic Weight Averaging (SWA), a recent approach which averages weights along the trajectory of SGD with a modified learning rate schedule. We also propose fast-SWA, which further accelerates convergence by averaging multiple points within each cycle of a cyclical learning rate schedule. With weight averaging, we achieve the best known semi-supervised results on CIFAR-10 and CIFAR-100, over many different quantities of labeled training data. For example, we achieve 5.0% error on CIFAR-10 with only 4000 labels, compared to the previous best result in the literature of 6.3%.
                     </p>
                     <!-- <div class="share">
                       <span>Share:</span>
