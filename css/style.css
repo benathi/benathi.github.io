@@ -149,6 +149,35 @@ h6 {
     height: 750px;
 }
 
+.arlo_tm_bubbles {
+    width: 100%;
+    height: 650px;
+    float: left;
+    background: #f1f1f1;
+}
+
+.arlo_tm_bubbles iframe {
+    width: 100%;
+    height: 750px;
+}
+
+.arlo_tm_bubble {
+    width: 100%;
+    height: 650px;
+    float: left;
+}
+
+.opened iframe {
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.opened .pt-5 {
+    margin-top: 20px
+}
+
 .arlo_tm_preloader {
     position: fixed;
     background-color: #fff;
@@ -668,7 +697,8 @@ h6 {
     color: #009D9C;
     display: inline-block;
     font-family: poppins;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 28px;
     text-transform: uppercase;
     margin-bottom: 4px
 }
@@ -687,6 +717,14 @@ h6 {
 .arlo_tm_about .left .about_image_wrap {
     position: relative;
     float: left
+}
+
+#youtube {
+    margin: 20px 0px 60px 0px;
+    position:relative;
+    display:block;
+    width: 100%;
+    height: 500px;
 }
 
 .arlo_tm_about .left .about_image_wrap .image {
@@ -746,6 +784,10 @@ h6 {
 .arlo_tm_about .right .text span {
     color: #009D9C;
     font-style: italic
+}
+
+.arlo_tm_about .right .text a {
+    color: #009D9C;
 }
 
 .arlo_tm_about .about_short_contact_wrap {
@@ -861,7 +903,20 @@ h6 {
     clear: both;
     float: left;
     background-color: #f9f9f9;
-    padding: 140px 0 138px
+    padding: 50px 0 100px
+}
+
+.blogs_inner {
+    width: 100%;
+    text-align: center;
+}
+
+.blogs_inner img {
+    max-width: 380px;
+}
+
+.date a {
+    font-weight: bold;
 }
 
 .arlo_tm_services .service_inner {
@@ -1254,7 +1309,8 @@ h6 {
 
 .arlo_tm_news .news_list ul li .image img {
     min-width: 100%;
-    opacity: 0
+    opacity: 0;
+    height: 200px;
 }
 
 .arlo_tm_news .news_list ul li .image .main {
@@ -1352,6 +1408,10 @@ h6 {
     position: absolute;
     z-index: -11;
     display: none
+}
+
+.description a {
+    color: #009D9C
 }
 
 body.modal {
@@ -1465,7 +1525,7 @@ body.modal {
 
 .arlo_tm_modalbox_news .description_wrap .image {
     position: relative;
-    z-index: -1;
+    z-index: 3;
     margin-bottom: 40px
 }
 
@@ -1730,8 +1790,36 @@ body.modal {
 
 .arlo_tm_copyright .social ul li .svg {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(236deg) brightness(102%) contrast(101%);
-    width: 18px;
-    height: 18px
+    width: 20px;
+    height: 20px
+}
+
+#blogs {
+    padding: 0px 0px 100px 0px;
+}
+
+.arlo_tm_about .social ul {
+    margin: 0px 0px 25px 0px;
+    list-style-type: none
+}
+
+.arlo_tm_about .social ul li {
+    margin: 0 15px 0 0;
+    display: inline-block
+}
+
+.arlo_tm_about .social ul li:last-child {
+    margin-right: 0
+}
+
+.arlo_tm_about .social ul li a {
+    text-decoration: none;
+    color: #fff
+}
+
+.arlo_tm_about .social ul li .svg {
+    width: 22px;
+    height: 22px
 }
 
 /* .mouse-cursor {
