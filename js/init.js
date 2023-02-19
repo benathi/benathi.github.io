@@ -185,7 +185,7 @@ function arlo_tm_modalbox_news() {
       modalBox.addClass("opened");
       modalBox.find(".description_wrap").html(details);
       mainImage = modalBox.find(".main");
-      mainImage.css({ backgroundImage: "url(" + imgData + ")" });
+      mainImage.css({ backgroundImage: "url(" + imgData + ")", left: "0px" });
       title = modalBox.find(".title");
       title.html(titleHref);
       return false;
