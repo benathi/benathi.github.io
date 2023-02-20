@@ -284,7 +284,7 @@ h6 {
     display: none
 }
 
-.arlo_tm_topbar .logo .light.blog_icon {
+.arlo_tm_topbar .logo .light {
     filter: invert(100%);
 }
 
@@ -3325,7 +3325,8 @@ svg {
     margin-block: 0;
 }
 
-.education__content p {
+.education__content p,
+.education__content ul {
     color: rgba(0, 0, 0, 0.6);
     font-size: 0.9rem;
     margin-block-start: 0.5rem;
@@ -3347,7 +3348,7 @@ svg {
     box-shadow: inset 0 0 0 2px white;
     border: 2px solid #009D9C;
     left: .8rem;
-    top: 0.74rem;
+    top: .88rem;
 }
 
 .education__content:hover {
@@ -3359,9 +3360,52 @@ svg {
     position: absolute;
     content: "";
     width: 4px;
-    background-color: #dedede;
+    background-color: #303030;
     left: calc(2rem - 2px);
     top: 2.74rem;
     bottom: -0.74rem;
     z-index: -1;
+}
+
+.faqs-item {
+    width: 100%;
+    padding: 0;
+    display: block;
+}
+
+.faqs-title {
+    position: relative;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    outline: none;
+    transition: 0.4s;
+}
+
+.faqs-title:after {
+    margin-top: -55px;
+    content: '\002B';
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: normal;
+    float: right;
+    margin-left: auto;
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.faqs-content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.faqs-content-inside ul {
+    margin-left: 20px;
 }
