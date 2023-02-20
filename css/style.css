@@ -284,6 +284,10 @@ h6 {
     display: none
 }
 
+.arlo_tm_topbar .logo .light.blog_icon {
+    filter: invert(100%);
+}
+
 .arlo_tm_topbar .logo img {
     max-width: 50px
 }
@@ -3290,17 +3294,22 @@ svg {
 }
 
 .education {
-    margin: 0px 40px 70px 40px;
+    margin: 0px 0px 100px 0px;
     width: 100%;
 }
 
 .education__heading {
-    padding-inline-start: 4rem;
+    padding: 4rem 0rem;
 }
 
 .education__heading h4 {
-    font-size: 2rem;
-    margin-block: 0.5rem;
+    color: #009D9C;
+    display: inline-block;
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
 }
 
 .education__content {
