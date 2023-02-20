@@ -258,6 +258,7 @@ function arlo_tm_animate_text() {
       "a language lover",
       "a future cyborg code-logger",
       "an aspiring space rover",
+      "an AGI fervor",
       //"an AGI believer",
       //  "for a transformative and bright future.",
       //"an AGI believer, determined and true",
