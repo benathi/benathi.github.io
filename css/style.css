@@ -3408,4 +3408,5 @@ svg {
 
 .faqs-content-inside ul {
     margin-left: 20px;
+    list-style: circle inside url('../img/svg/bullets.png')
 }
