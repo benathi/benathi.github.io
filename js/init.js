@@ -24,7 +24,6 @@ jQuery(document).ready(function () {
   arlo_tm_videoplayer();
   arlo_tm_about_animation();
   arlo_tm_animate_text();
-  arlo_tm_animate_text2();
   jQuery(window).on("resize", function () {
     arlo_tm_isotope();
     arlo_tm_modalbox_news();
@@ -259,8 +258,8 @@ function arlo_tm_animate_text() {
       "a language lover",
       "a future cyborg code-logger",
       "an aspiring space rover",
-      "an AGI believer",
-        "for a transformative and bright future.",
+      //"an AGI believer",
+      //  "for a transformative and bright future.",
       //"an AGI believer, determined and true",
       //"to help build a more intelligent world for me and you",
       //"an AGI enthusiast with a drive",
@@ -271,24 +270,7 @@ function arlo_tm_animate_text() {
     backDelay: 2e3,
   });
 }
-function arlo_tm_animate_text2() {
-  "use strict";
-  var animateSpan = jQuery(".arlo_tm_animation_text_word2");
-  animateSpan.typed({
-    strings: ["a neural networker",
-      "a language lover",
-      "a future cyborg code-logger",
-      "an aspiring space rover",
-        "an AGI believer",
-        "for a transformative and bright future.",
-      //"an AGI enthusiast with a drive",
-      //"to help build a world more intelligent and alive.",
-    ],
-    loop: true,
-    startDelay: 1e3,
-    backDelay: 2e3,
-  });
-}
+
 function arlo_tm_popup() {
   "use strict";
   jQuery(".gallery_zoom").each(function () {
