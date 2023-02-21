@@ -3351,6 +3351,24 @@ svg {
     top: .88rem;
 }
 
+.education__content .year_inner {
+    position: absolute;
+    content: var(--year);
+    width: 1.4rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    color: white;
+    border-radius: 50%;
+    background-color: #009D9C;
+    box-shadow: inset 0 0 0 2px white;
+    border: 2px solid #009D9C;
+    left: .8rem;
+    top: .88rem;
+}
+
 .education__content:hover {
     background-color: rgba(230, 230, 230, 0.48);
     border-radius: 0.25rem;
@@ -3365,6 +3383,14 @@ svg {
     top: 2.74rem;
     bottom: -0.74rem;
     z-index: -1;
+}
+
+
+.education__content__inner {
+    position: relative;
+    padding: 1rem 1rem 1rem 3rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
 
 .faqs-item {
