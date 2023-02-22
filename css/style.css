@@ -692,8 +692,8 @@ h6 {
     height: auto;
     clear: both;
     float: left;
-    margin-bottom: 150px;
-    padding-top: 140px
+    margin-bottom: 30px;
+    padding-top: 110px
 }
 
 .arlo_tm_about .about_inner {
@@ -701,7 +701,7 @@ h6 {
     height: auto;
     clear: both;
     display: flex;
-    padding-top: 100px
+    padding-top: 60px
 }
 
 .arlo_tm_main_title {

@@ -1,3 +1,6 @@
+setTimeout(function () {
+  jQuery(".arlo_tm_preloader").addClass("loaded");
+}, 1500);
 jQuery(document).ready(function () {
   "use strict";
   arlo_tm_color_switcher();
@@ -29,9 +32,6 @@ jQuery(document).ready(function () {
     arlo_tm_modalbox_news();
   });
   window.addEventListener("load", function () {
-    setTimeout(function () {
-      jQuery(".arlo_tm_preloader").addClass("loaded");
-    }, 1000);
     arlo_tm_isotope();
   });
 });
@@ -558,7 +558,9 @@ for (i = 0; i < acc.length; i++) {
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
         } else {
-            panel.style.maxHeight = panel.scrollHeight + 'px';
+            panel.style.height = 'auto';
+            panel.style.maxHeight = panel.scrollHeight + 100 + 'px';
         }
     });
 }
+
