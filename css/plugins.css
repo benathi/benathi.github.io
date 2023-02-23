@@ -67,6 +67,10 @@ td {
     outline: none
 }
 
+a {
+    cursor: pointer;
+}
+
 article,
 aside,
 details,
@@ -1400,6 +1404,7 @@ input[type=button] {
 }
 
 .mfp-preloader a {
+    cursor: pointer;
     color: #ccc
 }
 
@@ -1894,6 +1899,7 @@ screen and (max-height:300px) {
 }
 
 .mb_YTPBar span.mb_YTPUrl a {
+    cursor: pointer;
     color: #fff
 }
 
