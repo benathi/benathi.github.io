@@ -9,7 +9,7 @@ html {
 
 body {
     overflow-x: hidden;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-size: 16px;
     line-height: 2;
     letter-spacing: .5px;
@@ -90,7 +90,7 @@ h5,
 h6 {
     font-weight: 500;
     line-height: 1.4;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Montserrat', sans-serif;
     color: #000
 }
 
@@ -312,7 +312,7 @@ h6 {
 .arlo_tm_topbar .menu ul li a {
     text-decoration: none;
     color: #fff;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-weight: 500;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -517,7 +517,7 @@ h6 {
     color: #000;
     display: inline-block;
     padding: 4px 0;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-weight: 500
 }
 
@@ -610,7 +610,7 @@ h6 {
     text-transform: uppercase;
     font-size: 45px;
     font-weight: 800;
-    font-family: 'Roboto', sans-serif !important
+    font-family: 'Montserrat', sans-serif
 }
 
 .arlo_tm_hero .name_holder h3 span {
@@ -621,7 +621,7 @@ h6 {
     color: #fff;
     font-size: 19px;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif !important
+    font-family: poppins
 }
 
 .arlo_tm_arrow_wrap {
@@ -715,7 +715,7 @@ h6 {
 .arlo_tm_main_title span {
     color: #009D9C;
     display: inline-block;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-weight: 700;
     font-size: 28px;
     text-transform: uppercase;
@@ -893,7 +893,7 @@ h6 {
     background-color: #009D9C;
     display: inline-block;
     padding: 12px 45px;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     border-radius: 5px;
     position: relative;
     overflow: hidden
@@ -1003,7 +1003,7 @@ h6 {
 }
 
 .arlo_tm_services .lets_work p {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-weight: 500;
     font-size: 18px
 }
@@ -1090,7 +1090,7 @@ h6 {
     position: relative;
     display: inline-block;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -1164,7 +1164,7 @@ h6 {
     background: #fff;
     font-size: 18px;
     padding: 5px 15px;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-weight: 600;
     color: #000;
     position: fixed;
@@ -1184,7 +1184,7 @@ h6 {
     top: 100%;
     left: 0;
     margin-top: -10px;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-size: 16px;
     font-weight: 400;
     padding: 5px 15px
@@ -1265,7 +1265,7 @@ h6 {
 }
 
 .arlo_tm_counter_section ul li .list_inner span {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     color: #fff
 }
 
@@ -1382,7 +1382,7 @@ h6 {
 
 .arlo_tm_news .news_list ul li .details .date {
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-size: 12px;
     color: #767676;
     font-style: italic
@@ -1581,7 +1581,7 @@ body.modal {
 
 .arlo_tm_modalbox_news .date {
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-size: 12px;
     color: #767676;
     font-style: italic
@@ -1628,7 +1628,7 @@ body.modal {
 }
 
 .arlo_tm_modalbox_news .share span {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     color: #000;
     font-weight: 600;
     display: inline-block;
@@ -1796,7 +1796,7 @@ body.modal {
 
 .arlo_tm_copyright .copy p {
     color: #fff;
-    font-family: 'Roboto', sans-serif !important
+    font-family: poppins
 }
 
 .arlo_tm_copyright .social ul {
@@ -2065,7 +2065,7 @@ body.modal {
     display: block;
     position: relative;
     padding: 13px 0;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-weight: 500;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -2246,7 +2246,7 @@ body.modal {
 
 .arlo_tm_settings .title {
     color: #fff;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-weight: 600;
     position: relative;
     display: inline-block
@@ -2447,7 +2447,7 @@ body.dark .arlo_tm_settings .cursor li .svg,
     color: #000;
     font-size: 13px;
     font-weight: 600;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     display: block;
     position: relative;
     top: 2px
@@ -2524,7 +2524,7 @@ body.dark .arlo_tm_settings .cursor li .svg,
     color: #fff;
     font-size: 20px;
     letter-spacing: 2px;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-weight: 500
 }
 
@@ -2593,7 +2593,7 @@ body.dark .arlo_tm_settings .cursor li .svg,
     text-decoration: none;
     color: #000;
     font-size: 18px;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     font-weight: 600;
     display: inline-block;
     position: relative;
@@ -2686,7 +2686,7 @@ body.dark .arlo_tm_settings .cursor li .svg,
 .arlo_tm_intro_fixed_price .anim {
     text-decoration: none;
     color: #fff;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: poppins;
     background-color: #e54b4b;
     position: fixed;
     font-size: 22px;
@@ -3309,7 +3309,7 @@ svg {
 .education__heading h4 {
     color: #009D9C;
     display: inline-block;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 28px;
     text-transform: uppercase;
