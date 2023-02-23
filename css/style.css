@@ -1429,9 +1429,8 @@ h6 {
 }
 
 .description a {
-    font-size: 20px;
     text-decoration: none;
-    color: #009D9C
+    color: #009D9C;
 }
 
 .description a:hover {
@@ -1439,8 +1438,12 @@ h6 {
 }
 
 .description a img {
-    max-width: 22px;
-    margin: 0px 10px;
+    max-width: 25px;
+    margin: 0px 0px 20px 10px;
+}
+
+.description .social a img {
+    margin: 0px;
 }
 
 body.modal {
@@ -1532,7 +1535,7 @@ body.modal {
 .arlo_tm_modalbox_news .details {
     width: 100%;
     float: left;
-    margin-bottom: 30px
+    margin-bottom: 20px
 }
 
 .arlo_tm_modalbox_news .description {
@@ -2784,7 +2787,7 @@ body.dark .arlo_tm_settings .cursor li .svg,
     }
 
     .container {
-        max-width: 1070px
+        max-width: 900px
     }
 
     .arlo_tm_leftpart .inner .logo img {
@@ -2931,7 +2934,7 @@ body.dark .arlo_tm_settings .cursor li .svg,
     }
 
     .arlo_tm_modalbox_news .description_wrap {
-        padding: 20px
+        padding: 25px 20px 45px 20px;
     }
 
     .arlo_tm_modalbox_news .details .title {
@@ -3456,7 +3459,7 @@ svg {
 
 .faqs-content {
     padding: 0;
-    max-height: 0;
+    max-height: 338px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
