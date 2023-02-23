@@ -6,7 +6,9 @@ body {
     margin: 1em auto 4em auto;
     position: relative;
     tab-size: 2;
-    padding: 30px 80px;
+    width: 960px;
+    #background: #b3d3ef;
+    #background: #000;
 }
 h1 {
     font-size: 64px;
@@ -101,8 +103,7 @@ aside,
     color: #e6550d;
 }
 iframe {
-    margin: 30px 0px;
-    width: 100%;
+    width: 960px;
     height: 700px;
     border: 0px;
 }

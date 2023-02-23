@@ -17,20 +17,20 @@
 <body>
     <script type="text/javascript">
         //Width and height
-        var w = screen.width - 160;
-        var h = 650;
+        var w = 960;
+        var h = 700;
         var radius = 50;
         var centerRadius = 120;
         var padding = 50;
         var radius_parent = 25;
-        //var centerNode = "Ben Athiwaratkun";
+         //var centerNode = "Ben Athiwaratkun";
         var centerNode = 0;
         var transparency_normal = 0.7;
         var transparency_hover_factor = 0.4;
         var transparency_defocused = 0.07;
         var transparency_parent = 1.0;
 
-        // Force
+         // Force
         var LINK_DISTANCE = 100;
         var LINK_STRENGTH = 0.5;
         var GRAVITY_STRENGTH = 0.05;
@@ -46,25 +46,25 @@
                         {
                             name: "Resume",
                             link: "./docs/ResumeBenA.pdf"
-                        },
+                },
                         {
                             name: "LinkedIn",
                             link: "https://www.linkedin.com/in/benathi"
-                        },
+                },
                         {
                             name: "GitHub",
                             link: "https://www.github.com/benathi"
-                        },
+                },
                         {
                             name: "Google Scholar",
                             link: "https://scholar.google.com/citations?user=KZpZTTQAAAAJ&hl=en"
-                        }
-
-
+                }
+                    
+                    
                     ]
-                },
+     },
                 {
-                    name: "ML Research",
+        name: "ML Research",
                     subtree: [
                         {
                             name: "Adversarial Cross-Lingual Sentiment Classification",
@@ -145,9 +145,9 @@
                                 }
                             ]
                         },
-                    ]
-                }
-            ]
+                        ]
+     }
+          ]
         };
 
         var dataset = {
@@ -220,7 +220,7 @@
 
         var colors = d3.scale.category20();
 
-        //Create SVG element
+         //Create SVG element
         var svg = d3.select("body")
             .append("svg")
             //.attr("viewBox", "0 0 " + w + " " + h)
@@ -229,13 +229,13 @@
             .attr("width", w)
             .attr("height", h);
 
-        // Fading in
+         // Fading in
         svg.style("opacity", 0)
             .transition()
             .duration(1000)
             .style("opacity", 1);
 
-        //Create edges as lines
+         //Create edges as lines
         var edges = svg.selectAll("line")
             .data(dataset.edges)
             .enter()
@@ -255,15 +255,15 @@
                 });
         }
 
-        // TODO - add backgroud to circle
-        // the background should be a vector graphic?
-        // need to make sure it scales ok
-        // the background will pop up on mousehover as the transparency increased
-        // 
+         // TODO - add backgroud to circle
+         // the background should be a vector graphic?
+         // need to make sure it scales ok
+         // the background will pop up on mousehover as the transparency increased
+         // 
 
 
-        // (2) Nodes
-        // 2.1 Each node is a collection g
+         // (2) Nodes
+         // 2.1 Each node is a collection g
         var nodes = svg.selectAll(".node")
             .data(dataset.nodes)
             .enter()
@@ -271,7 +271,7 @@
             .attr("class", "node")
             .call(force.drag);
 
-        // 2.2 Each node has a circle as an element
+         // 2.2 Each node has a circle as an element
         nodes.append("circle")
             .attr("r", function (d) {
                 if (d.index == centerNode) {
@@ -290,10 +290,10 @@
                     return "hide";   
                 }
             })*/
-            .style("fill-opacity", function (d) {
-                if (d.index == centerNode) {
+            .style("fill-opacity", function(d){
+                if (d.index == centerNode){
                     d.mode = "normal"
-                    return transparency_normal;
+                    return transparency_normal;   
                 } else {
                     d.mode = "hide"
                     return transparency_defocused;
@@ -424,27 +424,27 @@
                 }
             })
 
-        // 2.3 Each node has a text label 
-        nodes.append("text")
+         // 2.3 Each node has a text label 
+         nodes.append("text")
             .attr("text-anchor", "middle")
             .text(function (d) {
                 return d.name;
             })
-            .style("font-size", 15)
+            .style("font-size", 13)
             .attr("fill", function (d, i) {
-                return d3.rgb(colors(i)).darker(10);
+                return d3.rgb(colors(i)).darker(2);
             })
-            .style("fill-opacity", function (d) {
-                if (d.index == centerNode) {
-                    return transparency_normal;
+            .style("fill-opacity", function(d){
+                if (d.index == centerNode){
+                    return transparency_normal;   
                 } else {
                     return transparency_defocused;
                 }
             })
 
 
-        // 3. Ticking
-        force.on("tick", function () {
+         // 3. Ticking
+         force.on("tick", function () {
 
             edges.attr("x1", function (d) {
                 return d.source.x;
@@ -482,8 +482,8 @@
 
 
 
-        // TODO - make this work for non uniform radius
-        // TODO - modify this so that it bounces off the walls
+         // TODO - make this work for non uniform radius
+         // TODO - modify this so that it bounces off the walls
         function collide(alpha) {
             var quadtree = d3.geom.quadtree(dataset.nodes);
             return function (d) {
@@ -511,8 +511,8 @@
         }
 
 
-        // not able to move much due to constraints
-        // check if there's something wrong with the method
+         // not able to move much due to constraints
+         // check if there's something wrong with the method
         function shake() {
             nodes.forEach(function (o, i) {
                 o.x += (Math.random() - .5) * 2 * radius;
