@@ -555,7 +555,8 @@ for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener('click', function () {
         this.classList.toggle('active');
         var panel = this.nextElementSibling;
-        if (panel.style.maxHeight != '0px' && panel.style.maxHeight != '') {
+        console.log(panel);
+        if (panel.style.maxHeight != '0px') {
             panel.style.maxHeight = '0px';
         } else {
             panel.style.height = 'auto';
