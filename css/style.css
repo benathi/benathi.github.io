@@ -326,11 +326,11 @@ h6 {
 }
 
 .arlo_tm_topbar .menu ul li.current a {
-    color: #0476D0
+    color: #1482d9
 }
 
 .arlo_tm_topbar .menu ul li a:hover {
-    color: #0476D0
+    color: #1482d9
 }
 
 .arlo_tm_mobile_menu {
@@ -614,7 +614,7 @@ h6 {
 }
 
 .arlo_tm_hero .name_holder h3 span {
-    color: #0476D0
+    color: #1482d9
 }
 
 .arlo_tm_hero .text_typing p {
@@ -713,7 +713,7 @@ h6 {
 }
 
 .arlo_tm_main_title span {
-    color: #0476D0;
+    color: #1482d9;
     display: inline-block;
     font-family: poppins;
     font-weight: 700;
@@ -768,7 +768,7 @@ h6 {
     bottom: -25px !important;
     left: 25px !important;
     right: -25px !important;
-    border: 10px solid #0476D0
+    border: 10px solid #1482d9
 }
 
 .arlo_tm_about .left .about_image_wrap img {
@@ -793,7 +793,7 @@ h6 {
 }
 
 .arlo_tm_about .right .about_title h3 .arlo_tm_animation_text_word {
-    color: #0476D0
+    color: #1482d9
 }
 
 .arlo_tm_about .right .text {
@@ -802,12 +802,12 @@ h6 {
 }
 
 .arlo_tm_about .right .text span {
-    color: #0476D0;
+    color: #1482d9;
     font-style: italic
 }
 
 .arlo_tm_about .right .text a {
-    color: #0476D0;
+    color: #1482d9;
 }
 
 .arlo_tm_about .about_short_contact_wrap {
@@ -878,7 +878,7 @@ h6 {
     top: 6px;
     width: 17px;
     height: 17px;
-    color: #0476D0
+    color: #1482d9
 }
 
 .arlo_tm_button {
@@ -891,7 +891,7 @@ h6 {
 .arlo_tm_button a {
     text-decoration: none;
     color: #fff;
-    background-color: #0476D0;
+    background-color: #1482d9;
     display: inline-block;
     padding: 12px 45px;
     font-family: poppins;
@@ -986,7 +986,7 @@ h6 {
 .arlo_tm_services .service_inner ul li .inner .svg {
     width: 50px;
     height: 50px;
-    color: #0476D0;
+    color: #1482d9;
     margin-bottom: 17px
 }
 
@@ -1100,11 +1100,11 @@ h6 {
 }
 
 .arlo_tm_portfolio .portfolio_filter ul li a.current {
-    color: #0476D0
+    color: #1482d9
 }
 
 .arlo_tm_portfolio .portfolio_filter ul li a:hover {
-    color: #0476D0
+    color: #1482d9
 }
 
 .arlo_tm_portfolio .portfolio_list {
@@ -1325,7 +1325,7 @@ h6 {
 .arlo_tm_news .news_list ul li .image {
     position: relative;
     overflow: hidden;
-    max-height: 170px;
+    max-height: 172px;
 }
 
 .arlo_tm_news .news_list ul li .image img {
@@ -1379,7 +1379,7 @@ h6 {
 }
 
 .arlo_tm_news .news_list ul li .details .title a:hover {
-    color: #0476D0
+    color: #1482d9
 }
 
 .arlo_tm_news .news_list ul li .details .date {
@@ -1401,7 +1401,7 @@ h6 {
 }
 
 .arlo_tm_news .news_list ul li .details .date a:hover {
-    color: #0476D0
+    color: #1482d9
 }
 
 .arlo_tm_news .news_list ul li .details .date span {
@@ -1432,7 +1432,7 @@ h6 {
 
 .description a {
     text-decoration: none;
-    color: #0476D0;
+    color: #1482d9;
 }
 
 .description a:hover {
@@ -1555,7 +1555,7 @@ body.modal {
 .arlo_tm_modalbox_news .description blockquote {
     font-style: italic;
     color: #000;
-    border-left: 2px solid #0476D0;
+    border-left: 2px solid #1482d9;
     padding-left: 20px;
     margin-bottom: 15px
 }
@@ -1606,7 +1606,7 @@ body.modal {
 }
 
 .arlo_tm_modalbox_news .date a:hover {
-    color: #0476D0
+    color: #1482d9
 }
 
 .arlo_tm_modalbox_news .date span {
@@ -1877,7 +1877,7 @@ body.modal {
     width: 6px;
     height: 6px;
     z-index: 100;
-    background-color: #0476D0;
+    background-color: #1482d9;
     -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
     transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out
 }
@@ -1887,7 +1887,7 @@ body.modal {
     margin-top: -40px;
     width: 80px;
     height: 80px;
-    background-color: #0476D0;
+    background-color: #1482d9;
     opacity: .3
 }
 
@@ -1896,7 +1896,7 @@ body.modal {
     margin-top: -15px;
     width: 30px;
     height: 30px;
-    border: 2px solid #0476D0;
+    border: 2px solid #1482d9;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 100;
@@ -2852,6 +2852,10 @@ body.dark .arlo_tm_settings .cursor li .svg,
         display: none
     }
 
+    .arlo_tm_news .news_list ul li .image {
+        max-height: 265px;
+    }
+
     .cursor-inner {
         display: none
     }
@@ -2967,6 +2971,10 @@ body.dark .arlo_tm_settings .cursor li .svg,
 @media(max-width:768px) {
     .arlo_tm_about .left .about_image_wrap .border .inner {
         display: none
+    }
+
+    .arlo_tm_news .news_list ul li .image {
+        max-height: none;
     }
 
     .arlo_tm_hero .name_holder h3 {
@@ -3092,7 +3100,7 @@ svg {
 
 /*===== Page Loader =====*/
 .preloader {
-    background: #0476D0;
+    background: #1482d9;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -3315,7 +3323,7 @@ svg {
 }
 
 .education__heading h4 {
-    color: #0476D0;
+    color: #1482d9;
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -3363,9 +3371,9 @@ svg {
     font-size: 0.6rem;
     color: white;
     border-radius: 50%;
-    background-color: #0476D0;
+    background-color: #1482d9;
     box-shadow: inset 0 0 0 2px white;
-    border: 2px solid #0476D0;
+    border: 2px solid #1482d9;
     left: .8rem;
     top: .88rem;
 }
@@ -3381,9 +3389,9 @@ svg {
     font-size: 0.6rem;
     color: white;
     border-radius: 50%;
-    background-color: #0476D0;
+    background-color: #1482d9;
     box-shadow: inset 0 0 0 2px white;
-    border: 2px solid #0476D0;
+    border: 2px solid #1482d9;
     left: -0.6rem;
     top: .88rem;
 }
@@ -3399,9 +3407,9 @@ svg {
     font-size: 0.6rem;
     color: white;
     border-radius: 50%;
-    background-color: #0476D0;
+    background-color: #1482d9;
     box-shadow: inset 0 0 0 2px white;
-    border: 2px solid #0476D0;
+    border: 2px solid #1482d9;
     left: .8rem;
     top: .88rem;
 }
@@ -3465,14 +3473,14 @@ svg {
 .faqs-content {
     padding: 0;
     height: auto;
-    max-height: 338px;
+    max-height: 400px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 
-.mx-h {
+/* .mx-h {
     max-height: 0px;
-}
+} */
 
 .faqs-content-inside ul {
     margin-left: 20px;

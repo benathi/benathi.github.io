@@ -221,14 +221,12 @@ function arlo_tm_scrollable() {
   verMenu.css({ height: H - logoHeight - socialHeight });
   scrollable.each(function () {
     var element = jQuery(this);
-    element
-      .css({ height: H - logoHeight - socialHeight })
-      .niceScroll({
-        touchbehavior: false,
-        cursorwidth: 0,
-        autohidemode: true,
-        cursorborder: "0px solid #eee",
-      });
+    element.css({ height: H - logoHeight - socialHeight }).niceScroll({
+      touchbehavior: false,
+      cursorwidth: 0,
+      autohidemode: true,
+      cursorborder: "0px solid #eee",
+    });
   });
 }
 jQuery(".arlo_tm_counter").each(function () {
@@ -254,7 +252,8 @@ function arlo_tm_animate_text() {
   "use strict";
   var animateSpan = jQuery(".arlo_tm_animation_text_word");
   animateSpan.typed({
-    strings: ["a neural networker",
+    strings: [
+      "a neural networker",
       "a language lover",
       "a future cyborg code-logger",
       "an aspiring space rover",
@@ -548,20 +547,20 @@ function arlo_tm_about_animation() {
   }
 }
 
-var acc = document.getElementsByClassName('faqs-title');
+var acc = document.getElementsByClassName("faqs-title");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener('click', function () {
-        this.classList.toggle('active');
-        var panel = this.nextElementSibling;
-        console.log(panel);
-        if (panel.style.maxHeight != '0px') {
-            panel.style.maxHeight = '0px';
-        } else {
-            panel.style.height = 'auto';
-            panel.style.maxHeight = panel.scrollHeight + 100 + 'px';
-        }
-    });
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    // panel.style.maxHeight = panel.scrollHeight + 100 + "px";
+    if (panel.style.maxHeight != "0px") {
+      panel.style.height = "auto";
+      panel.style.maxHeight = "0px";
+    } else {
+      panel.style.height = "auto";
+      panel.style.maxHeight = panel.scrollHeight + 162 + "px";
+    }
+  });
 }
-
