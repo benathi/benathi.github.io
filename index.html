@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4T90Z05NK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-L4T90Z05NK');
+  </script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="description" content="Name of your web site" />
   <meta name="author" content="Marketify" />
@@ -34,7 +43,7 @@
     <div class="arlo_tm_modalbox_news">
       <div class="box_inner">
         <div class="close">
-          <a href="#">
+          <a>
             <img class="svg" src="img/svg/cancel.svg" alt="cancel" />
           </a>
         </div>
@@ -47,7 +56,8 @@
         <div class="container">
           <div class="mobile_in">
             <div class="logo">
-              <a href="#"><img src="img/logo/icon.png" alt="" /></a>
+              <a><img src="img/logo/profile.png" alt="" /></a>
+              <a href="https://benathi.github.io/blogs"><img src="img/logo/blogs.png" alt="" /></a>
             </div>
             <div class="my_trigger">
               <div class="hamburger hamburger--collapse-r">
@@ -66,7 +76,8 @@
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#projects">Projects</a></li>
-              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#endeavors">Endeavors</a></li>
+              <li><a href="https://benathi.github.io/blogs">Blogs</a></li>
               <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
           </div>
@@ -78,8 +89,11 @@
       <div class="container">
         <div class="topbar_inner">
           <div class="logo">
-            <a href="#"><img class="light" src="img/logo/icon.png" alt="" /></a>
-            <a href="#"><img class="dark" src="img/logo/icon.png" alt="" /></a>
+            <a class="light"><img src="img/logo/profile.png" alt="" /></a>
+            <a class="light" href="https://benathi.github.io/blogs/"><img class="blog_icon" src="img/logo/blogs.png"
+                alt="" /></a>
+            <a class="dark"><img src="img/logo/profile.png" alt="" /></a>
+            <a class="dark" href="https://benathi.github.io/blogs/"><img src="img/logo/blogs.png" alt="" /></a>
           </div>
           <div class="menu">
             <ul class="anchor_nav">
@@ -87,7 +101,7 @@
               <li><a href="#about">About</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#endeavors">Endeavors</a></li>
-              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="https://benathi.github.io/blogs">Blogs</a></li>
               <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
           </div>
@@ -111,13 +125,35 @@
           <h3>Ben <span>Athiwaratkun</span></h3>
         </div>
         <div class="text_typing">
-          <p>I'm <span class="arlo_tm_animation_text_word"></span></p>
+          <p> &zwnj; <span class="arlo_tm_animation_text_word"></span></p>
         </div>
       </div>
       <div class="arlo_tm_arrow_wrap bounce anchor">
         <a href="#about"><i class="xcon-angle-double-down"></i></a>
       </div>
     </div>
+
+
+    <!--
+    Note: want highlight section here
+    <div class="arlo_tm_section" id="blogs">
+      <div class="arlo_tm_news arlo_tm_services">
+        <div class="container">
+          <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+            <span>News</span>
+          </div>
+          <div class="news_list">
+            <div class="container blogs_inner wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+              <h3>Coming Soon</h3>
+               <img src="img/comming soon.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   -->
+
+
 
     <div class="arlo_tm_about" id="about">
       <div class="container">
@@ -130,7 +166,7 @@
               data-relative-input="true">
               <div class="image layer" data-depth="0.1">
                 <img src="img/ratios/550x650.jpg" alt="" />
-                <div class="inner" data-img-url="img/about/1.jpg"></div>
+                <div class="inner" data-img-url="img/about/2.jpg"></div>
               </div>
               <div class="border layer" data-depth="0.2">
                 <img src="img/ratios/550x650.jpg" alt="" />
@@ -141,33 +177,44 @@
           <div class="right">
             <div class="about_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
               <h3>
-                I'm Ben Athiwaratkun
-                <!-- <span class="arlo_tm_animation_text_word"></span> -->
+                I'm Ben Athiwaratkun,
+                <span class="arlo_tm_animation_text_word"></span>
               </h3>
             </div>
             <div class="text wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
               <p>
                 My name is <span>Ben Athiwaratkun</span>. I am an ML scientist at AWS AI Labs. I completed my PhD in
                 Statistics and focus on machine learning from Cornell University, under the supervision of <a
-                  href="https://cims.nyu.edu/~andrewgw">Andrew Gordon Wilson.</a> Before my PhD, I studied Mathematics
+                  href="https://cims.nyu.edu/~andrewgw" target="_blank">Andrew Gordon Wilson.</a> Before my PhD, I
+                studied Mathematics
                 and Economics at Williams College.
               </p>
             </div>
             <div class="social wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".6s">
               <ul>
                 <li>
-                  <a href="https://www.instagram.com/benathi/" target="_blank"><img class="svg" src="img/svg/social/instagram.svg"
+                  <a href="https://www.instagram.com/benathi/" target="_blank"><img class="svg"
+                      src="img/svg/social/instagram.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/ben_athi" target="_blank"><img class="svg"
+                      src="img/svg/social/twitter.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="https://scholar.google.com/citations?user=KZpZTTQAAAAJ&hl=en" target="_blank"><img
+                      class="svg" src="img/svg/social/scholar.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/benathi" target="_blank"><img class="svg"
+                      src="img/svg/social/linkedin.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="https://github.com/benathi" target="_blank"><img class="svg" src="img/svg/social/github.svg"
                       alt="" /></a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/ben_athi" target="_blank"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
-                </li>
-                <li>
-                  <a href="https://scholar.google.com/citations?user=KZpZTTQAAAAJ&hl=en" target="_blank"><img class="svg"
-                      src="img/svg/social/scholar.svg" alt="" /></a>
-                </li>
-                <li>
-                  <a href="https://linkedin.com/in/benathi" target="_blank"><img class="svg" src="img/svg/social/linkedin.svg" alt="" /></a>
+                  <a href="mailto:ben.athiwaratkun@gmail.com"><img class="svg" src="img/svg/social/email.svg"
+                      alt="" /></a>
                 </li>
               </ul>
             </div>
@@ -176,7 +223,7 @@
                 <li>
                   <img class="svg" src="img/svg/location-1.svg" alt="" />
                   <span><label>Location:</label>
-                    <a class="href_location" href="#">New York, NY</a></span>
+                    <a class="href_location" >New York, NY</a></span>
                 </li>
                 <li>
                   <img class="svg" src="img/svg/game-controller-2.svg" alt="" />
@@ -201,8 +248,247 @@
               </ul>
             </div> -->
             <div class="arlo_tm_button wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".6s">
-              <a href="./resume.pdf" download><span>CV</span></a>
+              <a href="./docs/benathi_cv.pdf" download><span>CV</span></a>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='education mb-50'>
+      <div class="container">
+        <div class='education__heading'>
+          <h4>Experience</h4>
+        </div>
+
+
+
+        <div class='education__content  m-50'>
+          <div class="faqs-item ">
+            <span class='year'></span>
+            <a class="faqs-title">
+              <h5>ML Scientist at AWS AI Labs</h5>
+              <p>Few-shot learning, language models for code generation, and efficient inference.</p>
+            </a>
+            <div class="faqs-content">
+              <div class="faqs-content-inside">
+                <!--
+                <ul>
+                  <p> Developed framework for evaluating language model's code generation abilities at scale on 10+
+                    languages. </p>
+                  <p>Developed solutions for efficient inference for language models</p>
+                  <p>Demonstrated the effectiveness of using generative models for tasks such as structured predictions
+                    which were not previously considered applicable for language models.</p>
+                </ul>
+                -->
+
+                <!--
+                  <div class="education">
+                  <div class="container">
+                  <div class='education__content'>
+                    <div class="faqs-item ">
+                      <span class='year'></span>
+                      <a class="faqs-title">
+                      <h5>Code generation with language models</h5>
+                      <p> Developed framework for evaluating language model's code generation abilities at scale on 10+ languages. </p>
+                      </a>
+                    </div>
+                   </div>
+
+                   <div class='education__content'>
+                    <div class="faqs-item ">
+                      <span class='year'></span>
+                      <a class="faqs-title">
+                      <h5>Efficient inference</h5>
+                      <p>Developed solutions for efficient inference for language models</p>
+                      </a>
+                    </div>
+                   </div>
+
+                   <div class='education__content'>
+                    <div class="faqs-item ">
+                      <span class='year'></span>
+                      <a class="faqs-title">
+                      <h5>Language model for structured predictions</h5>
+                      <p>Led the effort to use generative models for tasks such as structured predictions which were not previously considered applicable for language models.</p>
+                      </a>
+                    </div>
+                   </div>
+
+                   </div>
+                   </div>
+                   -->
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class='education__content m-50'>
+          <div class="faqs-item ">
+            <span class='year'></span>
+            <a class="faqs-title">
+              <h5>PhD Student at Cornell University</h5>
+              <p>PhD in Statistics with Special Masters in Computer Science.</p>
+            </a>
+
+            <!-- begin sub structure-->
+            <div class="faqs-content">
+              <div class="faqs-content-inside">
+                <div class="education">
+                  <div class="container">
+                    <div class='education__content sub_list'>
+                      <div class="faqs-item ">
+                        <span class='list'></span>
+                        <a class="faqs-title">
+                          <h5>Intern at AWS AI, Palo Alto</h5>
+                          <p>Probabilistic FastText for multiple word meanings</p>
+                        </a>
+
+                        <div class="faqs-content" style="max-height: 0px;">
+                          <div class="faqs-content-inside">
+                            <ul>
+                              Adapted fast C++ training code from FastText to incorporate multiple modalities of word
+                              meanings.
+                            </ul>
+                          </div>
+                        </div>
+
+
+
+                      </div>
+                    </div>
+
+
+                    <div class='education__content sub_list'>
+                      <div class="faqs-item ">
+                        <span class='list'></span>
+                        <a class="faqs-title">
+                          <h5>Intern at Microsoft Research, Redmond</h5>
+                          <p>Language modeling on machine APIs for malware classification</p>
+                        </a>
+
+                        <div class="faqs-content" style="max-height: 0px;">
+                          <div class="faqs-content-inside">
+                            <ul>
+                              Conducted Language modeling experiments in Tensorflow + Keras, with multiple architectures
+                              (GRU, LSTM, Character CNN).
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class='education__content sub_list'>
+                      <div class="faqs-item ">
+                        <span class='list'></span>
+                        <a class="faqs-title">
+                          <h5>Intern at Loop AI, San Francisco</h5>
+                          <p>Word embeddings via language modeling</p>
+                        </a>
+
+                        <!--
+                        <div class="faqs-content" style="max-height: 0px;">
+                          <div class="faqs-content-inside">
+                            <ul>
+                              Theano
+                            </ul>
+                          </div>
+                        </div>
+                        -->
+
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end sub structure -->
+
+
+          </div>
+        </div>
+
+
+
+        <div class='education__content m-50'>
+          <div class="faqs-item ">
+            <span class='year'></span>
+            <a class="faqs-title">
+              <h5>Student at Williams College</h5>
+              <p>Mathematics and Economics Double Majors with Honors Thesis in Ergodic Theory.</p>
+            </a>
+
+
+
+
+            <!-- begin sub structure-->
+            <div class="faqs-content">
+              <div class="faqs-content-inside">
+                <div class="education">
+                  <div class="container">
+
+
+                    <div class='education__content sub_list'>
+                      <div class="faqs-item ">
+                        <span class='list'></span>
+                        <a class="faqs-title">
+                          <h5>Intern at RelSci</h5>
+                          <p>Data processing for relationship extraction</p>
+                        </a>
+                      </div>
+                    </div>
+
+
+                    <div class='education__content sub_list'>
+                      <div class="faqs-item ">
+                        <span class='list'></span>
+                        <a class="faqs-title">
+                          <h5>Physics Summer Research</h5>
+                          <p>Predicting top quarks from proton-proton collisions</p>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class='education__content sub_list'>
+                      <div class="faqs-item ">
+                        <span class='list'></span>
+                        <a class="faqs-title">
+                          <h5>Winter Study Physics Research</h5>
+                          <p>Optimizing precision of computer-generated phase-regime holograms</p>
+                        </a>
+
+                        <div class="faqs-content" style="max-height: 0px;">
+                          <div class="faqs-content-inside">
+                            <ul>
+                              Assisted a faculty member on maximizing the precision of computer-generated phase-regime
+                              holograms that controls light patterns for high precision trapping of small objects such
+                              as
+                              computer chips. Accomplished in determining optimal holograms for grid-like laser
+                              patterns.
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end sub structure -->
+
+
           </div>
         </div>
       </div>
@@ -228,21 +514,22 @@
               <li class="wow fadeInLeft" data-wow-duration="1.5s">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="img/news/1a.jpg" alt="" />
-                    <div class="main" data-img-url="img/news/1a.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <img src="img/news/2.jpg" alt="" />
+                    <div class="main" data-img-url="img/news/2.jpg"></div>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Multi-lingual Evaluation of code-generation model - ICLR 2023 (spotlight)</a>
+                      <a>Multi-lingual Evaluation of code-generation model - ICLR 2023 (spotlight)</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a> et al.
+                      <a>Ben Athiwaratkun</a> et al.
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/2210.14868" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/2210.14868" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       We present MBXP, an execution-based code completion benchmark in 10+ programming languages. This
                       collection of datasets is generated by our conversion framework that translates prompts and test
                       cases from the original MBPP dataset
@@ -255,21 +542,21 @@
                       canonical solutions in several languages. These solutions can be used for other
                       code-related evaluations such as insertion-based, summarization, or code translation tasks where
                       we demonstrate results and release as part of our benchmark.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -279,25 +566,26 @@
               <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="img/news/2.png" alt="" />
-                    <div class="main" data-img-url="img/news/2.png"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <img src="img/ml/mbxp_conversion_bold.png" alt="" />
+                    <div class="main" data-img-url="img/ml/mbxp_conversion_bold.png"></div>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">ExecEval Data Release (Multi-lingual HumanEval, MBXP) + Evaluation Code</a>
+                      <a>ExecEval Data Release (Multi-lingual HumanEval, MBXP) + Evaluation Code</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun et al.</a>
+                      <a>Ben Athiwaratkun et al.</a>
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://github.com/amazon-science/mbxp-exec-eval" target="_blank">Link</a>
+                    <a href="https://github.com/amazon-science/mbxp-exec-eval" target="_blank"><img
+                        src="img/svg/social/github.svg" alt="" /></a>
                     <p>
                       This repository contains code to perform execution-based multi-lingual evaluation of code
                       generation capabilities and the corresponding data, namely, a multi-lingual benchmark MBXP,
                       multi-lingual MathQA and multi-lingual HumanEval. Results and findings can be found in the paper
-                      "Multi-lingual Evaluation of Code Generation Models"
+                      "Multi-lingual Evaluation of Code Generation Models".
                     </p>
                     <blockquote>
                       Our paper describes the language conversion framework, the synthetic solution generation, and many
@@ -308,16 +596,16 @@
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -327,22 +615,26 @@
               <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="img/news/8.jpg" alt="" />
-                    <div class="main" data-img-url="img/news/8.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <img src="img/news/structured_predictions.svg" alt="" />
+                    <div class="main" data-img-url="img/news/structured_predictions.svg"> </div>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Structured Prediction as Translation between Augmented Natural Languages - ICLR 2021 (spotlight)</a>
+                      <a>Structured Prediction as Translation between Augmented Natural Languages - ICLR 2021
+                        (spotlight)</a>
                     </h3>
                     <p class="date">
-                      Giovanni Paolini, <a href="#">Ben Athiwaratkun</a>, Jason Krone, Jie Ma, Alessandro Achille,
+                      Giovanni Paolini, <a>Ben Athiwaratkun</a>, Jason Krone, Jie Ma, Alessandro Achille,
                       Rishita Anubhai, Cicero Nogueira dos Santos, Bing Xiang, Stefano Soatto
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/2101.05779" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/2101.05779" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <a href="https://github.com/amazon-science/tanl" target="_blank"><img
+                        src="img/svg/social/github.svg" alt="" /></a>
+                    <blockquote>
                       We propose a new framework, Translation between Augmented Natural Languages (TANL), to solve many
                       structured prediction language tasks including joint entity and relation extraction, nested named
                       entity recognition, relation classification, semantic role labeling, event extraction, coreference
@@ -356,21 +648,21 @@
                       tasks and even when training a single model to solve all tasks at the same time (multi-task
                       learning). Finally, we show that our framework can also significantly improve the performance in a
                       low-resource regime, thanks to better use of label semantics.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -380,22 +672,23 @@
               <li class="wow fadeInLeft" data-wow-duration="1.5s">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="img/news/3.jpg" alt="" />
-                    <div class="main" data-img-url="img/news/3.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <img src="img/news/generative_sequence.svg" alt="" />
+                    <div class="main" data-img-url="img/news/generative_sequence.svg"></div>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Augmented Natural Language for Generative Sequence Labeling - EMNLP 2022 (oral)</a>
+                      <a>Augmented Natural Language for Generative Sequence Labeling - EMNLP 2022 (oral)</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>, Cicero Nogueira dos Santos, Jason Krone, Bing Xiang
+                      <a>Ben Athiwaratkun</a>, Cicero Nogueira dos Santos, Jason Krone, Bing Xiang
 
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/2009.13272" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/2009.13272" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       We propose a generative framework for joint sequence labeling and sentence-level classification.
                       Our model performs multiple sequence labeling tasks at once using a single, shared natural
                       language output space. Unlike prior discriminative methods, our model naturally incorporates label
@@ -408,21 +701,21 @@
                       incorporating label semantics. We also maintain competitive results on high-resource tasks,
                       performing within two points of the state-of-the-art on all tasks and setting a new
                       state-of-the-art on the SNIPS dataset.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -434,19 +727,20 @@
                   <div class="image">
                     <img src="img/news/6.jpg" alt="" />
                     <div class="main" data-img-url="img/news/6.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">There Are Many Consistent Explanations of Unlabeled Data: Why You Should Average</a>
+                      <a>There Are Many Consistent Explanations of Unlabeled Data: Why You Should Average - ICLR 2019</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>, Marc Finzi, Pavel Izmailov, Andrew Gordon Wilson
+                      <a>Ben Athiwaratkun</a>, Marc Finzi, Pavel Izmailov, Andrew Gordon Wilson
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/1806.05594" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/1806.05594" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       Presently the most successful approaches to semi-supervised learning are based on consistency
                       regularization, whereby a model is trained to be robust to small perturbations of its inputs and
                       parameters. To understand consistency regularization, we conceptually explore how loss geometry
@@ -461,21 +755,21 @@
                       CIFAR-100, over many different quantities of labeled training data. For example, we achieve 5.0%
                       error on CIFAR-10 with only 4000 labels, compared to the previous best result in the literature of
                       6.3%.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -487,20 +781,21 @@
                   <div class="image">
                     <img src="img/news/4.jpg" alt="" />
                     <div class="main" data-img-url="img/news/4.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Probabilistic FastText for Multi-Sense Word Embeddings</a>
+                      <a>Probabilistic FastText for Multi-Sense Word Embeddings - ACL 2018 (oral)</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>, Andrew Gordon Wilson, Anima Anandkumar
+                      <a>Ben Athiwaratkun</a>, Andrew Gordon Wilson, Anima Anandkumar
 
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/1806.02901" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/1806.02901" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       We introduce Probabilistic FastText, a new model for word embeddings that can capture multiple
                       word senses, sub-word structure, and uncertainty information. In particular, we represent each
                       word with a Gaussian mixture density, where the mean of a mixture component is given by the sum of
@@ -513,21 +808,21 @@
                       achieve state-of-art performance on benchmarks that measure ability to discern different meanings.
                       Thus, the proposed model is the first to achieve multi-sense representations while having enriched
                       semantics on rare words.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -537,22 +832,24 @@
               <li class="wow fadeInLeft" data-wow-duration="1.5s">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="img/news/5.jpg" alt="" />
-                    <div class="main" data-img-url="img/news/5.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <img src="img/ml/ADAN.png" alt="" />
+                    <div class="main" data-img-url="img/ml/ADAN.png"></div>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Adversarial Deep Averaging Networks for Cross-Lingual Domain Adaptation - TACL 2018</a>
+                      <a>Adversarial Deep Averaging Networks for Cross-Lingual Domain Adaptation - TACL
+                        2018</a>
                     </h3>
                     <p class="date">
-                      Xilun Chen, Yu Sun, <a href="#">Ben Athiwaratkun</a>, Claire Cardie, Kilian Weinberger
+                      Xilun Chen, Yu Sun, <a>Ben Athiwaratkun</a>, Claire Cardie, Kilian Weinberger
 
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/1606.01614" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/1606.01614" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       In recent years great success has been achieved in sentiment classification for English, thanks in
                       part to the availability of copious annotated resources. Unfortunately, most languages do not
                       enjoy such an abundance of labeled data. To tackle the sentiment classification problem in
@@ -564,21 +861,21 @@
                       indicative for the classification task and invariant across languages. Experiments on Chinese and
                       Arabic sentiment classification demonstrate that ADAN significantly outperforms state-of-the-art
                       systems.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -590,20 +887,21 @@
                   <div class="image">
                     <img src="img/news/9.jpg" alt="" />
                     <div class="main" data-img-url="img/news/9.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Hierarchical Density Order Embeddings - ICLR 2018</a>
+                      <a>Hierarchical Density Order Embeddings - ICLR 2018</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>, Andrew Gordon Wilson
+                      <a>Ben Athiwaratkun</a>, Andrew Gordon Wilson
 
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/1804.09843" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/1804.09843" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       By representing words with probability densities rather than point vectors, probabilistic word
                       embeddings can capture rich and interpretable semantic information and uncertainty. The
                       uncertainty information can be particularly meaningful in capturing entailment relationships --
@@ -615,21 +913,21 @@
                       approach provides state-of-the-art performance on the WordNet hypernym relationship prediction
                       task and the challenging HyperLex lexical entailment dataset -- while retaining a rich and
                       interpretable density representation.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -641,41 +939,258 @@
                   <div class="image">
                     <img src="img/news/10.jpg" alt="" />
                     <div class="main" data-img-url="img/news/10.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Multimodal Word Distributions - ACL 2017</a>
+                      <a>Multimodal Word Distributions - ACL 2017</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>, Andrew Gordon Wilson
+                      <a>Ben Athiwaratkun</a>, Andrew Gordon Wilson
 
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/1704.08424" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/1704.08424" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       Word embeddings provide point representations of words containing useful semantic information. We
                       introduce multimodal word distributions formed from Gaussian mixtures, for multiple word meanings,
                       entailment, and rich uncertainty information. To learn these distributions, we propose an
                       energy-based max-margin objective. We show that the resulting approach captures uniquely
                       expressive semantic information, and outperforms alternatives, such as word2vec skip-grams, and
                       Gaussian embeddings, on benchmark datasets such as word similarity and entailment.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                        </li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+              </li>
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+                <div class="list_inner">
+                  <div class="image">
+                    <img src="img/news/tax_joint.svg" alt="" />
+                    <div class="main" data-img-url="img/news/tax_joint.svg"></div>
+                    <a class="arlo_tm_full_link"></a>
+                  </div>
+                  <div class="details">
+                    <h3 class="title">
+                      <a>Joint Text and Label Generation for Spoken Language Understanding</a>
+                    </h3>
+                    <p class="date">
+                      Yang Li, <a>Ben Athiwaratkun</a>, Cicero Nogueira dos Santos, Bing Xiang
+                    </p>
+                  </div>
+                  <div class="description">
+                    <a href="https://arxiv.org/pdf/2105.05052.pdf" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
+                      Generalization is a central problem in machine learning, especially when data is limited. Using
+                      prior information to enforce
+                      constraints is the principled way of encouraging generalization. In this work, we propose to
+                      leverage the prior information
+                      embedded in pretrained language models (LM) to improve
+                      generalization for intent classification and slot labeling tasks
+                      with limited training data. Specifically, we extract prior knowledge from pretrained LM in the
+                      form of synthetic data, which
+                      encode the prior implicitly. We fine-tune the LM to generate an augmented language, which contains
+                      not only text but
+                      also encodes both intent labels and slot labels. The generated
+                      synthetic data can be used to train a classifier later. Since the
+                      generated data may contain noise, we rephrase the learning
+                      from generated data as learning with noisy labels. We then
+                      utilize the mixout regularization for the classifier and prove
+                      its effectiveness to resist label noise in generated data. Empirically, our method demonstrates
+                      superior performance and
+                      outperforms the baseline by a large margin.
+
+                    </blockquote>
+                    <!-- <div class="share">
+                      <span>Share:</span>
+                      <ul class="social">
+                        <li>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                        </li>
+                        <li>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                        </li>
+                        <li>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                        </li>
+                        <li>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                        </li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+              </li>
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+                <div class="list_inner">
+                  <div class="image">
+                    <img src="img/news/13.jpg" alt="" />
+                    <div class="main" data-img-url="img/news/13.jpg"></div>
+                    <a class="arlo_tm_full_link"></a>
+                  </div>
+                  <div class="details">
+                    <h3 class="title">
+                      <a>Improving Stability in Deep Reinforcement Learning with Weight Averaging</a>
+                    </h3>
+                    <p class="date">
+                      Evgenii Nikishin, Pavel Izmailov, <a>Ben Athiwaratkun</a>, Dmitrii Podoprikhin, Timur
+                      Garipov, Pavel Shvechikov, Dmitry Vetrov, Andrew Gordon Wilson
+                    </p>
+                  </div>
+                  <div class="description">
+                    <a href="http://www.gatsby.ucl.ac.uk/~balaji/udl-camera-ready/UDL-24.pdf" target="_blank"><img
+                        src="img/svg/social/pdf.svg" alt="" /></a>
+                    <blockquote>
+                      Deep reinforcement learning (RL) methods are
+                      notoriously unstable during training. In this
+                      paper, we focus on model-free RL algorithms
+                      where we observe that the average reward is
+                      unstable throughout the learning process and
+                      does not increase monotonically given more
+                      training steps. Furthermore, a highly rewarded
+                      policy, once learned, is often forgotten by an
+                      agent, leading to performance deterioration.
+                      These problems are partly caused by fundamental presence of noise in gradient estimators
+                      in RL. In order to reduce the effect of noise on
+                      training, we propose to apply stochastic weight
+                      averaging (SWA), a recent method that averages weights along the optimization trajectory.
+                      We show that SWA stabilizes the model solutions, alleviates the problem of forgetting the
+                      highly rewarded policy during training, and
+                      improves the average rewards on several Atari
+                      and MuJoCo environments.
+                    </blockquote>
+                    <!-- <div class="share">
+                      <span>Share:</span>
+                      <ul class="social">
+                        <li>
+                          <a><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                        </li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+              </li>
+              <!-- <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+                <div class="list_inner">
+                  <div class="image">
+                    <img src="img/news/0.jpg" alt="" />
+                    <div class="main" data-img-url="img/news/0.jpg"></div>
+                    <a class="arlo_tm_full_link"></a>
+                  </div>
+                  <div class="details">
+                    <h3 class="title">
+                      <a>Generative Context Pair Selection for Multi-hop Question Answering - EMNLP 2021</a>
+                    </h3>
+                    <p class="date">
+                      Dheeru Dua
+                      , Cicero Nogueira dos Santos
+                      , Patrick Ng <a>Ben Athiwaratkun</a>, Bing Xiang
+                      , Matt Gardner
+                      and Sameer Singh
+                    </p>
+                  </div>
+                  <div class="description">
+                    <a href="https://arxiv.org/pdf/2104.08744.pdf" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
+                      Compositional reasoning tasks like multi-hop
+                      question answering, require making latent decisions to get the final answer, given a question.
+                      However, crowdsourced datasets often capture
+                      only a slice of the underlying task distribution,
+                      which can induce unanticipated biases in models performing compositional reasoning. Furthermore,
+                      discriminatively trained models exploit such biases to get a better held-out performance, without
+                      learning the right way to
+                      reason, as they do not necessitate paying attention to the question representation (conditioning
+                      variable) in its entirety, to estimate the
+                      answer likelihood. In this work, we propose a
+                      generative context selection model for multihop question answering that reasons about
+                      how the given question could have been generated given a context pair. While being comparable to
+                      the state-of-the-art answering performance, our proposed generative passage selection model has a
+                      better performance (4.9%
+                      higher than baseline) on adversarial held-out
+                      set which tests robustness of model’s multihop reasoning capabilities.
+                    </blockquote>
+                    <div class="share">
+                      <span>Share:</span>
+                      <ul class="social">
+                        <li>
+                          <a class="twitter-share-button" target="_blank" rel="noopener noreferrer" data-size="large"
+                            href="https://twitter.com/intent/tweet?text=Generative Context Pair Selection for Multi-hop Question Answering"><img
+                              class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                        </li>
+                      </ul>
+                    </div> 
+                  </div>
+                </div>
+              </li> -->
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+                <div class="list_inner">
+                  <div class="image">
+                    <img src="img/news/16.jpg" alt="" />
+                    <div class="main" data-img-url="img/news/16.jpg"></div>
+                    <a class="arlo_tm_full_link"></a>
+                  </div>
+                  <div class="details">
+                    <h3 class="title">
+                      <a>Malware classification with LSTM and GRU language models and a character-level CNN - ICASSP 2017</a>
+                    </h3>
+                    <p class="date">
+                      <a>Ben Athiwaratkun</a>, Jack W. Stokes
+                    </p>
+                  </div>
+                  <div class="description">
+                    <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2017/07/LstmGruCnnMalwareClassifier.pdf" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
+                      Malicious software, or malware, continues to be a problem for computer users, corporations, and
+                      governments. Previous research [1]
+                      has explored training file-based, malware classifiers using a twostage approach. In the first
+                      stage, a malware language model is
+                      used to learn the feature representation which is then input to a second stage malware classifier.
+                      In Pascanu et al. [1], the language
+                      model is either a standard recurrent neural network (RNN) or an
+                      echo state network (ESN). In this work, we propose several new
+                      malware classification architectures which include a long short-term
+                      memory (LSTM) language model and a gated recurrent unit (GRU)
+                      language model. We also propose using an attention mechanism
+                      similar to [12] from the machine translation literature, in addition
+                      to temporal max pooling used in [1], as an alternative way to construct the file representation
+                      from neural features. Finally, we propose a new single-stage malware classifier based on a
+                      character-level
+                      convolutional neural network (CNN). Results show that the LSTM
+                      with temporal max pooling and logistic regression offers a 31.3%
+                      improvement in the true positive rate compared to the best system
+                      in [1] at a false positive rate of 1%.
+                      <br>
+                      <b>Index Terms</b>— Malware Classification, Neural Language
+                      Model, LSTM, GRU, CNN
+                    </blockquote>
+                    <!-- <div class="share">
+                      <span>Share:</span>
+                      <ul class="social">
+                        <li>
+                          <a class="twitter-share-button" target="_blank" rel="noopener noreferrer" data-size="large"
+                            href="https://twitter.com/intent/tweet?text=Generative Context Pair Selection for Multi-hop Question Answering"><img
+                              class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -690,6 +1205,8 @@
       </div>
     </div>
 
+
+
     <div class="arlo_tm_section" id="endeavors">
       <div class="arlo_tm_news">
         <div class="container">
@@ -697,7 +1214,7 @@
             <span>Along the Way Endeavors</span>
           </div>
           <p>
-            
+
           </p>
 
           <div class="news_list">
@@ -708,54 +1225,48 @@
                 <div class="list_inner">
                   <div class="image">
                     <img src="img/news/0.jpg" alt="" />
-                    <div class="main"><iframe width="100%" height="100%" height="javascript:"
-                        src="https://www.youtube.com/embed/9mZframhEAw" title="YouTube video player" frameborder="0"
+                    <div class="main" data-img-url="img/news/0.jpg"><iframe width="100%" height="100%"
+                        height="javascript:" src="https://www.youtube.com/embed/9mZframhEAw"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe></div>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">The Moment I Believed in Deep Learning: My First Q-Learning Implementation</a>
+                      <a>The Moment I Believed in Deep Learning: My First Q-Learning Implementation</a>
                     </h3>
                     <p class="date">
                     </p>
                   </div>
                   <div class="description">
                     <p>
-                      I remember the first time I got Q-learning to work. I literally jumped on my bed with elation, and I was convinced that deep learning was the way forward. At that time, some people still called deep learning a hype.
+                      I had recently discovered machine learning and was teaching myself through online courses. As part of a Machine Learning class taught by Ryan Adams at Harvard in 2014, I was tasked with using RL to help a monkey plan its movement to avoid hitting trees and dying. Once I successfully implemented Q-learning and the monkey was able to jump without hitting any trees, I was hooked and completely enamored with the power of deep learning. At the time, some people still considered deep learning to be a passing trend, but I was convinced that it was the future.
+
+
                     </p>
                     <p>
-                      This project was completed as part of a Machine Learning class taught by Ryan Adams at Harvard in 2014. The class was offered online to external students through Harvard Extension School. At the time, I had already taken Andrew Ng's Coursera course on introductory machine learning. I was grateful for all the MOOC (Massive Open Online Courses) efforts, which helped to open up access for a curious mind like mine.
+                      Although this project may not seem impressive by today's standards, it marked a pivotal moment in my journey with machine learning. The class was offered online to external students through Harvard Extension School, and I was grateful for the MOOC (Massive Open Online Courses) efforts that made it possible for curious learners like myself to gain access to quality education.
                     </p>
 
-                    <p>
-                      This video is to demonstrate the use of the Q-Learning Algorithm that trains the agent to play the Swingy
-                      Monkey game. The monkey receives a reward when it goes through the hoop and is penalized when it
-                      hits the tree or the floor/ceiling. Over time, the monkey is able to learn to navigate through the
-                      hoops and avoid the obstable better, as indicated by the constantly increasing scores in later
-                      epoch.
-                    </p>
+                    <blockquote>
+                      In this video, we showcase the Q-Learning Algorithm's ability to train an agent to play the Swingy Monkey game. The game mechanics involve the monkey receiving a reward for successfully passing through the hoop and being penalized for hitting obstacles such as trees or the floor/ceiling. As the agent continues to play, it learns to navigate through the hoops and avoid obstacles more efficiently, leading to a noticeable improvement in scores as seen in later epochs.
+                    </blockquote>
 
-                    <a href="./docs/projects/swingy_monkey/harvard_e181_practical4.pdf" download="download" target="_blank">Problem</a>
-                    <a href="./docs/projects/swingy_monkey/Practical4_athiwaratkun.pdf" download="download" target="_blank">Writeup</a>
+                    <a href="./docs/projects/swingy_monkey/harvard_e181_practical4.pdf" download="download"
+                      target="_blank">Problem</a>
+                    <a href="./docs/projects/swingy_monkey/Practical4_athiwaratkun.pdf" download="download"
+                      target="_blank">Writeup</a>
                     <a href="https://github.com/benathi/SwingyMonkey" download="download" target="_blank">Code</a>
-                    
+
 
 
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a class="twitter-share-button" target="_blank" rel="noopener noreferrer" data-size="large"
+                            href="https://twitter.com/intent/tweet?text=The Moment I Believed in Deep Learning: My First Q-Learning Implementation"><img
+                              class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -778,10 +1289,10 @@
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Pacman</a>
+                      <a >Pacman</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>
+                      <a >Ben Athiwaratkun</a>
                     </p>
                   </div>
                   <div class="description">
@@ -800,30 +1311,32 @@
               <li class="wow fadeInLeft" data-wow-duration="1.5s">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="./img/news/0.jpg" alt="">
+                    <img src="./img/news/11.jpg" alt="">
                     <div class="main" data-img-url="./img/news/11.jpg">
-                      <div class="arlo_tm_bubble">
-                        <iframe src="./BenPersonalWebsite-master/base.html" marginwidth="0" marginheight="0"
-                          scrolling="no"></iframe>
-                      </div>
                     </div>
                   </div>
                   <div class="details pt-5">
                     <h3 class="title">
-                      <a href="#">My First Website with JavaScript D3</a>
+                      <a>My First Website with JavaScript D3</a>
                     </h3>
                     <p class="date">
                     </p>
                   </div>
                   <div class="description">
                     <!--<h5>Ben Personal Website</h5> -->
+                    <a href="./BenPersonalWebsite-master/index.html" target="_blank">Link</a>
                     <p>
-                      This website was my first foray into using D3. I encourage you to play around. Although I have since deprecated it since it is not quite user-friendly, I decided to keep it here because I still love its coolness factor. Look at all these bubbles bursting!
+                      This website marked my initial attempt at making a website, which I decided to do with D3, a JavaScript library for data visualization. I invite you to play around with it, although I must admit that it is not particularly user-friendly, which is why I have deprecated it. Nonetheless, I have decided to keep it available here because I still appreciate its coolness factor. The bubble bursting effect is my favourite part.
+
                     </p>
 
                     <p>
-At its core, the website is a simple concept. It represents all of its data, including project hierarchies, as a tree that is stored in a single JSON file. The script then uses D3 to render this tree as hierarchical bubbles that can be clicked on to navigate further down the tree. Users can traverse back up the tree by clicking the small back button. In effect, the website navigation is a tree traversal!
-                   </p>
+                      At its core, the website is a simple concept. It represents all of its data, including project
+                      hierarchies, as a tree that is stored in a simple JSON file. The script then uses D3 to render
+                      this tree as hierarchical bubbles that can be clicked on to navigate further down the tree. Users
+                      can traverse back up the tree by clicking the small back button. In effect, the website navigation
+                      is a tree traversal!
+                    </p>
                     <!-- <p>This project set up requires</p>
                     <ul>
                       <li>defiant.js /defiant/defiant.min.js</li>
@@ -834,51 +1347,168 @@ At its core, the website is a simple concept. It represents all of its data, inc
                 </div>
               </li>
 
+
+              <!--  Math Thesis -->
               <li class="wow fadeInLeft" data-wow-duration="1.5s">
                 <div class="list_inner">
                   <div class="image">
                     <img src="img/news/7.jpg" alt="" />
                     <div class="main" data-img-url="img/news/7.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Undergraduate Honors Thesis: On Recurrence and Power Weakly Mixing Properties of Infinite Measure Preserving
-                        Transformations</a>
+                      <a>Undergraduate Honors Thesis: On Recurrence and Power Mixing of Measure Preserving
+                        Transformations </a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>
+                      <a>Ben Athiwaratkun</a>
                       , Cesar E. Silva
                   </div>
                   <div class="description">
-                    <a href="./ThesisFinalDraft.pdf" download="download" target="_blank">PDF</a>
-                    <p>
+                    <a href="./ThesisFinalDraft.pdf" download="download" target="_blank"><img
+                        src="img/svg/social/pdf.svg" alt="" /></a>
+                    <blockquote>
                       We explore two properties of infinite measure preserving
                       transformations. We examine a T that is recurrent but not 2-recurrent
                       which implies that T x T is not conservative. We have added a proof
                       that T x T^2 is also not conservative.
                       In addition, we introduce conditions that imply power weak mixing
                       property for cutting and stacking transformations with arbitrary number of cuts and tower spacers.
-                    </p>
+                    </blockquote>
                     <p>This thesis was subsequently published as part of the following paper (<a
                         href="https://arxiv.org/pdf/1702.01455.pdf" target="_blank">link</a>).</p>
-                    <!-- <div class="share">
-                      <span>Share:</span>
-                      <ul class="social">
-                        <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
-                        </li>
-                      </ul>
-                    </div> -->
+                  </div>
+                </div>
+              </li>
+
+              <!-- econ CGE -->
+              <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                <div class="list_inner">
+                  <div class="image">
+                    <img src="img/news/7.jpg" alt="" />
+                    <div class="main" data-img-url="img/economics/dalle_environment_clean_energy.png"></div>
+                    <a class="arlo_tm_full_link"></a>
+                  </div>
+                  <div class="details">
+                    <h3 class="title">
+                      <a>Environmental Policy with Computable General Equilibrium</a>
+                    </h3>
+                    <p class="date">
+
+                  </div>
+                  <div class="description">
+                    <a href="./docs/projects/economics/CGE_project.pdf" target="_blank"><img
+                        src="img/svg/social/pdf.svg" alt="" /></a>
+                    <p>
+                      Studied the effects of taxes on output, unemployment rate, household utility, and energy
+                      consumption via Computable General Equilibrium (CGE) Model.
+                      Developed an approach to minimize energy consumption and unemployment rate for a given reduction
+                      level of household utility, using the CGE model and numerical optimization with Matlab.
+                    </p>
+                    <blockquote>
+                      Found that to reduce energy consumption by means of tax imposition, it is optimal to increase
+                      taxes on primary energy and energy intensive industries.
+                    </blockquote>
+                  </div>
+                </div>
+              </li>
+
+
+
+              <!-- hologram -->
+              <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                <div class="list_inner">
+                  <div class="image">
+                    <img src="img/physics_olympiad/phase_only_holograms.jpg" alt="" />
+                    <div class="main" data-img-url="img/physics_olympiad/phase_only_holograms.jpg"></div>
+                    <a class="arlo_tm_full_link"></a>
+                  </div>
+                  <div class="details">
+                    <h3 class="title">
+                      <a>Physics Winter Study: Controlling Phase-Only Holograms</a>
+                    </h3>
+                    <p class="date">
+
+                  </div>
+                  <div class="description">
+                    <p>
+
+                      This project is to optimize the calculation of computer generated holograms, which could be used
+                      to holographically control the path of laser beams. The constraint of the hologram is that only
+                      the phase can be adjusted, not the amplitude. The inverse Fourier Transform of a desired pattern
+                      without amplitude variations, which represents the phase-only hologram, does not capture all
+                      information and consequently there are undesired spots generated from the phase-only hologram, in
+                      addition to the original pattern.
+                    </p>
+
+                    </blockquote>
+                    We found that randomizing the phase of the desired grid patterns before inverse Fourier Transform
+                    can improve the image quality.
+                    </blockquote>
+                    <p>
+                      Research was done under the supervision of <a href="https://research.nvidia.com/person/ward-lopes"
+                        target="_blank">Professor Ward Lopes</a> at Williams College. A few unorganized scripts in
+                      Mathematica can be found here:
+                      <a href="./docs/projects/physics/holograms/FixedDiffractionPattern.pdf"
+                        target="_blank">diffraction pattern</a>,
+                      <a href="./docs/projects/physics/holograms/GeneralTrapsPlotAndGrid.pdf" target="_blank">general
+                        traps</a>,
+                      <a href="./docs/projects/physics/holograms/grid_trap25.pdf" target="_blank">grid trap
+                        calculation</a>,
+                      <a href="./docs/projects/physics/holograms/test_inverse.pdf" target="_blank">grid trap inverse
+                        fourier transform</a>.
+
+                    </p>
+
+                  </div>
+                </div>
+              </li>
+
+
+              <!-- proton proton -->
+              <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                <div class="list_inner">
+                  <div class="image">
+                    <img src="img/physics_olympiad/top_antitop_quark_event.svg" alt="" />
+                    <div class="main" data-img-url="img/physics_olympiad/top_antitop_quark_event.svg"></div>
+                    <a class="arlo_tm_full_link"></a>
+                  </div>
+                  <div class="details">
+                    <h3 class="title">
+                      <a>Physics Summer Research: Detecting Top Quarks</a>
+                    </h3>
+                    <p class="date">
+
+                  </div>
+                  <div class="description">
+                    <blockquote>
+                      Proton-proton collisions can generate clusters of particles where
+                      detection of such particles is typically challenging.
+                      The goal of this study is to be able to identify multiple top
+                      quark mass eigenstates that could be the result of proton-proton collision at the
+                      Large Hadron Collider.
+                    </blockquote>
+
+                    <p>
+                      We used Monte Carto simulation package in Fortran to simulate the LHC data,
+                      and analyzed the distribution of transverse masses <a
+                        href="https://www.worldscientific.com/doi/pdf/10.1142/S2010194511000122" target="_blank">mT2</a>
+                      in order to infer if we would be able to detect the top quarks, if there were present.
+                      We succeeded in distinguishing two top quark
+                      mass eigenstates with resolution of 100 MeV.
+                    </p>
+                    <p>
+                      Duties included programming with Fortran and Mathematica and analyzing statistical distributions
+                      of relativistic variables.
+                      Research was done under the supervision of <a
+                        href="https://physics.williams.edu/profile/dtuckers/" target="_blank">Professor David Tucker
+                        Smith</a> at Williams College.
+                    </p>
+                    <p>
+                      Photo credit: <a href="https://en.wikipedia.org/wiki/Top_quark" download="download"
+                        target="_blank">Top Quark, Wikipedia </a>.
+                    </p>
                   </div>
                 </div>
               </li>
@@ -888,50 +1518,71 @@ At its core, the website is a simple concept. It represents all of its data, inc
                 <div class="list_inner">
                   <div class="image">
                     <img src="img/news/7.jpg" alt="" />
-                    <div class="main" data-img-url="img/physics_olympiad/where_is_nutrino_ipho_2011.png"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <div class="main" data-img-url="img/physics_olympiad/neutrons_ipho2005.png"></div>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Physics Olympiad</a>
+                      <a>My Participation in the Physics Olympiad</a>
                     </h3>
                     <p class="date">
-                      <!-- <a href="#">Ben Athiwaratkun</a> -->
-                      
+                      <!-- <a >Ben Athiwaratkun</a> -->
+
                   </div>
                   <div class="description">
+                    <blockquote>
+                      I discovered my passion for Physics in high school.
+                      I went through multiple rounds of local competitions in Thailand and
+                      eventually got the chance to compete in the International Physics
+                      Olympiad as one of the country's representatives.
+                      I have always been thankful for such a pivotal moment in my life.
+                      If it weren't for this moment, I may never have had the opportunity of coming to the US for
+                      college.
+                    </blockquote>
+
                     <p>
-                    I discovered my passion for Physics in high school and competed in the International Physics Olympiad in 2007, where I received a Silver Medal. At that moment, it was quite unbelievable I got that far. Deep down, I thanked my rather unpriviledged background that gave me so much drive. In fact, if it weren't for this moment, I may never have had the opportunity of coming to the US for college. Maybe I'll write about that journey someday!
+                      The competition itself was fun, even though a bit stressful. Each country sent a team of 5 to
+                      Isfahan (Iran)
+                      who hosted the international competition in 2007. We were there for around a week and there were
+                      two actual exam
+                      days, where the rest were sightseeing tours for students where the professors were grading and
+                      debating scores.
+                    </p>
+
+
+                    <p>
+                      The first exam day is a theoretical exam with analytic questions about black holes, mechanism of
+                      car air bag, and analysis of binary star orbits. The topics sound fancy but do not assume prior
+                      knowledge for the specifics, only a general understanding of physics, and sometimes a willingness
+                      to learn a new concept quickly, the ability to connect the dots.
                     </p>
 
                     <p>
-                    Back to Physics, the competition was really fun! Each country sent a team of 5 to Isfahan (Iran) who hosted the competition in 2007. We were there for around a week and there were two actual exam days, where the rest were sightseeing tours for students where the professors were grading and debating scores.
+                      The second exam day was a laboratory one. I vaguely remember that
+                      I had to heat some gas in a vial which leads to change in refraction index, and had to analyze the
+                      gas.
                     </p>
 
 
                     <p>
-                      The first exam day is a theoretical exam with analytic questions about black holes, mechanism of car air bag, and analysis of binary star orbits. The topics sound fancy but do not assume prior knowledge for the specifics, only a general understanding of physics, and sometimes a willingness to learn a new concept quickly, a good dose of creativity.
+                      For the theoretical problems, one can check them out
+                      <a href="https://physprob.com/" download="download" target="_blank">here</a> for all International
+                      Physics Olympiad.
+
+                      I also participated in the Asian Physics Olympiad (exams of previous years <a
+                        href="https://apho.olimpicos.net/" download="download" target="_blank">here</a>). The experience
+                      was quite similar and was hosted in Shanghai!
                     </p>
 
                     <p>
-                      The second exam day was a laboratory one. I could not find the problem online but I remember that I had to heat some gas in a vial which leads to change in refraction index, and had to analyze the gas, but that's all I could remember.
-                    </p>
-
-
-
-                    <p>
-                    For the theoretical problems, one can check them out  
-                    <a href="https://physprob.com/" download="download" target="_blank">here</a> for all International Physics Olympiad.
-
-                    I also participated in the Asian Physics Olympiad (exams of previous years <a href="https://apho.olimpicos.net/" download="download" target="_blank">here</a>). The experience was quite similar and was hosted in Shanghai!
-                    </p>
-
-                    <p>
-                    Photo credit: <a href="https://s3.eu-central-1.amazonaws.com/physprob.com/files/ipho/2018_Portugal_p2.pdf" download="download" target="_blank">Where is Nutrino?</a> from IPhO 2011
+                      Photo credit: <a
+                        href="https://s3.eu-central-1.amazonaws.com/physprob.com/files/ipho/2005_Spain_p3.pdf"
+                        download="download" target="_blank">Neutrons in a gravitational field</a> from IPhO 2005
                     </p>
                   </div>
                 </div>
               </li>
+
 
             </ul>
           </div>
@@ -939,141 +1590,14 @@ At its core, the website is a simple concept. It represents all of its data, inc
       </div>
     </div>
 
-    <div class="arlo_tm_section" id="blogs">
-      <div class="arlo_tm_news arlo_tm_services">
-        <div class="container">
-          <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-            <span>Blogs</span>
-          </div>
-          <div class="news_list">
-            <div class="container blogs_inner wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-              <h1>Coming Soon</h1>
-              <img src="img/comming soon.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-
-    <!-- <div class="arlo_tm_section" id="services">
-            <div class="arlo_tm_services">
-                <div class="container">
-                    <div class="arlo_tm_main_title">
-                        <span>Services</span>
-                        <h3>Quality Services</h3>
-                    </div>
-                    <div class="service_inner">
-                        <ul>
-                            <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                                <div class="inner">
-                                    <img class="svg" src="img/svg/creativity.svg" alt="" />
-                                    <h3>Creative Design</h3>
-                                    <p>Web design is a similar process of creation, with the intention of presenting...
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                                <div class="inner">
-                                    <img class="svg" src="img/svg/code.svg" alt="" />
-                                    <h3>Web Development</h3>
-                                    <p>Web design is a similar process of creation, with the intention of presenting...
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                                <div class="inner">
-                                    <img class="svg" src="img/svg/telegram.svg" alt="" />
-                                    <h3>Brand Identity</h3>
-                                    <p>Web design is a similar process of creation, with the intention of presenting...
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                                <div class="inner">
-                                    <img class="svg" src="img/svg/photoshop.svg" alt="" />
-                                    <h3>Adobe Photoshop</h3>
-                                    <p>Web design is a similar process of creation, with the intention of presenting...
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                                <div class="inner">
-                                    <img class="svg" src="img/svg/ai.svg" alt="" />
-                                    <h3>Adobe Illustrator</h3>
-                                    <p>Web design is a similar process of creation, with the intention of presenting...
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                                <div class="inner">
-                                    <img class="svg" src="img/svg/share.svg" alt="" />
-                                    <h3>Social Media</h3>
-                                    <p>Web design is a similar process of creation, with the intention of presenting...
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-    <!-- <div class="arlo_tm_section" id="contact">
-      <div class="arlo_tm_contact">
-        <div class="container">
-          <div class="contact_inner">
-            <div class="arlo_tm_main_title">
-              <span>Contact</span>
-              <h3>Get in Touch</h3>
-            </div>
-            <div class="wrapper">
-              <div class="left wow fadeInLeft" data-wow-duration="1.5s">
-                <div class="map_wrap">
-                  <div class="map" id="ieatmaps">
-                    <img src="./img/contact/website-content-sections.png" alt="" srcset="">
-                  </div>
-                </div>
-              </div>
-              <div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-                <div class="fields">
-                  <form action="https://marketifythemes.net/" method="post" class="contact_form" id="contact_form">
-                    <div class="returnmessage" data-success="Your message has been received, We will contact you soon.">
-                    </div>
-                    <div class="empty_notice">
-                      <span>Please Fill Required Fields</span>
-                    </div>
-                    <div class="first">
-                      <ul>
-                        <li>
-                          <input id="name" type="text" placeholder="Name" autocomplete="off" />
-                        </li>
-                        <li>
-                          <input id="email" type="text" placeholder="Email" autocomplete="off" />
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="last">
-                      <textarea id="message" placeholder="Message"></textarea>
-                    </div>
-                    <div class="arlo_tm_button" data-color="dark">
-                      <a id="send_message" href="#">Send Message</a>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
+    <!-- footer -->
     <div class="arlo_tm_section">
       <div class="arlo_tm_copyright">
         <div class="container">
           <div class="inner">
             <div class="copy wow fadeInLeft" data-wow-duration="1.5s">
-              <p>&copy; Copyright 2023. All rights are reserved.</p>
+              <p>&copy; Copyright 2023, Ben Athiwaratkun. All rights reserved.</p>
             </div>
             <div class="social wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
               <ul>
@@ -1090,6 +1614,13 @@ At its core, the website is a simple concept. It represents all of its data, inc
                 </li>
                 <li>
                   <a href="linkedin.com/benathi"><img class="svg" src="img/svg/social/linkedin.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="https://github.com/benathi"><img class="svg" src="img/svg/social/github.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="mailto:ben.athiwaratkun@gmail.com"><img class="svg" src="img/svg/social/email.svg"
+                      alt="" /></a>
                 </li>
               </ul>
             </div>
@@ -1111,5 +1642,23 @@ At its core, the website is a simple concept. It represents all of its data, inc
     });
   </script>
 </body>
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-53653308-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
 
 </html>
