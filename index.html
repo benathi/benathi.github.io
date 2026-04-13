@@ -344,54 +344,54 @@
               <h5 style="margin-bottom: 5px;">Bifurcated Attention: Accelerating Massively Parallel Decoding with Shared Prefixes in LLMs</h5>
               <span style="color: #888; font-size: 0.85em;">ICML 2024</span>
               &nbsp;<a href="https://arxiv.org/pdf/2403.08845" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              <p style="margin-top: 5px;">Crucial for parallel sampling &mdash; reduces KV cache memory and improves loading time. Highly applicable for RL rollout where we massively parallelize sampling to obtain thousands of candidate answers for verification and reward signaling.</p>
+              <p style="margin-top: 5px;">Crucial for parallel sampling &mdash; reduces KV cache memory and loading time. Enables massively parallel RL rollouts where thousands of candidate answers are sampled for verification and reward signaling.</p>
             </div>
 
             <div style="margin-bottom: 20px;">
               <h5 style="margin-bottom: 5px;">System-Aware 4-Bit KV-Cache Quantization for Real-World LLM Serving</h5>
               <span style="color: #888; font-size: 0.85em;">Under review at COLM 2026</span>
-              <p style="margin-top: 5px;">Investigations into quality degradation and approaches to reduce KV quantization errors for frontier language models. Highly applicable for real-world LLM serving with improved throughput via higher batch size.</p>
+              <p style="margin-top: 5px;">Identifies which KV cache quantization methods actually work under real serving constraints (paged memory, fused attention, concurrency). Improves throughput via higher batch size with near-zero accuracy loss.</p>
             </div>
 
             <div style="margin-bottom: 20px;">
               <h5 style="margin-bottom: 5px;">Search Your NVFP4 Scales!</h5>
               <span style="color: #888; font-size: 0.85em;">Under review at MLSys</span>
-              <p style="margin-top: 5px;">Smart searching of quantization scales to reduce the quality gap between NVFP4 and FP8/FP16 model weight quantization. High-impact work applicable for frontier model efficiency.</p>
+              <p style="margin-top: 5px;">Smart searching of quantization scales to close the quality gap between NVFP4 and FP8/FP16. Directly applicable to frontier model weight quantization and FP4 attention.</p>
             </div>
 
             <div style="margin-bottom: 20px;">
               <h5 style="margin-bottom: 5px;">Introspective Diffusion Language Models</h5>
               <span style="color: #888; font-size: 0.85em;">Under review at COLM 2026</span>
               &nbsp;<a href="https://yifan1130.github.io/projects/introspective-diffusion-lm/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[project page]</a>
-              <p style="margin-top: 5px;">Adapting autoregressive models to be more diffusion-like, using speculative decoding for rejection sampling with a novel algorithm that performs both verification and generation simultaneously for higher inference efficiency.</p>
+              <p style="margin-top: 5px;">A new generation paradigm that bridges autoregressive and diffusion models. Uses introspective strided decoding to perform verification and generation in the same forward pass, achieving 3.1x throughput while matching AR quality.</p>
             </div>
 
             <div style="margin-bottom: 20px;">
               <h5 style="margin-bottom: 5px;">ATLAS and Aurora</h5>
               <span style="color: #888; font-size: 0.85em;">2025&ndash;2026</span>
               &nbsp;<a href="https://arxiv.org/pdf/2602.06932" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              <p style="margin-top: 5px;">Keeping speculative decoding models up to date with the latest data distributions. Critical for LLM workloads with shifting traffic patterns, including RL rollout where the policy gets updated frequently and requires co-evolving draft models.</p>
+              <p style="margin-top: 5px;">Keeping speculative decoding drafters aligned with shifting data distributions. Critical for RL rollout where the policy updates frequently, requiring co-evolving draft models. Aurora frames this as an RL problem with continuous, zero-downtime updates.</p>
             </div>
 
             <div style="margin-bottom: 20px;">
               <h5 style="margin-bottom: 5px;">Squeeze Evolve: Unified Multi-Model Orchestration for Verifier-Free Evolution</h5>
               <span style="color: #888; font-size: 0.85em;">2026</span>
               &nbsp;<a href="https://arxiv.org/pdf/2604.07725" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              <p style="margin-top: 5px;">Major progress in evolution algorithms: improving performance and reducing stagnation via multi-model usage, with cost optimization through smarter model selection.</p>
+              <p style="margin-top: 5px;">Multi-model orchestration for evolutionary inference &mdash; allocating strong vs. cheap models by marginal utility at each stage. 3x cost reduction while matching verifier-based methods.</p>
             </div>
 
             <div style="margin-bottom: 20px;">
               <h5 style="margin-bottom: 5px;">Beat the Long Tail: Distribution-Aware Speculative Decoding for RL Training</h5>
               <span style="color: #888; font-size: 0.85em;">2025</span>
               &nbsp;<a href="https://arxiv.org/pdf/2511.13841" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              <p style="margin-top: 5px;">Improving efficiency of RL rollout in synchronous RL by allocating speculative decoding budget during low-batch scenarios.</p>
+              <p style="margin-top: 5px;">Accelerates RL rollouts by targeting the long-tail of trajectory lengths that dominate wall-clock time. Allocates more aggressive speculative decoding budgets to slow trajectories. Up to 50% rollout time reduction.</p>
             </div>
 
             <div style="margin-bottom: 20px;">
               <h5 style="margin-bottom: 5px;">Mixture of Agents</h5>
               <span style="color: #888; font-size: 0.85em;">ICLR 2025</span>
               &nbsp;<a href="https://arxiv.org/pdf/2406.04692" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              <p style="margin-top: 5px;">One of the pioneering works showing the potential of multi-agent systems as a way to further augment LLM capabilities.</p>
+              <p style="margin-top: 5px;">Pioneering work on multi-agent LLM systems. A layered architecture where open-source models collaboratively refine outputs, surpassing GPT-4o on AlpacaEval 2.0.</p>
             </div>
 
             <div style="margin-bottom: 20px;">
@@ -399,14 +399,14 @@
               <span style="color: #888; font-size: 0.85em;">2026</span>
               &nbsp;<a href="https://arxiv.org/pdf/2602.13692" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
               &nbsp;<a href="https://thunderagent.ai/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[website]</a>
-              <p style="margin-top: 5px;">Smart routing to reduce overhead for agentic scaffolding via program-aware scheduling. Increases cache hit rate and overall throughput.</p>
+              <p style="margin-top: 5px;">Program-aware scheduling for agentic inference &mdash; co-schedules LLM calls, KV caches, and tool execution. Increases cache hit rate and throughput across serving and RL workloads.</p>
             </div>
 
             <div style="margin-bottom: 20px;">
               <h5 style="margin-bottom: 5px;">Ladder-Residual</h5>
               <span style="color: #888; font-size: 0.85em;">ICML 2025</span>
               &nbsp;<a href="https://arxiv.org/pdf/2501.06589" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              <p style="margin-top: 5px;">An alternative architecture that modifies residual streams to be non-sequential, allowing overlapping of communication and computation to reduce inference latency in tensor parallelism.</p>
+              <p style="margin-top: 5px;">Redesigns residual connections to overlap communication and computation in tensor parallelism. 29% inference speedup for 70B models across 8 GPUs &mdash; no retraining required.</p>
             </div>
 
           </div>
