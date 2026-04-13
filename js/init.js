@@ -253,19 +253,9 @@ function arlo_tm_animate_text() {
   var animateSpan = jQuery(".arlo_tm_animation_text_word");
   animateSpan.typed({
     strings: [
-      "a neural networker",
-      "a language lover",
-      "a future cyborg code-logger",
-      "an aspiring space rover",
-      "an ASI fervor",
-      //"an AGI believer",
-      //  "for a transformative and bright future.",
-      //"an AGI believer, determined and true",
-      //"to help build a more intelligent world for me and you",
-      //"an AGI enthusiast with a drive",
-      //"to help build a world more intelligent and alive.",
+      "ML Researcher",
     ],
-    loop: true,
+    loop: false,
     startDelay: 1e3,
     backDelay: 2e3,
   });
@@ -560,7 +550,7 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = "0px";
     } else {
       panel.style.height = "auto";
-      panel.style.maxHeight = panel.scrollHeight + 162 + "px";
+      panel.style.maxHeight = panel.scrollHeight + 500 + "px";
     }
   });
 }

@@ -57,7 +57,7 @@
           <div class="mobile_in">
             <div class="logo">
               <a><img src="img/logo/profile.png" alt="" /></a>
-              <a href="https://benathi.github.io/blogs"><img src="img/logo/blogs.png" alt="" /></a>
+              <a href="https://benathi.github.io/blog"><img src="img/logo/blogs.png" alt="" /></a>
             </div>
             <div class="my_trigger">
               <div class="hamburger hamburger--collapse-r">
@@ -75,9 +75,10 @@
             <ul class="anchor_nav">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#endeavors">Endeavors</a></li>
-              <li><a href="https://benathi.github.io/blogs">Blogs</a></li>
+              <li><a href="#highlights">Highlights</a></li>
+              <li><a href="#publications">Publications</a></li>
+              <!-- <li><a href="#projects">Projects</a></li> -->
+              <li><a href="https://benathi.github.io/blog">Blog</a></li>
               <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
           </div>
@@ -90,18 +91,19 @@
         <div class="topbar_inner">
           <div class="logo">
             <a class="light"><img src="img/logo/profile.png" alt="" /></a>
-            <a class="light" href="https://benathi.github.io/blogs/"><img class="blog_icon" src="img/logo/blogs.png"
+            <a class="light" href="https://benathi.github.io/blog/"><img class="blog_icon" src="img/logo/blogs.png"
                 alt="" /></a>
             <a class="dark"><img src="img/logo/profile.png" alt="" /></a>
-            <a class="dark" href="https://benathi.github.io/blogs/"><img src="img/logo/blogs.png" alt="" /></a>
+            <a class="dark" href="https://benathi.github.io/blog/"><img src="img/logo/blogs.png" alt="" /></a>
           </div>
           <div class="menu">
             <ul class="anchor_nav">
               <li class="current"><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#endeavors">Endeavors</a></li>
-              <li><a href="https://benathi.github.io/blogs">Blogs</a></li>
+              <li><a href="#highlights">Highlights</a></li>
+              <li><a href="#publications">Publications</a></li>
+              <!-- <li><a href="#projects">Projects</a></li> -->
+              <li><a href="https://benathi.github.io/blog">Blog</a></li>
               <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
           </div>
@@ -124,9 +126,7 @@
         <div class="name_holder">
           <h3>Ben <span>Athiwaratkun</span></h3>
         </div>
-        <div class="text_typing">
-          <p> &zwnj; <span class="arlo_tm_animation_text_word"></span></p>
-        </div>
+        <!-- text_typing removed -->
       </div>
       <div class="arlo_tm_arrow_wrap bounce anchor">
         <a href="#about"><i class="xcon-angle-double-down"></i></a>
@@ -177,17 +177,18 @@
           <div class="right">
             <div class="about_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
               <h3>
-                I'm Ben Athiwaratkun,
-                <span class="arlo_tm_animation_text_word"></span>
+                About Me
               </h3>
             </div>
             <div class="text wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
               <p>
-                My name is <span>Ben Athiwaratkun</span>. I am an ML scientist at AWS AI Labs. I completed my PhD in
+                My name is <span>Ben Athiwaratkun</span>. I am a Senior Director at <a href="https://www.together.ai" target="_blank">Together AI</a>, where I lead the Core ML (Turbo) Research team focusing on full-stack inference efficiency &mdash; from low-level optimization such as sparsity, quantization, efficient architecture, and speculative decoding, to high-level optimization such as smart routing and multi-model optimization.
+              </p>
+              <p>
+                Previously, I was an ML Scientist at AWS AI Labs. I completed my PhD in
                 Statistics and focus on machine learning from Cornell University, under the supervision of <a
                   href="https://cims.nyu.edu/~andrewgw" target="_blank">Andrew Gordon Wilson.</a> Before my PhD, I
-                studied Mathematics
-                and Economics at Williams College.
+                studied Mathematics, Physics, and Economics at Williams College.
               </p>
             </div>
             <div class="social wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".6s">
@@ -247,9 +248,7 @@
 
               </ul>
             </div> -->
-            <div class="arlo_tm_button wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".6s">
-              <a href="./docs/benathi_cv.pdf" download><span>CV</span></a>
-            </div>
+            <!-- CV link removed -->
           </div>
         </div>
       </div>
@@ -263,232 +262,59 @@
 
 
 
-        <div class='education__content  m-50'>
+        <div class='education__content m-50'>
+          <div class="faqs-item ">
+            <span class='year'></span>
+            <a class="faqs-title">
+              <h5>Senior Director at Together AI</h5>
+              <p>Leading inference efficiency research and its path to production &mdash; from low-level optimization (speculative decoding, quantization, efficient architecture) to system-level intelligence (multi-model routing, agentic orchestration).</p>
+            </a>
+            <div class="faqs-content">
+              <div class="faqs-content-inside">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='education__content m-50'>
           <div class="faqs-item ">
             <span class='year'></span>
             <a class="faqs-title">
               <h5>ML Scientist at AWS AI Labs</h5>
-              <p>Few-shot learning, language models for code generation, and efficient inference.</p>
+              <p>Few-shot learning, language models for code generation, efficient inference, and structured prediction.</p>
             </a>
             <div class="faqs-content">
               <div class="faqs-content-inside">
-                <!--
-                <ul>
-                  <p> Developed framework for evaluating language model's code generation abilities at scale on 10+
-                    languages. </p>
-                  <p>Developed solutions for efficient inference for language models</p>
-                  <p>Demonstrated the effectiveness of using generative models for tasks such as structured predictions
-                    which were not previously considered applicable for language models.</p>
-                </ul>
-                -->
-
-                <!--
-                  <div class="education">
-                  <div class="container">
-                  <div class='education__content'>
-                    <div class="faqs-item ">
-                      <span class='year'></span>
-                      <a class="faqs-title">
-                      <h5>Code generation with language models</h5>
-                      <p> Developed framework for evaluating language model's code generation abilities at scale on 10+ languages. </p>
-                      </a>
-                    </div>
-                   </div>
-
-                   <div class='education__content'>
-                    <div class="faqs-item ">
-                      <span class='year'></span>
-                      <a class="faqs-title">
-                      <h5>Efficient inference</h5>
-                      <p>Developed solutions for efficient inference for language models</p>
-                      </a>
-                    </div>
-                   </div>
-
-                   <div class='education__content'>
-                    <div class="faqs-item ">
-                      <span class='year'></span>
-                      <a class="faqs-title">
-                      <h5>Language model for structured predictions</h5>
-                      <p>Led the effort to use generative models for tasks such as structured predictions which were not previously considered applicable for language models.</p>
-                      </a>
-                    </div>
-                   </div>
-
-                   </div>
-                   </div>
-                   -->
-
-
-
-
               </div>
             </div>
           </div>
         </div>
 
-
         <div class='education__content m-50'>
           <div class="faqs-item ">
             <span class='year'></span>
             <a class="faqs-title">
-              <h5>PhD Student at Cornell University</h5>
-              <p>PhD in Statistics with Special Masters in Computer Science.</p>
+              <h5>PhD, Cornell University</h5>
+              <p>Statistics with focus on machine learning. Advisor: Andrew Gordon Wilson.</p>
             </a>
-
-            <!-- begin sub structure-->
             <div class="faqs-content">
               <div class="faqs-content-inside">
-                <div class="education">
-                  <div class="container">
-                    <div class='education__content sub_list'>
-                      <div class="faqs-item ">
-                        <span class='list'></span>
-                        <a class="faqs-title">
-                          <h5>Intern at AWS AI, Palo Alto</h5>
-                          <p>Probabilistic FastText for multiple word meanings</p>
-                        </a>
-
-                        <div class="faqs-content" style="max-height: 0px;">
-                          <div class="faqs-content-inside">
-                            <ul>
-                              Adapted fast C++ training code from FastText to incorporate multiple modalities of word
-                              meanings.
-                            </ul>
-                          </div>
-                        </div>
-
-
-
-                      </div>
-                    </div>
-
-
-                    <div class='education__content sub_list'>
-                      <div class="faqs-item ">
-                        <span class='list'></span>
-                        <a class="faqs-title">
-                          <h5>Intern at Microsoft Research, Redmond</h5>
-                          <p>Language modeling on machine APIs for malware classification</p>
-                        </a>
-
-                        <div class="faqs-content" style="max-height: 0px;">
-                          <div class="faqs-content-inside">
-                            <ul>
-                              Conducted Language modeling experiments in Tensorflow + Keras, with multiple architectures
-                              (GRU, LSTM, Character CNN).
-                            </ul>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <div class='education__content sub_list'>
-                      <div class="faqs-item ">
-                        <span class='list'></span>
-                        <a class="faqs-title">
-                          <h5>Intern at Loop AI, San Francisco</h5>
-                          <p>Word embeddings via language modeling</p>
-                        </a>
-
-                        <!--
-                        <div class="faqs-content" style="max-height: 0px;">
-                          <div class="faqs-content-inside">
-                            <ul>
-                              Theano
-                            </ul>
-                          </div>
-                        </div>
-                        -->
-
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
               </div>
             </div>
-            <!-- end sub structure -->
-
-
           </div>
         </div>
 
-
-
         <div class='education__content m-50'>
           <div class="faqs-item ">
             <span class='year'></span>
             <a class="faqs-title">
-              <h5>Student at Williams College</h5>
-              <p>Mathematics and Economics Double Majors with Honors Thesis in Ergodic Theory.</p>
+              <h5>Williams College</h5>
+              <p>Mathematics, Physics, and Economics. Honors Thesis in Ergodic Theory.</p>
             </a>
-
-
-
-
-            <!-- begin sub structure-->
             <div class="faqs-content">
               <div class="faqs-content-inside">
-                <div class="education">
-                  <div class="container">
-
-
-                    <div class='education__content sub_list'>
-                      <div class="faqs-item ">
-                        <span class='list'></span>
-                        <a class="faqs-title">
-                          <h5>Intern at RelSci</h5>
-                          <p>Data processing for relationship extraction</p>
-                        </a>
-                      </div>
-                    </div>
-
-
-                    <div class='education__content sub_list'>
-                      <div class="faqs-item ">
-                        <span class='list'></span>
-                        <a class="faqs-title">
-                          <h5>Physics Summer Research</h5>
-                          <p>Predicting top quarks from proton-proton collisions</p>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class='education__content sub_list'>
-                      <div class="faqs-item ">
-                        <span class='list'></span>
-                        <a class="faqs-title">
-                          <h5>Winter Study Physics Research</h5>
-                          <p>Optimizing precision of computer-generated phase-regime holograms</p>
-                        </a>
-
-                        <div class="faqs-content" style="max-height: 0px;">
-                          <div class="faqs-content-inside">
-                            <ul>
-                              Assisted a faculty member on maximizing the precision of computer-generated phase-regime
-                              holograms that controls light patterns for high precision trapping of small objects such
-                              as
-                              computer chips. Accomplished in determining optimal holograms for grid-like laser
-                              patterns.
-                            </ul>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-
-
-
-                  </div>
-                </div>
               </div>
             </div>
-            <!-- end sub structure -->
-
-
           </div>
         </div>
       </div>
@@ -503,11 +329,240 @@
         ></iframe>
       </div> -->
 
-    <div class="arlo_tm_section" id="projects">
+    <div class="arlo_tm_section" id="highlights">
       <div class="arlo_tm_news arlo_tm_services">
         <div class="container">
           <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-            <span>ML Research</span>
+            <span>Highlighted Work</span>
+          </div>
+          <div class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" style="padding: 0 20px;">
+            <p style="margin-bottom: 25px;">
+              My research focuses on inference efficiency, ranging from low-level optimization such as attention, quantization, and KV compression, to high-level optimization such as routing and multi-model agent orchestration. Below are some highly impactful works that are widely adopted for real-world LLM efficiency.
+            </p>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Bifurcated Attention: Accelerating Massively Parallel Decoding with Shared Prefixes in LLMs</h5>
+              <span style="color: #888; font-size: 0.85em;">ICML 2024</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2403.08845" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Crucial for parallel sampling &mdash; reduces KV cache memory and improves loading time. Highly applicable for RL rollout where we massively parallelize sampling to obtain thousands of candidate answers for verification and reward signaling.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">System-Aware 4-Bit KV-Cache Quantization for Real-World LLM Serving</h5>
+              <span style="color: #888; font-size: 0.85em;">Under review at COLM 2026</span>
+              <p style="margin-top: 5px;">Investigations into quality degradation and approaches to reduce KV quantization errors for frontier language models. Highly applicable for real-world LLM serving with improved throughput via higher batch size.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Search Your NVFP4 Scales!</h5>
+              <span style="color: #888; font-size: 0.85em;">Under review at MLSys</span>
+              <p style="margin-top: 5px;">Smart searching of quantization scales to reduce the quality gap between NVFP4 and FP8/FP16 model weight quantization. High-impact work applicable for frontier model efficiency.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Introspective Diffusion Language Models</h5>
+              <span style="color: #888; font-size: 0.85em;">Under review at COLM 2026</span>
+              &nbsp;<a href="https://yifan1130.github.io/projects/introspective-diffusion-lm/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[project page]</a>
+              <p style="margin-top: 5px;">Adapting autoregressive models to be more diffusion-like, using speculative decoding for rejection sampling with a novel algorithm that performs both verification and generation simultaneously for higher inference efficiency.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">ATLAS and Aurora</h5>
+              <span style="color: #888; font-size: 0.85em;">2025&ndash;2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2602.06932" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Keeping speculative decoding models up to date with the latest data distributions. Critical for LLM workloads with shifting traffic patterns, including RL rollout where the policy gets updated frequently and requires co-evolving draft models.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Squeeze Evolve: Unified Multi-Model Orchestration for Verifier-Free Evolution</h5>
+              <span style="color: #888; font-size: 0.85em;">2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2604.07725" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Major progress in evolution algorithms: improving performance and reducing stagnation via multi-model usage, with cost optimization through smarter model selection.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Beat the Long Tail: Distribution-Aware Speculative Decoding for RL Training</h5>
+              <span style="color: #888; font-size: 0.85em;">2025</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2511.13841" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Improving efficiency of RL rollout in synchronous RL by allocating speculative decoding budget during low-batch scenarios.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Mixture of Agents</h5>
+              <span style="color: #888; font-size: 0.85em;">ICLR 2025</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2406.04692" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">One of the pioneering works showing the potential of multi-agent systems as a way to further augment LLM capabilities.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">ThunderAgent: A Simple, Fast and Program-Aware Agentic Inference System</h5>
+              <span style="color: #888; font-size: 0.85em;">2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2602.13692" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              &nbsp;<a href="https://thunderagent.ai/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[website]</a>
+              <p style="margin-top: 5px;">Smart routing to reduce overhead for agentic scaffolding via program-aware scheduling. Increases cache hit rate and overall throughput.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Ladder-Residual</h5>
+              <span style="color: #888; font-size: 0.85em;">ICML 2025</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2501.06589" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">An alternative architecture that modifies residual streams to be non-sequential, allowing overlapping of communication and computation to reduce inference latency in tensor parallelism.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="arlo_tm_section" id="publications">
+      <div class="arlo_tm_news arlo_tm_services">
+        <div class="container">
+          <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+            <span>Publications</span>
+          </div>
+          <div class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" style="padding: 0 20px;">
+
+            <h4 style="margin-top: 20px; margin-bottom: 15px; color: #4ab0b0;">2026</h4>
+            <ul style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2604.07725" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Squeeze Evolve: Unified Multi-Model Orchestration for Verifier-Free Evolution</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2603.17946" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>CARE: Covariance-Aware and Rank-Enhanced Decomposition for Enabling Multi-Head Latent Attention</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2026</span>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2603.04304" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>V&#8321;: Unifying Generation and Self-Verification for Parallel Reasoners</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2602.06932" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Aurora: When RL Meets Adaptive Speculative Training</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2602.13692" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>ThunderAgent: A Simple, Fast and Program-Aware Agentic Inference System</strong></a>
+                &nbsp;<a href="https://thunderagent.ai/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[website]</a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2506.16411" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>When Does Divide and Conquer Work for Long Context LLM?</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2026</span>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://yifan1130.github.io/projects/introspective-diffusion-lm/" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Introspective Diffusion Language Models</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; under review</span>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <strong>System-Aware 4-Bit KV-Cache Quantization for Real-World LLM Serving</strong>
+                <span style="color: #888; font-size: 0.85em;">&mdash; under review</span>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <strong>Search Your NVFP4 Scales!</strong>
+                <span style="color: #888; font-size: 0.85em;">&mdash; under review</span>
+              </li>
+            </ul>
+
+            <h4 style="margin-top: 25px; margin-bottom: 15px; color: #4ab0b0;">2025</h4>
+            <ul style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2512.24574" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Understanding and Steering the Cognitive Behaviors of Reasoning Models at Test-Time</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2511.19269" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>CDLM: Consistency Diffusion Language Models For Faster Sampling</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2511.18643" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Kitty: Accurate and Efficient 2-bit KV Cache Quantization</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2511.13841" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Beat the Long Tail: Distribution-Aware Speculative Decoding for RL Training</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2511.07885" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Intelligence per Watt: Measuring Intelligence Efficiency of Local AI</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2511.02237" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Opportunistic Expert Activation: Batch-Aware Expert Routing for Faster Decode</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2510.05059" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Staircase Streaming for Low-Latency Multi-Agent Inference</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2509.02737" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Imitate Optimal Policy: Prevail and Induce Action Collapse in Policy Gradient</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2507.02173" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Data Diversification Methods In Alignment Enhance Math Performance In LLMs</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2506.18203" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Shrinking the Generation-Verification Gap with Weak Verifiers</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2505.11462" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Disentangling Reasoning and Knowledge in Medical Large Language Models</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2505.03059" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Improving Model Alignment Through Collective Intelligence of Open-Source LLMs</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2025</span>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2504.14391" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>How Well Can General Vision-Language Models Learn Medicine By Watching Videos?</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2504.14047" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Think Deep, Think Fast: Investigating Efficiency of Verifier-free Inference-time-scaling</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2504.12637" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Scaling Instruction-Tuned LLMs to Million-Token Contexts</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2025</span>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2501.06589" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Ladder-residual: Parallelism-Aware Architecture for Accelerating Large Model Inference</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2025</span>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2408.14690" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Training-Free Activation Sparsity in Large Language Models (TEAL)</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2025</span>
+              </li>
+            </ul>
+
+            <h4 style="margin-top: 25px; margin-bottom: 15px; color: #4ab0b0;">2024</h4>
+            <ul style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2411.12372" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>RedPajama: an Open Dataset for Training Large Language Models</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; NeurIPS 2024</span>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2406.06461" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Reasoning in Token Economies: Budget-Aware Evaluation of LLM Reasoning Strategies</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; EMNLP 2024</span>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2406.04692" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Mixture-of-Agents Enhances Large Language Model Capabilities</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2025</span>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2406.00977" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Dragonfly: Multi-Resolution Zoom-In Encoding Enhances Vision-Language Models</strong></a>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2403.08845" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Bifurcated Attention: Accelerating Massively Parallel Decoding with Shared Prefixes in LLMs</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2024</span>
+              </li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://arxiv.org/pdf/2403.08688" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Token Alignment via Character Matching for Subword Completion</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ACL 2024 (Findings)</span>
+              </li>
+            </ul>
+
+
+            <p style="margin-top: 15px; color: #888; font-size: 0.9em;">
+              For earlier publications, see <a href="https://scholar.google.com/citations?user=KZpZTTQAAAAJ&hl=en" target="_blank" style="color: #4ab0b0;">Google Scholar</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ML Research (Older) section hidden -->
+    <div class="arlo_tm_section" id="projects" style="display: none;">
+      <div class="arlo_tm_news arlo_tm_services">
+        <div class="container">
+          <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+            <span>ML Research (Older)</span>
           </div>
           <div class="news_list">
             <ul>
@@ -1204,391 +1259,7 @@
         </div>
       </div>
     </div>
-
-
-
-    <div class="arlo_tm_section" id="endeavors">
-      <div class="arlo_tm_news">
-        <div class="container">
-          <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-            <span>Along the Way Endeavors</span>
-          </div>
-          <p>
-
-          </p>
-
-          <div class="news_list">
-            <ul>
-
-              <!-- Begin new item -->
-              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-                <div class="list_inner">
-                  <div class="image">
-                    <img src="img/news/0.jpg" alt="" />
-                    <div class="main" data-img-url="img/news/0.jpg"><iframe width="100%" height="100%"
-                        height="javascript:" src="https://www.youtube.com/embed/9mZframhEAw"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe></div>
-                  </div>
-                  <div class="details">
-                    <h3 class="title">
-                      <a>The Moment I Believed in Deep Learning: My First Q-Learning Implementation</a>
-                    </h3>
-                    <p class="date">
-                    </p>
-                  </div>
-                  <div class="description">
-                    <p>
-                      I had recently discovered machine learning and was teaching myself through online courses. As part of a Machine Learning class taught by Ryan Adams at Harvard in 2014, I was tasked with using RL to help a monkey plan its movement to avoid hitting trees and dying. Once I successfully implemented Q-learning and the monkey was able to jump without hitting any trees, I was hooked and completely enamored with the power of deep learning. At the time, some people still considered deep learning to be a passing trend, but I was convinced that it was the future.
-
-
-                    </p>
-                    <p>
-                      Although this project may not seem impressive by today's standards, it marked a pivotal moment in my journey with machine learning. The class was offered online to external students through Harvard Extension School, and I was grateful for the MOOC (Massive Open Online Courses) efforts that made it possible for curious learners like myself to gain access to quality education.
-                    </p>
-
-                    <blockquote>
-                      In this video, we showcase the Q-Learning Algorithm's ability to train an agent to play the Swingy Monkey game. The game mechanics involve the monkey receiving a reward for successfully passing through the hoop and being penalized for hitting obstacles such as trees or the floor/ceiling. As the agent continues to play, it learns to navigate through the hoops and avoid obstacles more efficiently, leading to a noticeable improvement in scores as seen in later epochs.
-                    </blockquote>
-
-                    <a href="./docs/projects/swingy_monkey/harvard_e181_practical4.pdf" download="download"
-                      target="_blank">Problem</a>
-                    <a href="./docs/projects/swingy_monkey/Practical4_athiwaratkun.pdf" download="download"
-                      target="_blank">Writeup</a>
-                    <a href="https://github.com/benathi/SwingyMonkey" download="download" target="_blank">Code</a>
-
-
-
-                    <!-- <div class="share">
-                      <span>Share:</span>
-                      <ul class="social">
-                        <li>
-                          <a class="twitter-share-button" target="_blank" rel="noopener noreferrer" data-size="large"
-                            href="https://twitter.com/intent/tweet?text=The Moment I Believed in Deep Learning: My First Q-Learning Implementation"><img
-                              class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
-                        </li>
-                      </ul>
-                    </div> -->
-                  </div>
-                </div>
-              </li>
-
-              <!-- Begin new item -->
-              <!--
-              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
-                <div class="list_inner">
-                  <div class="image">
-                    <img src="img/news/0.jpg" alt="" />
-                    <div class="main">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/zGypk4-bRnk"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <div class="details">
-                    <h3 class="title">
-                      <a >Pacman</a>
-                    </h3>
-                    <p class="date">
-                      <a >Ben Athiwaratkun</a>
-                    </p>
-                  </div>
-                  <div class="description">
-                    <p>
-                      This Pacman is trained with machine learning algorithms to detect the ghosts and capsules and
-                      optimize the reward based on agents' and capsules' positions. This model won 2nd place at Harvard
-                      Machine Learning Final Project Tournament.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              -->
-
-
-              <!-- Begin new item -->
-              <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                <div class="list_inner">
-                  <div class="image">
-                    <img src="./img/news/11.jpg" alt="">
-                    <div class="main" data-img-url="./img/news/11.jpg">
-                    </div>
-                  </div>
-                  <div class="details pt-5">
-                    <h3 class="title">
-                      <a>My First Website with JavaScript D3</a>
-                    </h3>
-                    <p class="date">
-                    </p>
-                  </div>
-                  <div class="description">
-                    <!--<h5>Ben Personal Website</h5> -->
-                    <a href="./BenPersonalWebsite-master/index.html" target="_blank">Link</a>
-                    <p>
-                      This website marked my initial attempt at making a website, which I decided to do with D3, a JavaScript library for data visualization. I invite you to play around with it, although I must admit that it is not particularly user-friendly, which is why I have deprecated it. Nonetheless, I have decided to keep it available here because I still appreciate its coolness factor. The bubble bursting effect is my favourite part.
-
-                    </p>
-
-                    <p>
-                      At its core, the website is a simple concept. It represents all of its data, including project
-                      hierarchies, as a tree that is stored in a simple JSON file. The script then uses D3 to render
-                      this tree as hierarchical bubbles that can be clicked on to navigate further down the tree. Users
-                      can traverse back up the tree by clicking the small back button. In effect, the website navigation
-                      is a tree traversal!
-                    </p>
-                    <!-- <p>This project set up requires</p>
-                    <ul>
-                      <li>defiant.js /defiant/defiant.min.js</li>
-                      <li>d3 /d3/d3.min.js</li>
-                    </ul>
-                    -->
-                  </div>
-                </div>
-              </li>
-
-
-              <!--  Math Thesis -->
-              <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                <div class="list_inner">
-                  <div class="image">
-                    <img src="img/news/7.jpg" alt="" />
-                    <div class="main" data-img-url="img/news/7.jpg"></div>
-                    <a class="arlo_tm_full_link"></a>
-                  </div>
-                  <div class="details">
-                    <h3 class="title">
-                      <a>Undergraduate Honors Thesis: On Recurrence and Power Mixing of Measure Preserving
-                        Transformations </a>
-                    </h3>
-                    <p class="date">
-                      <a>Ben Athiwaratkun</a>
-                      , Cesar E. Silva
-                  </div>
-                  <div class="description">
-                    <a href="./ThesisFinalDraft.pdf" download="download" target="_blank"><img
-                        src="img/svg/social/pdf.svg" alt="" /></a>
-                    <blockquote>
-                      We explore two properties of infinite measure preserving
-                      transformations. We examine a T that is recurrent but not 2-recurrent
-                      which implies that T x T is not conservative. We have added a proof
-                      that T x T^2 is also not conservative.
-                      In addition, we introduce conditions that imply power weak mixing
-                      property for cutting and stacking transformations with arbitrary number of cuts and tower spacers.
-                    </blockquote>
-                    <p>This thesis was subsequently published as part of the following paper (<a
-                        href="https://arxiv.org/pdf/1702.01455.pdf" target="_blank">link</a>).</p>
-                  </div>
-                </div>
-              </li>
-
-              <!-- econ CGE -->
-              <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                <div class="list_inner">
-                  <div class="image">
-                    <img src="img/news/7.jpg" alt="" />
-                    <div class="main" data-img-url="img/economics/dalle_environment_clean_energy.png"></div>
-                    <a class="arlo_tm_full_link"></a>
-                  </div>
-                  <div class="details">
-                    <h3 class="title">
-                      <a>Environmental Policy with Computable General Equilibrium</a>
-                    </h3>
-                    <p class="date">
-
-                  </div>
-                  <div class="description">
-                    <a href="./docs/projects/economics/CGE_project.pdf" target="_blank"><img
-                        src="img/svg/social/pdf.svg" alt="" /></a>
-                    <p>
-                      Studied the effects of taxes on output, unemployment rate, household utility, and energy
-                      consumption via Computable General Equilibrium (CGE) Model.
-                      Developed an approach to minimize energy consumption and unemployment rate for a given reduction
-                      level of household utility, using the CGE model and numerical optimization with Matlab.
-                    </p>
-                    <blockquote>
-                      Found that to reduce energy consumption by means of tax imposition, it is optimal to increase
-                      taxes on primary energy and energy intensive industries.
-                    </blockquote>
-                  </div>
-                </div>
-              </li>
-
-
-
-              <!-- hologram -->
-              <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                <div class="list_inner">
-                  <div class="image">
-                    <img src="img/physics_olympiad/phase_only_holograms.jpg" alt="" />
-                    <div class="main" data-img-url="img/physics_olympiad/phase_only_holograms.jpg"></div>
-                    <a class="arlo_tm_full_link"></a>
-                  </div>
-                  <div class="details">
-                    <h3 class="title">
-                      <a>Physics Winter Study: Controlling Phase-Only Holograms</a>
-                    </h3>
-                    <p class="date">
-
-                  </div>
-                  <div class="description">
-                    <p>
-
-                      This project is to optimize the calculation of computer generated holograms, which could be used
-                      to holographically control the path of laser beams. The constraint of the hologram is that only
-                      the phase can be adjusted, not the amplitude. The inverse Fourier Transform of a desired pattern
-                      without amplitude variations, which represents the phase-only hologram, does not capture all
-                      information and consequently there are undesired spots generated from the phase-only hologram, in
-                      addition to the original pattern.
-                    </p>
-
-                    </blockquote>
-                    We found that randomizing the phase of the desired grid patterns before inverse Fourier Transform
-                    can improve the image quality.
-                    </blockquote>
-                    <p>
-                      Research was done under the supervision of <a href="https://research.nvidia.com/person/ward-lopes"
-                        target="_blank">Professor Ward Lopes</a> at Williams College. A few unorganized scripts in
-                      Mathematica can be found here:
-                      <a href="./docs/projects/physics/holograms/FixedDiffractionPattern.pdf"
-                        target="_blank">diffraction pattern</a>,
-                      <a href="./docs/projects/physics/holograms/GeneralTrapsPlotAndGrid.pdf" target="_blank">general
-                        traps</a>,
-                      <a href="./docs/projects/physics/holograms/grid_trap25.pdf" target="_blank">grid trap
-                        calculation</a>,
-                      <a href="./docs/projects/physics/holograms/test_inverse.pdf" target="_blank">grid trap inverse
-                        fourier transform</a>.
-
-                    </p>
-
-                  </div>
-                </div>
-              </li>
-
-
-              <!-- proton proton -->
-              <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                <div class="list_inner">
-                  <div class="image">
-                    <img src="img/physics_olympiad/top_antitop_quark_event.svg" alt="" />
-                    <div class="main" data-img-url="img/physics_olympiad/top_antitop_quark_event.svg"></div>
-                    <a class="arlo_tm_full_link"></a>
-                  </div>
-                  <div class="details">
-                    <h3 class="title">
-                      <a>Physics Summer Research: Detecting Top Quarks</a>
-                    </h3>
-                    <p class="date">
-
-                  </div>
-                  <div class="description">
-                    <blockquote>
-                      Proton-proton collisions can generate clusters of particles where
-                      detection of such particles is typically challenging.
-                      The goal of this study is to be able to identify multiple top
-                      quark mass eigenstates that could be the result of proton-proton collision at the
-                      Large Hadron Collider.
-                    </blockquote>
-
-                    <p>
-                      We used Monte Carto simulation package in Fortran to simulate the LHC data,
-                      and analyzed the distribution of transverse masses <a
-                        href="https://www.worldscientific.com/doi/pdf/10.1142/S2010194511000122" target="_blank">mT2</a>
-                      in order to infer if we would be able to detect the top quarks, if there were present.
-                      We succeeded in distinguishing two top quark
-                      mass eigenstates with resolution of 100 MeV.
-                    </p>
-                    <p>
-                      Duties included programming with Fortran and Mathematica and analyzing statistical distributions
-                      of relativistic variables.
-                      Research was done under the supervision of <a
-                        href="https://physics.williams.edu/profile/dtuckers/" target="_blank">Professor David Tucker
-                        Smith</a> at Williams College.
-                    </p>
-                    <p>
-                      Photo credit: <a href="https://en.wikipedia.org/wiki/Top_quark" download="download"
-                        target="_blank">Top Quark, Wikipedia </a>.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-
-              <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                <div class="list_inner">
-                  <div class="image">
-                    <img src="img/news/7.jpg" alt="" />
-                    <div class="main" data-img-url="img/physics_olympiad/neutrons_ipho2005.png"></div>
-                    <a class="arlo_tm_full_link"></a>
-                  </div>
-                  <div class="details">
-                    <h3 class="title">
-                      <a>My Participation in the Physics Olympiad</a>
-                    </h3>
-                    <p class="date">
-                      <!-- <a >Ben Athiwaratkun</a> -->
-
-                  </div>
-                  <div class="description">
-                    <blockquote>
-                      I discovered my passion for Physics in high school.
-                      I went through multiple rounds of local competitions in Thailand and
-                      eventually got the chance to compete in the International Physics
-                      Olympiad as one of the country's representatives.
-                      I have always been thankful for such a pivotal moment in my life.
-                      If it weren't for this moment, I may never have had the opportunity of coming to the US for
-                      college.
-                    </blockquote>
-
-                    <p>
-                      The competition itself was fun, even though a bit stressful. Each country sent a team of 5 to
-                      Isfahan (Iran)
-                      who hosted the international competition in 2007. We were there for around a week and there were
-                      two actual exam
-                      days, where the rest were sightseeing tours for students where the professors were grading and
-                      debating scores.
-                    </p>
-
-
-                    <p>
-                      The first exam day is a theoretical exam with analytic questions about black holes, mechanism of
-                      car air bag, and analysis of binary star orbits. The topics sound fancy but do not assume prior
-                      knowledge for the specifics, only a general understanding of physics, and sometimes a willingness
-                      to learn a new concept quickly, the ability to connect the dots.
-                    </p>
-
-                    <p>
-                      The second exam day was a laboratory one. I vaguely remember that
-                      I had to heat some gas in a vial which leads to change in refraction index, and had to analyze the
-                      gas.
-                    </p>
-
-
-                    <p>
-                      For the theoretical problems, one can check them out
-                      <a href="https://physprob.com/" download="download" target="_blank">here</a> for all International
-                      Physics Olympiad.
-
-                      I also participated in the Asian Physics Olympiad (exams of previous years <a
-                        href="https://apho.olimpicos.net/" download="download" target="_blank">here</a>). The experience
-                      was quite similar and was hosted in Shanghai!
-                    </p>
-
-                    <p>
-                      Photo credit: <a
-                        href="https://s3.eu-central-1.amazonaws.com/physprob.com/files/ipho/2005_Spain_p3.pdf"
-                        download="download" target="_blank">Neutrons in a gravitational field</a> from IPhO 2005
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- end ML Research (Older) section -->
 
 
     <!-- footer -->
