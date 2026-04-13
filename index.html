@@ -423,128 +423,259 @@
           </div>
           <div class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" style="padding: 0 20px;">
 
+            <style>
+              details.pub-abstract { margin-bottom: 12px; }
+              details.pub-abstract summary { cursor: pointer; list-style: none; }
+              details.pub-abstract summary::-webkit-details-marker { display: none; }
+              details.pub-abstract summary::before { content: "▸ "; color: #4ab0b0; font-size: 0.85em; }
+              details.pub-abstract[open] summary::before { content: "▾ "; }
+              details.pub-abstract .pub-desc { margin: 4px 0 0 16px; color: #666; font-size: 0.9em; line-height: 1.5; }
+            </style>
+
             <h4 style="margin-top: 20px; margin-bottom: 15px; color: #4ab0b0;">2026</h4>
-            <ul style="list-style: none; padding: 0;">
-              <li style="margin-bottom: 8px;">
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2604.07725" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Squeeze Evolve: Unified Multi-Model Orchestration for Verifier-Free Evolution</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Multi-model orchestration for evolutionary inference that allocates strong vs. cheap models based on marginal utility. Reduces API cost by ~3x and increases throughput by ~10x while matching or exceeding verifier-based methods.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2603.17946" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>CARE: Covariance-Aware and Rank-Enhanced Decomposition for Enabling Multi-Head Latent Attention</strong></a>
                 <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2026</span>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Activation-aware method for converting GQA models to MLA format. Reduces perplexity by up to 215x over naive SVD baselines at matched KV-cache budgets, and fully recovers original accuracy with brief fine-tuning.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2603.04304" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>V&#8321;: Unifying Generation and Self-Verification for Parallel Reasoners</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Replaces pointwise scoring with pairwise self-verification for test-time scaling. Improves Pass@1 by up to 10% on code and math benchmarks while being more compute-efficient than existing methods.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2602.06932" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Aurora: When RL Meets Adaptive Speculative Training</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Continuously trains speculative decoding drafters from live inference traces using asynchronous RL. Supports day-0 deployment with 1.5x speedup and graceful adaptation to domain drift, with zero-downtime hot-swapping.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2602.13692" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>ThunderAgent: A Simple, Fast and Program-Aware Agentic Inference System</strong></a>
                 &nbsp;<a href="https://thunderagent.ai/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[website]</a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Program-aware system that co-schedules LLM inference and tool execution, achieving 1.5-3.6x throughput in serving, 1.8-3.9x in RL rollouts, and up to 4.2x disk memory savings.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2506.16411" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>When Does Divide and Conquer Work for Long Context LLM?</strong></a>
                 <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2026</span>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Theoretical framework decomposing long-context failures into task, model, and aggregator noise. Explains when chunking + weak models beats single-shot GPT-4o, and when it doesn't.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://yifan1130.github.io/projects/introspective-diffusion-lm/" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Introspective Diffusion Language Models</strong></a>
                 <span style="color: #888; font-size: 0.85em;">&mdash; under review</span>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">First diffusion LM to match autoregressive quality at the same scale. Introspective strided decoding performs verification and generation in the same forward pass, achieving 3.1x higher throughput.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <strong>System-Aware 4-Bit KV-Cache Quantization for Real-World LLM Serving</strong>
                 <span style="color: #888; font-size: 0.85em;">&mdash; under review</span>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Identifies which KV cache quantization methods work under real serving constraints. Token-wise INT4 with block-diagonal Hadamard rotation consistently achieves the best accuracy-efficiency trade-off with zero overhead.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <strong>Search Your NVFP4 Scales!</strong>
                 <span style="color: #888; font-size: 0.85em;">&mdash; under review</span>
-              </li>
-            </ul>
+              </summary>
+              <p class="pub-desc">Searching for error-minimizing block scales in NVFP4 format reduces quantization error by 26%. Improves weight PTQ by up to 7.5 points (GPQA) and enables near-lossless FP4 attention on Tensor Cores.</p>
+            </details>
 
             <h4 style="margin-top: 25px; margin-bottom: 15px; color: #4ab0b0;">2025</h4>
-            <ul style="list-style: none; padding: 0;">
-              <li style="margin-bottom: 8px;">
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2512.24574" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Understanding and Steering the Cognitive Behaviors of Reasoning Models at Test-Time</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Identifies specialized attention heads governing reasoning behaviors and steers them at inference time via CREST. Improves accuracy by up to 17.5% while reducing token usage by 37.6%, with no training required.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2511.19269" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>CDLM: Consistency Diffusion Language Models For Faster Sampling</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Accelerates diffusion language models by 3.6-14.5x through consistency modeling and block-wise causal attention enabling KV caching, while maintaining competitive accuracy on math and coding tasks.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2511.18643" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Kitty: Accurate and Efficient 2-bit KV Cache Quantization</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Near-lossless 2-bit KV cache quantization via algorithm-system co-design. Cuts KV memory by ~8x with negligible accuracy loss, enabling up to 8x larger batches and 2.1-4.1x higher throughput.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2511.13841" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Beat the Long Tail: Distribution-Aware Speculative Decoding for RL Training</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Targets the long-tail of RL rollout trajectory lengths that dominate wall-clock time. Builds adaptive drafters from historical rollouts and allocates more aggressive speculation to slow trajectories, reducing rollout time by up to 50%.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2511.07885" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Intelligence per Watt: Measuring Intelligence Efficiency of Local AI</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Local LMs can accurately answer 88.7% of real-world queries. Intelligence-per-watt improved 5.3x from 2023-2025, and local accelerators achieve at least 1.4x better efficiency than cloud counterparts.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2511.02237" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Opportunistic Expert Activation: Batch-Aware Expert Routing for Faster Decode</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Dynamically re-routes tokens to piggyback on already-loaded MoE experts in the same batch. Reduces MoE layer decode latency by up to 39% with no accuracy loss and no retraining.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2510.05059" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Staircase Streaming for Low-Latency Multi-Agent Inference</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Begins final response generation from partial intermediate outputs in multi-agent pipelines. Reduces time-to-first-token by up to 93% while maintaining response quality.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2509.02737" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Imitate Optimal Policy: Prevail and Induce Action Collapse in Policy Gradient</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Discovers "Action Collapse" in policy gradient networks &mdash; a structured convergence analogous to neural collapse. Fixing the action layer to a simplex ETF yields faster and more robust RL training.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2507.02173" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Data Diversification Methods In Alignment Enhance Math Performance In LLMs</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Diversified-ThinkSolve generates diverse reasoning paths for preference optimization, improving math performance by up to 7.1% on GSM8K at only 1.03x compute overhead &mdash; far cheaper than MCTS (5x cost).</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2506.18203" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Shrinking the Generation-Verification Gap with Weak Verifiers</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Weaver ensembles multiple weak verifiers via weak supervision to approach oracle-level quality. Llama 3.3 70B + Weaver reaches 87.7% on reasoning tasks, matching o3-mini without finetuning.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2505.11462" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Disentangling Reasoning and Knowledge in Medical Large Language Models</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Separates medical QA into reasoning vs. knowledge subsets, finding only 32.8% require complex reasoning. BioMed-R1 trained on reasoning-heavy examples achieves strongest performance among similarly sized models.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2505.03059" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Improving Model Alignment Through Collective Intelligence of Open-Source LLMs</strong></a>
                 <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2025</span>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Distills collective intelligence from multiple open-source LLMs into smaller models. LLaMA-3.1-8B goes from 19.5 to 48.3 on Arena-Hard, creating a self-improving loop without proprietary dependencies.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2504.14391" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>How Well Can General Vision-Language Models Learn Medicine By Watching Videos?</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Fine-tuning VLMs on 1031 hours of curated YouTube biomedical videos yields up to 98.7% improvement on video tasks. Educational videos designed for humans are a surprisingly effective training signal.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2504.14047" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Think Deep, Think Fast: Investigating Efficiency of Verifier-free Inference-time-scaling</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">For reasoning models, simple majority voting is generally as good or better than sophisticated methods like best-of-N or sequential revisions. Non-reasoning models cannot close the gap even with extreme budgets.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2504.12637" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Scaling Instruction-Tuned LLMs to Million-Token Contexts</strong></a>
                 <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2025</span>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Hierarchical synthetic data generation and step-by-step RoPE scaling enable instruction-tuned LLMs to handle up to 1M token contexts while maintaining general task performance.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2501.06589" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Ladder-residual: Parallelism-Aware Architecture for Accelerating Large Model Inference</strong></a>
                 <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2025</span>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Redesigns residual connections to overlap communication and computation in tensor parallelism. 29% end-to-end inference speedup for a 70B Transformer on 8 GPUs.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2408.14690" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Training-Free Activation Sparsity in Large Language Models (TEAL)</strong></a>
                 <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2025</span>
-              </li>
-            </ul>
+              </summary>
+              <p class="pub-desc">Applies magnitude-based activation sparsity without any training, achieving 40-50% model-wide sparsity with up to 1.8x decoding speedup. Compatible with weight quantization for compounding gains.</p>
+            </details>
 
             <h4 style="margin-top: 25px; margin-bottom: 15px; color: #4ab0b0;">2024</h4>
-            <ul style="list-style: none; padding: 0;">
-              <li style="margin-bottom: 8px;">
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2411.12372" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>RedPajama: an Open Dataset for Training Large Language Models</strong></a>
                 <span style="color: #888; font-size: 0.85em;">&mdash; NeurIPS 2024</span>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Two massive open datasets: V1 reproduces LLaMA training data, V2 provides 100T+ raw web tokens with quality signals. Adopted for training Snowflake Arctic, Salesforce XGen, and AI2's OLMo.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2406.06461" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Reasoning in Token Economies: Budget-Aware Evaluation of LLM Reasoning Strategies</strong></a>
                 <span style="color: #888; font-size: 0.85em;">&mdash; EMNLP 2024</span>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">When controlling for compute budget, complex reasoning strategies (multi-agent debate, Reflexion) often fail to outperform simple chain-of-thought self-consistency. Some strategies even degrade with additional budget.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2406.04692" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Mixture-of-Agents Enhances Large Language Model Capabilities</strong></a>
                 <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2025</span>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Layered multi-agent architecture where open-source LLMs collaboratively refine outputs. Scored 65.1% on AlpacaEval 2.0, surpassing GPT-4o's 57.5%.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2406.00977" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Dragonfly: Multi-Resolution Zoom-In Encoding Enhances Vision-Language Models</strong></a>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Zooms in beyond native resolution via multi-crop sub-image features. Top-tier results among 7-8B VLMs on general and biomedical benchmarks, including 91.6% on SLAKE vs. 84.8% for Med-Gemini.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2403.08845" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Bifurcated Attention: Accelerating Massively Parallel Decoding with Shared Prefixes in LLMs</strong></a>
                 <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2024</span>
-              </li>
-              <li style="margin-bottom: 8px;">
+              </summary>
+              <p class="pub-desc">Splits attention into two GEMMs for shared-prefix and per-sequence KV caches, eliminating redundant memory IO. Over 2.1x speedup at 16 sequences, 6.2x at 32 sequences.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <a href="https://arxiv.org/pdf/2403.08688" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Token Alignment via Character Matching for Subword Completion</strong></a>
                 <span style="color: #888; font-size: 0.85em;">&mdash; ACL 2024 (Findings)</span>
-              </li>
-            </ul>
+              </summary>
+              <p class="pub-desc">Fixes tokenization artifacts in code/text completion by backtracking to the last complete token boundary and constraining generation to match the prompt character-by-character.</p>
+            </details>
 
 
             <p style="margin-top: 15px; color: #888; font-size: 0.9em;">
