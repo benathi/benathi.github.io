@@ -1,0 +1,293 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\definecolor{linkblue}{HTML}{1a5276}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage/\pageref{LastPage}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+\setlist[itemize]{leftmargin=1.5em, itemsep=2pt, parsep=0pt, topsep=2pt}
+
+\newcommand{\entrytitle}[2]{%
+  \noindent\textbf{#1}\hfill #2\\
+}
+
+\newcommand{\entrysubtitle}[1]{%
+  \noindent\textit{#1}\vspace{2pt}\\
+}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Ben Athiwaratkun}}\\[6pt]
+\href{https://linkedin.com/in/benathi}{linkedin.com/in/benathi} \quad
+\href{https://benathi.github.io}{benathi.github.io} \quad
+\href{mailto:ben.athiwaratkun@gmail.com}{ben.athiwaratkun@gmail.com}
+\end{center}
+
+%--------------------------------------------------------------
+\section{Summary}
+
+My focus is full-stack inference efficiency---from low-level optimization like speculative decoding, quantization, and KV cache compression, to system-level intelligence like multi-model routing and agentic orchestration. I built and led this research agenda at Together AI, shipping results to production and delivering the world's fastest LLM inference on NVIDIA Blackwell.
+
+%--------------------------------------------------------------
+\section{Current Role}
+
+\entrytitle{Senior Director of Research, Together AI}{2024--present}
+\entrysubtitle{Leading the Core ML (Turbo) Research team on full-stack inference efficiency.}
+
+\vspace{4pt}
+\noindent\textbf{Speculative Decoding.}
+Defined the technical direction for speculative decoding and built the team's capability from scratch. Evolved the approach from static, offline-trained drafters to a fully autonomous system that learns from live traffic and updates in production with zero downtime. This stack powers Together AI's serving infrastructure and delivered the world's fastest LLM inference on NVIDIA Blackwell.
+
+\vspace{6pt}
+\noindent\textbf{Quantization \& Compression.}
+Led the quantization research agenda across KV cache, weights, and attention. Pushed KV compression to 2-bit with 8x memory reduction, enabling significantly higher serving throughput. Drove the team's strategy on FP4 quantization for next-generation NVIDIA hardware. Established the principle that production-viable quantization must be co-designed with serving systems---not just optimized for offline accuracy.
+
+\vspace{6pt}
+\noindent\textbf{Multi-Model Routing \& Orchestration.}
+Initiated the multi-model intelligence research direction, starting with the insight that ensembles of open-source models can outperform frontier models. Grew this into a portfolio spanning model collaboration, cost-optimal routing, and program-aware scheduling for agentic workloads. These systems reduce serving cost by 3x while maintaining quality.
+
+\vspace{6pt}
+\noindent\textbf{Architecture \& Generation Paradigms.}
+Drove research on inference-aware model architecture, including redesigning residual connections for 29\% speedup in tensor parallelism and building the first diffusion language model that matches autoregressive quality with 3.1x throughput. These represent bets on what inference looks like beyond autoregressive decoding.
+
+%--------------------------------------------------------------
+\section{Past Experience}
+
+\entrytitle{ML Scientist, AWS AI Labs}{Aug 2019--Jan 2024}
+Few-shot learning, language models for code generation, efficient inference, and structured prediction. 3 patents filed. Publications at ICLR (Spotlight), ICML, ACL, EMNLP (Oral).
+
+\vspace{4pt}
+\entrytitle{PhD, Cornell University}{2014--2019}
+Statistics with focus on machine learning. Advisor: Andrew Gordon Wilson. Publications at ICLR, ACL (Oral).
+
+\vspace{4pt}
+\entrytitle{BA, Williams College}{2008--2012}
+Mathematics and Economics. Silver Medal, International Physics Olympiad. Phi Beta Kappa.
+
+%--------------------------------------------------------------
+\section{Highlighted Publications}
+
+\noindent\textbf{Bifurcated Attention: Accelerating Massively Parallel Decoding with Shared Prefixes in LLMs}\\
+\textit{ICML 2024} \href{https://arxiv.org/abs/2403.08845}{[pdf]}\\[2pt]
+Crucial for parallel sampling---reduces KV cache memory and loading time. Enables massively parallel RL rollouts where thousands of candidate answers are sampled for verification and reward signaling.
+
+\vspace{6pt}
+\noindent\textbf{System-Aware 4-Bit KV-Cache Quantization for Real-World LLM Serving}\\
+\textit{Under review at COLM 2026}\\[2pt]
+Identifies which KV cache quantization methods actually work under real serving constraints (paged memory, fused attention, concurrency). Improves throughput via higher batch size with near-zero accuracy loss.
+
+\vspace{6pt}
+\noindent\textbf{Search Your NVFP4 Scales!}\\
+\textit{Under review at MLSys}\\[2pt]
+Smart searching of quantization scales to close the quality gap between NVFP4 and FP8/FP16. Directly applicable to frontier model weight quantization and FP4 attention.
+
+\vspace{6pt}
+\noindent\textbf{Introspective Diffusion Language Models}\\
+\textit{Under review at COLM 2026}\\[2pt]
+A new generation paradigm that bridges autoregressive and diffusion models. Uses introspective strided decoding to perform verification and generation in the same forward pass, achieving 3.1x throughput while matching AR quality.
+
+\vspace{6pt}
+\noindent\textbf{ATLAS and Aurora}\\
+\textit{2025--2026} \href{https://arxiv.org/abs/2602.06932}{[pdf]}\\[2pt]
+Keeping speculative decoding drafters aligned with shifting data distributions. Critical for RL rollout where the policy updates frequently, requiring co-evolving draft models. Aurora frames this as an RL problem with continuous, zero-downtime updates.
+
+\vspace{6pt}
+\noindent\textbf{Squeeze Evolve: Unified Multi-Model Orchestration for Verifier-Free Evolution}\\
+\textit{2026} \href{https://arxiv.org/abs/2604.07725}{[pdf]}\\[2pt]
+Multi-model orchestration for evolutionary inference---allocating strong vs. cheap models by marginal utility at each stage. 3x cost reduction while matching verifier-based methods.
+
+\vspace{6pt}
+\noindent\textbf{Beat the Long Tail: Distribution-Aware Speculative Decoding for RL Training}\\
+\textit{2025} \href{https://arxiv.org/abs/2511.13841}{[pdf]}\\[2pt]
+Accelerates RL rollouts by targeting the long-tail of trajectory lengths that dominate wall-clock time. Allocates more aggressive speculative decoding budgets to slow trajectories. Up to 50\% rollout time reduction.
+
+\vspace{6pt}
+\noindent\textbf{Mixture of Agents}\\
+\textit{ICLR 2025} \href{https://arxiv.org/abs/2406.04692}{[pdf]}\\[2pt]
+Pioneering work on multi-agent LLM systems. A layered architecture where open-source models collaboratively refine outputs, surpassing GPT-4o on AlpacaEval 2.0.
+
+\vspace{6pt}
+\noindent\textbf{ThunderAgent: A Simple, Fast and Program-Aware Agentic Inference System}\\
+\textit{2026} \href{https://arxiv.org/abs/2602.13692}{[pdf]}\\[2pt]
+Program-aware scheduling for agentic inference---co-schedules LLM calls, KV caches, and tool execution. Increases cache hit rate and throughput across serving and RL workloads.
+
+\vspace{6pt}
+\noindent\textbf{Ladder-Residual}\\
+\textit{ICML 2025} \href{https://arxiv.org/abs/2501.06589}{[pdf]}\\[2pt]
+Redesigns residual connections to overlap communication and computation in tensor parallelism. 29\% inference speedup for 70B models across 8 GPUs---no retraining required.
+
+%--------------------------------------------------------------
+\newpage
+\section{Publications (2024--2026)}
+
+\textbf{Squeeze Evolve: Unified Multi-Model Orchestration for Verifier-Free Evolution.}
+2026. \href{https://arxiv.org/abs/2604.07725}{[pdf]}
+
+\vspace{3pt}
+\textbf{CARE: Covariance-Aware and Rank-Enhanced Decomposition for Enabling Multi-Head Latent Attention.}
+\textit{ICLR 2026.} \href{https://arxiv.org/abs/2603.17946}{[pdf]}
+
+\vspace{3pt}
+\textbf{V\textsubscript{1}: Unifying Generation and Self-Verification for Parallel Reasoners.}
+2026. \href{https://arxiv.org/abs/2603.04304}{[pdf]}
+
+\vspace{3pt}
+\textbf{Aurora: When RL Meets Adaptive Speculative Training.}
+2026. \href{https://arxiv.org/abs/2602.06932}{[pdf]}
+
+\vspace{3pt}
+\textbf{ThunderAgent: A Simple, Fast and Program-Aware Agentic Inference System.}
+2026. \href{https://arxiv.org/abs/2602.13692}{[pdf]}
+
+\vspace{3pt}
+\textbf{When Does Divide and Conquer Work for Long Context LLM?}
+\textit{ICLR 2026.} \href{https://arxiv.org/abs/2506.16411}{[pdf]}
+
+\vspace{3pt}
+\textbf{Introspective Diffusion Language Models.}
+Under review at COLM 2026.
+
+\vspace{3pt}
+\textbf{System-Aware 4-Bit KV-Cache Quantization for Real-World LLM Serving.}
+Under review at COLM 2026.
+
+\vspace{3pt}
+\textbf{Search Your NVFP4 Scales!}
+Under review at MLSys.
+
+\vspace{3pt}
+\textbf{Imitate Optimal Policy: Prevail and Induce Action Collapse in Policy Gradient.}
+\textit{ICLR 2026.} \href{https://arxiv.org/abs/2509.02737}{[pdf]}
+
+\vspace{3pt}
+\textbf{Understanding and Steering the Cognitive Behaviors of Reasoning Models at Test-Time.}
+2025. \href{https://arxiv.org/abs/2512.24574}{[pdf]}
+
+\vspace{3pt}
+\textbf{CDLM: Consistency Diffusion Language Models For Faster Sampling.}
+2025. \href{https://arxiv.org/abs/2511.19269}{[pdf]}
+
+\vspace{3pt}
+\textbf{Kitty: Accurate and Efficient 2-bit KV Cache Quantization.}
+2025. \href{https://arxiv.org/abs/2511.18643}{[pdf]}
+
+\vspace{3pt}
+\textbf{Beat the Long Tail: Distribution-Aware Speculative Decoding for RL Training.}
+2025. \href{https://arxiv.org/abs/2511.13841}{[pdf]}
+
+\vspace{3pt}
+\textbf{Intelligence per Watt: Measuring Intelligence Efficiency of Local AI.}
+2025. \href{https://arxiv.org/abs/2511.07885}{[pdf]}
+
+\vspace{3pt}
+\textbf{Opportunistic Expert Activation: Batch-Aware Expert Routing for Faster Decode.}
+2025. \href{https://arxiv.org/abs/2511.02237}{[pdf]}
+
+\vspace{3pt}
+\textbf{Staircase Streaming for Low-Latency Multi-Agent Inference.}
+2025. \href{https://arxiv.org/abs/2510.05059}{[pdf]}
+
+\vspace{3pt}
+\textbf{Data Diversification Methods In Alignment Enhance Math Performance In LLMs.}
+2025. \href{https://arxiv.org/abs/2507.02173}{[pdf]}
+
+\vspace{3pt}
+\textbf{Shrinking the Generation-Verification Gap with Weak Verifiers.}
+\textit{ICML 2025.} \href{https://arxiv.org/abs/2506.18203}{[pdf]}
+
+\vspace{3pt}
+\textbf{Disentangling Reasoning and Knowledge in Medical Large Language Models.}
+2025. \href{https://arxiv.org/abs/2505.11462}{[pdf]}
+
+\vspace{3pt}
+\textbf{Improving Model Alignment Through Collective Intelligence of Open-Source LLMs.}
+\textit{ICML 2025.} \href{https://arxiv.org/abs/2505.03059}{[pdf]}
+
+\vspace{3pt}
+\textbf{How Well Can General Vision-Language Models Learn Medicine By Watching Videos?}
+2025. \href{https://arxiv.org/abs/2504.14391}{[pdf]}
+
+\vspace{3pt}
+\textbf{Think Deep, Think Fast: Investigating Efficiency of Verifier-free Inference-time-scaling.}
+2025. \href{https://arxiv.org/abs/2504.14047}{[pdf]}
+
+\vspace{3pt}
+\textbf{Scaling Instruction-Tuned LLMs to Million-Token Contexts.}
+\textit{ICLR 2025.} \href{https://arxiv.org/abs/2504.12637}{[pdf]}
+
+\vspace{3pt}
+\textbf{Ladder-residual: Parallelism-Aware Architecture for Accelerating Large Model Inference.}
+\textit{ICML 2025.} \href{https://arxiv.org/abs/2501.06589}{[pdf]}
+
+\vspace{3pt}
+\textbf{Training-Free Activation Sparsity in Large Language Models (TEAL).}
+\textit{ICLR 2025.} \href{https://arxiv.org/abs/2408.14690}{[pdf]}
+
+\vspace{3pt}
+\textbf{RedPajama: an Open Dataset for Training Large Language Models.}
+\textit{NeurIPS 2024.} \href{https://arxiv.org/abs/2411.12372}{[pdf]}
+
+\vspace{3pt}
+\textbf{Reasoning in Token Economies: Budget-Aware Evaluation of LLM Reasoning Strategies.}
+\textit{EMNLP 2024.} \href{https://arxiv.org/abs/2406.06461}{[pdf]}
+
+\vspace{3pt}
+\textbf{Mixture-of-Agents Enhances Large Language Model Capabilities.}
+\textit{ICLR 2025.} \href{https://arxiv.org/abs/2406.04692}{[pdf]}
+
+\vspace{3pt}
+\textbf{Dragonfly: Multi-Resolution Zoom-In Encoding Enhances Vision-Language Models.}
+\textit{ICLR 2025.} \href{https://arxiv.org/abs/2406.00977}{[pdf]}
+
+\vspace{3pt}
+\textbf{Bifurcated Attention: Accelerating Massively Parallel Decoding with Shared Prefixes in LLMs.}
+\textit{ICML 2024.} \href{https://arxiv.org/abs/2403.08845}{[pdf]}
+
+\vspace{3pt}
+\textbf{Token Alignment via Character Matching for Subword Completion.}
+\textit{ACL 2024 (Findings).} \href{https://arxiv.org/abs/2403.08688}{[pdf]}
+
+\vspace{3pt}
+\textbf{Multi-lingual Evaluation of Code Generation Models.}
+\textit{ICLR 2023 (Spotlight).} \href{https://arxiv.org/abs/2210.14868}{[pdf]}
+
+\vspace{6pt}
+\noindent\textit{Full list and earlier publications: \href{https://scholar.google.com/citations?user=KZpZTTQAAAAJ}{Google Scholar}}
+
+%--------------------------------------------------------------
+\section{Education}
+
+\entrytitle{PhD in Statistics, Cornell University}{2014--2019}
+Focus on machine learning. Advisor: Andrew Gordon Wilson.
+
+\vspace{4pt}
+\entrytitle{BA in Mathematics and Economics, Williams College}{2008--2012}
+Magna Cum Laude. Phi Beta Kappa. Sigma Xi. Benedict First Prize in Mathematics.
+
+%--------------------------------------------------------------
+\section{Awards}
+
+Silver Medal, International Physics Olympiad, 2007.
+\quad Gold Medal, Thailand Physics Olympiad, 2006.
+\quad Top-500, Putnam Mathematical Competition, 2012.
+
+\end{document}
