@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4T90Z05NK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-L4T90Z05NK');
+  </script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="description" content="Name of your web site" />
   <meta name="author" content="Marketify" />
@@ -34,7 +43,7 @@
     <div class="arlo_tm_modalbox_news">
       <div class="box_inner">
         <div class="close">
-          <a href="#">
+          <a>
             <img class="svg" src="img/svg/cancel.svg" alt="cancel" />
           </a>
         </div>
@@ -47,7 +56,8 @@
         <div class="container">
           <div class="mobile_in">
             <div class="logo">
-              <a href="#"><img src="img/logo/icon.png" alt="" /></a>
+              <a><img src="img/logo/profile.png" alt="" /></a>
+              <a href="https://benathi.github.io/blog"><img src="img/logo/blogs.png" alt="" /></a>
             </div>
             <div class="my_trigger">
               <div class="hamburger hamburger--collapse-r">
@@ -65,8 +75,10 @@
             <ul class="anchor_nav">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#highlights">Highlights</a></li>
+              <li><a href="#publications">Publications</a></li>
+              <!-- <li><a href="#projects">Projects</a></li> -->
+              <li><a href="https://benathi.github.io/blog">Blog</a></li>
               <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
           </div>
@@ -78,16 +90,20 @@
       <div class="container">
         <div class="topbar_inner">
           <div class="logo">
-            <a href="#"><img class="light" src="img/logo/icon.png" alt="" /></a>
-            <a href="#"><img class="dark" src="img/logo/icon.png" alt="" /></a>
+            <a class="light"><img src="img/logo/profile.png" alt="" /></a>
+            <a class="light" href="https://benathi.github.io/blog/"><img class="blog_icon" src="img/logo/blogs.png"
+                alt="" /></a>
+            <a class="dark"><img src="img/logo/profile.png" alt="" /></a>
+            <a class="dark" href="https://benathi.github.io/blog/"><img src="img/logo/blogs.png" alt="" /></a>
           </div>
           <div class="menu">
             <ul class="anchor_nav">
               <li class="current"><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#endeavors">Endeavors</a></li>
-              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#highlights">Highlights</a></li>
+              <li><a href="#publications">Publications</a></li>
+              <!-- <li><a href="#projects">Projects</a></li> -->
+              <li><a href="https://benathi.github.io/blog">Blog</a></li>
               <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
           </div>
@@ -110,14 +126,34 @@
         <div class="name_holder">
           <h3>Ben <span>Athiwaratkun</span></h3>
         </div>
-        <div class="text_typing">
-          <p>I'm <span class="arlo_tm_animation_text_word"></span></p>
-        </div>
+        <!-- text_typing removed -->
       </div>
       <div class="arlo_tm_arrow_wrap bounce anchor">
         <a href="#about"><i class="xcon-angle-double-down"></i></a>
       </div>
     </div>
+
+
+    <!--
+    Note: want highlight section here
+    <div class="arlo_tm_section" id="blogs">
+      <div class="arlo_tm_news arlo_tm_services">
+        <div class="container">
+          <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+            <span>News</span>
+          </div>
+          <div class="news_list">
+            <div class="container blogs_inner wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+              <h3>Coming Soon</h3>
+               <img src="img/comming soon.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   -->
+
+
 
     <div class="arlo_tm_about" id="about">
       <div class="container">
@@ -130,7 +166,7 @@
               data-relative-input="true">
               <div class="image layer" data-depth="0.1">
                 <img src="img/ratios/550x650.jpg" alt="" />
-                <div class="inner" data-img-url="img/about/1.jpg"></div>
+                <div class="inner" data-img-url="img/about/2.jpg"></div>
               </div>
               <div class="border layer" data-depth="0.2">
                 <img src="img/ratios/550x650.jpg" alt="" />
@@ -141,33 +177,41 @@
           <div class="right">
             <div class="about_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
               <h3>
-                I'm Ben Athiwaratkun
-                <!-- <span class="arlo_tm_animation_text_word"></span> -->
+                About Me
               </h3>
             </div>
             <div class="text wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
               <p>
-                My name is <span>Ben Athiwaratkun</span>. I am an ML scientist at AWS AI Labs. I completed my PhD in
+                My name is <span>Ben Athiwaratkun</span>. I am a Senior Director at <a href="https://www.together.ai" target="_blank">Together AI</a>, where I lead the Core ML (Turbo) Research team focusing on full-stack inference efficiency &mdash; from low-level optimization such as sparsity, quantization, efficient architecture, and speculative decoding, to high-level optimization such as smart routing and multi-model optimization.
+              </p>
+              <p>
+                Previously, I was an ML Scientist at AWS AI Labs. I completed my PhD in
                 Statistics and focus on machine learning from Cornell University, under the supervision of <a
-                  href="https://cims.nyu.edu/~andrewgw">Andrew Gordon Wilson.</a> Before my PhD, I studied Mathematics
-                and Economics at Williams College.
+                  href="https://cims.nyu.edu/~andrewgw" target="_blank">Andrew Gordon Wilson.</a> Before my PhD, I
+                studied Mathematics, Physics, and Economics at Williams College.
               </p>
             </div>
             <div class="social wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".6s">
               <ul>
                 <li>
-                  <a href="https://www.instagram.com/benathi/" target="_blank"><img class="svg" src="img/svg/social/instagram.svg"
+                  <a href="https://twitter.com/ben_athi" target="_blank"><img class="svg"
+                      src="img/svg/social/twitter.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="https://scholar.google.com/citations?user=KZpZTTQAAAAJ&hl=en" target="_blank"><img
+                      class="svg" src="img/svg/social/scholar.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/benathi" target="_blank"><img class="svg"
+                      src="img/svg/social/linkedin.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="https://github.com/benathi" target="_blank"><img class="svg" src="img/svg/social/github.svg"
                       alt="" /></a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/ben_athi" target="_blank"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
-                </li>
-                <li>
-                  <a href="https://scholar.google.com/citations?user=KZpZTTQAAAAJ&hl=en" target="_blank"><img class="svg"
-                      src="img/svg/social/scholar.svg" alt="" /></a>
-                </li>
-                <li>
-                  <a href="https://linkedin.com/in/benathi" target="_blank"><img class="svg" src="img/svg/social/linkedin.svg" alt="" /></a>
+                  <a href="mailto:ben.athiwaratkun@gmail.com"><img class="svg" src="img/svg/social/email.svg"
+                      alt="" /></a>
                 </li>
               </ul>
             </div>
@@ -176,7 +220,7 @@
                 <li>
                   <img class="svg" src="img/svg/location-1.svg" alt="" />
                   <span><label>Location:</label>
-                    <a class="href_location" href="#">New York, NY</a></span>
+                    <a class="href_location" >New York, NY</a></span>
                 </li>
                 <li>
                   <img class="svg" src="img/svg/game-controller-2.svg" alt="" />
@@ -200,8 +244,72 @@
 
               </ul>
             </div> -->
-            <div class="arlo_tm_button wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".6s">
-              <a href="./resume.pdf" download><span>CV</span></a>
+            <!-- CV link removed -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='education mb-50'>
+      <div class="container">
+        <div class='education__heading'>
+          <h4>Experience</h4>
+        </div>
+
+
+
+        <div class='education__content m-50'>
+          <div class="faqs-item ">
+            <span class='year'></span>
+            <a class="faqs-title">
+              <h5>Senior Director at Together AI</h5>
+              <p>Leading inference efficiency research and its path to production &mdash; from low-level optimization (speculative decoding, quantization, efficient architecture) to system-level intelligence (multi-model routing, agentic orchestration).</p>
+            </a>
+            <div class="faqs-content">
+              <div class="faqs-content-inside">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='education__content m-50'>
+          <div class="faqs-item ">
+            <span class='year'></span>
+            <a class="faqs-title">
+              <h5>ML Scientist at AWS AI Labs</h5>
+              <p>Few-shot learning, language models for code generation, efficient inference, and structured prediction.</p>
+            </a>
+            <div class="faqs-content">
+              <div class="faqs-content-inside">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='education__content m-50'>
+          <div class="faqs-item ">
+            <span class='year'></span>
+            <a class="faqs-title">
+              <h5>PhD, Cornell University</h5>
+              <p>Statistics with focus on machine learning. Advisor: Andrew Gordon Wilson.</p>
+            </a>
+            <div class="faqs-content">
+              <div class="faqs-content-inside">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='education__content m-50'>
+          <div class="faqs-item ">
+            <span class='year'></span>
+            <a class="faqs-title">
+              <h5>Williams College</h5>
+              <p>Mathematics, Physics, and Economics. Honors Thesis in Ergodic Theory.</p>
+            </a>
+            <div class="faqs-content">
+              <div class="faqs-content-inside">
+              </div>
             </div>
           </div>
         </div>
@@ -217,32 +325,396 @@
         ></iframe>
       </div> -->
 
-    <div class="arlo_tm_section" id="projects">
+    <div class="arlo_tm_section" id="highlights">
       <div class="arlo_tm_news arlo_tm_services">
         <div class="container">
           <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-            <span>ML Research</span>
+            <span>Highlighted Work</span>
+          </div>
+          <div class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" style="padding: 0 20px;">
+            <p style="margin-bottom: 25px;">
+              My research focuses on inference efficiency, ranging from low-level optimization such as attention, quantization, and KV compression, to high-level optimization such as routing and multi-model agent orchestration. Below are some highly impactful works that are widely adopted for real-world LLM efficiency.
+            </p>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Bifurcated Attention: Accelerating Massively Parallel Decoding with Shared Prefixes in LLMs</h5>
+              <span style="color: #888; font-size: 0.85em;">ICML 2024</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2403.08845" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Crucial for parallel sampling &mdash; reduces KV cache memory and loading time. Enables massively parallel RL rollouts where thousands of candidate answers are sampled for verification and reward signaling.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">System-Aware 4-Bit KV-Cache Quantization for Real-World LLM Serving</h5>
+              <span style="color: #888; font-size: 0.85em;">Under review at COLM 2026</span>
+              <p style="margin-top: 5px;">Identifies which KV cache quantization methods actually work under real serving constraints (paged memory, fused attention, concurrency). Improves throughput via higher batch size with near-zero accuracy loss.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Search Your NVFP4 Scales!</h5>
+              <span style="color: #888; font-size: 0.85em;">Under review at MLSys</span>
+              <p style="margin-top: 5px;">Smart searching of quantization scales to close the quality gap between NVFP4 and FP8/FP16. Directly applicable to frontier model weight quantization and FP4 attention.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Introspective Diffusion Language Models</h5>
+              <span style="color: #888; font-size: 0.85em;">Under review at COLM 2026</span>
+              &nbsp;<a href="https://yifan1130.github.io/projects/introspective-diffusion-lm/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[project page]</a>
+              <p style="margin-top: 5px;">A new generation paradigm that bridges autoregressive and diffusion models. Uses introspective strided decoding to perform verification and generation in the same forward pass, achieving 3.1x throughput while matching AR quality.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">ATLAS and Aurora</h5>
+              <span style="color: #888; font-size: 0.85em;">2025&ndash;2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2602.06932" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Keeping speculative decoding drafters aligned with shifting data distributions. Critical for RL rollout where the policy updates frequently, requiring co-evolving draft models. Aurora frames this as an RL problem with continuous, zero-downtime updates.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Squeeze Evolve: Unified Multi-Model Orchestration for Verifier-Free Evolution</h5>
+              <span style="color: #888; font-size: 0.85em;">2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2604.07725" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Multi-model orchestration for evolutionary inference &mdash; allocating strong vs. cheap models by marginal utility at each stage. 3x cost reduction while matching verifier-based methods.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Beat the Long Tail: Distribution-Aware Speculative Decoding for RL Training</h5>
+              <span style="color: #888; font-size: 0.85em;">2025</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2511.13841" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Accelerates RL rollouts by targeting the long-tail of trajectory lengths that dominate wall-clock time. Allocates more aggressive speculative decoding budgets to slow trajectories. Up to 50% rollout time reduction.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Mixture of Agents</h5>
+              <span style="color: #888; font-size: 0.85em;">ICLR 2025</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2406.04692" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Pioneering work on multi-agent LLM systems. A layered architecture where open-source models collaboratively refine outputs, surpassing GPT-4o on AlpacaEval 2.0.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">ThunderAgent: A Simple, Fast and Program-Aware Agentic Inference System</h5>
+              <span style="color: #888; font-size: 0.85em;">2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2602.13692" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              &nbsp;<a href="https://thunderagent.ai/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[website]</a>
+              <p style="margin-top: 5px;">Program-aware scheduling for agentic inference &mdash; co-schedules LLM calls, KV caches, and tool execution. Increases cache hit rate and throughput across serving and RL workloads.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Ladder-Residual</h5>
+              <span style="color: #888; font-size: 0.85em;">ICML 2025</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2501.06589" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Redesigns residual connections to overlap communication and computation in tensor parallelism. 29% inference speedup for 70B models across 8 GPUs &mdash; no retraining required.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="arlo_tm_section" id="publications">
+      <div class="arlo_tm_news arlo_tm_services">
+        <div class="container">
+          <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+            <span>Publications</span>
+          </div>
+          <div class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" style="padding: 0 20px;">
+
+            <style>
+              details.pub-abstract { margin-bottom: 12px; }
+              details.pub-abstract summary { cursor: pointer; list-style: none; }
+              details.pub-abstract summary::-webkit-details-marker { display: none; }
+              details.pub-abstract summary::before { content: "▸ "; color: #4ab0b0; font-size: 0.85em; }
+              details.pub-abstract[open] summary::before { content: "▾ "; }
+              details.pub-abstract .pub-desc { margin: 4px 0 0 16px; color: #666; font-size: 0.9em; line-height: 1.5; }
+            </style>
+
+            <h4 style="margin-top: 20px; margin-bottom: 15px; color: #4ab0b0;">2026</h4>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2604.07725" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Squeeze Evolve: Unified Multi-Model Orchestration for Verifier-Free Evolution</strong></a>
+              </summary>
+              <p class="pub-desc">Multi-model orchestration for evolutionary inference that allocates strong vs. cheap models based on marginal utility. Reduces API cost by ~3x and increases throughput by ~10x while matching or exceeding verifier-based methods.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2603.17946" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>CARE: Covariance-Aware and Rank-Enhanced Decomposition for Enabling Multi-Head Latent Attention</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2026</span>
+              </summary>
+              <p class="pub-desc">Activation-aware method for converting GQA models to MLA format. Reduces perplexity by up to 215x over naive SVD baselines at matched KV-cache budgets, and fully recovers original accuracy with brief fine-tuning.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2603.04304" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>V&#8321;: Unifying Generation and Self-Verification for Parallel Reasoners</strong></a>
+              </summary>
+              <p class="pub-desc">Replaces pointwise scoring with pairwise self-verification for test-time scaling. Improves Pass@1 by up to 10% on code and math benchmarks while being more compute-efficient than existing methods.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2602.06932" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Aurora: When RL Meets Adaptive Speculative Training</strong></a>
+              </summary>
+              <p class="pub-desc">Continuously trains speculative decoding drafters from live inference traces using asynchronous RL. Supports day-0 deployment with 1.5x speedup and graceful adaptation to domain drift, with zero-downtime hot-swapping.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2602.13692" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>ThunderAgent: A Simple, Fast and Program-Aware Agentic Inference System</strong></a>
+                &nbsp;<a href="https://thunderagent.ai/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[website]</a>
+              </summary>
+              <p class="pub-desc">Program-aware system that co-schedules LLM inference and tool execution, achieving 1.5-3.6x throughput in serving, 1.8-3.9x in RL rollouts, and up to 4.2x disk memory savings.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2506.16411" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>When Does Divide and Conquer Work for Long Context LLM?</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2026</span>
+              </summary>
+              <p class="pub-desc">Theoretical framework decomposing long-context failures into task, model, and aggregator noise. Explains when chunking + weak models beats single-shot GPT-4o, and when it doesn't.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://yifan1130.github.io/projects/introspective-diffusion-lm/" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Introspective Diffusion Language Models</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; under review</span>
+              </summary>
+              <p class="pub-desc">First diffusion LM to match autoregressive quality at the same scale. Introspective strided decoding performs verification and generation in the same forward pass, achieving 3.1x higher throughput.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <strong>System-Aware 4-Bit KV-Cache Quantization for Real-World LLM Serving</strong>
+                <span style="color: #888; font-size: 0.85em;">&mdash; under review</span>
+              </summary>
+              <p class="pub-desc">Identifies which KV cache quantization methods work under real serving constraints. Token-wise INT4 with block-diagonal Hadamard rotation consistently achieves the best accuracy-efficiency trade-off with zero overhead.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <strong>Search Your NVFP4 Scales!</strong>
+                <span style="color: #888; font-size: 0.85em;">&mdash; under review</span>
+              </summary>
+              <p class="pub-desc">Searching for error-minimizing block scales in NVFP4 format reduces quantization error by 26%. Improves weight PTQ by up to 7.5 points (GPQA) and enables near-lossless FP4 attention on Tensor Cores.</p>
+            </details>
+
+            <h4 style="margin-top: 25px; margin-bottom: 15px; color: #4ab0b0;">2025</h4>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2512.24574" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Understanding and Steering the Cognitive Behaviors of Reasoning Models at Test-Time</strong></a>
+              </summary>
+              <p class="pub-desc">Identifies specialized attention heads governing reasoning behaviors and steers them at inference time via CREST. Improves accuracy by up to 17.5% while reducing token usage by 37.6%, with no training required.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2511.19269" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>CDLM: Consistency Diffusion Language Models For Faster Sampling</strong></a>
+              </summary>
+              <p class="pub-desc">Accelerates diffusion language models by 3.6-14.5x through consistency modeling and block-wise causal attention enabling KV caching, while maintaining competitive accuracy on math and coding tasks.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2511.18643" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Kitty: Accurate and Efficient 2-bit KV Cache Quantization</strong></a>
+              </summary>
+              <p class="pub-desc">Near-lossless 2-bit KV cache quantization via algorithm-system co-design. Cuts KV memory by ~8x with negligible accuracy loss, enabling up to 8x larger batches and 2.1-4.1x higher throughput.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2511.13841" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Beat the Long Tail: Distribution-Aware Speculative Decoding for RL Training</strong></a>
+              </summary>
+              <p class="pub-desc">Targets the long-tail of RL rollout trajectory lengths that dominate wall-clock time. Builds adaptive drafters from historical rollouts and allocates more aggressive speculation to slow trajectories, reducing rollout time by up to 50%.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2511.07885" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Intelligence per Watt: Measuring Intelligence Efficiency of Local AI</strong></a>
+              </summary>
+              <p class="pub-desc">Local LMs can accurately answer 88.7% of real-world queries. Intelligence-per-watt improved 5.3x from 2023-2025, and local accelerators achieve at least 1.4x better efficiency than cloud counterparts.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2511.02237" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Opportunistic Expert Activation: Batch-Aware Expert Routing for Faster Decode</strong></a>
+              </summary>
+              <p class="pub-desc">Dynamically re-routes tokens to piggyback on already-loaded MoE experts in the same batch. Reduces MoE layer decode latency by up to 39% with no accuracy loss and no retraining.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2510.05059" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Staircase Streaming for Low-Latency Multi-Agent Inference</strong></a>
+              </summary>
+              <p class="pub-desc">Begins final response generation from partial intermediate outputs in multi-agent pipelines. Reduces time-to-first-token by up to 93% while maintaining response quality.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2509.02737" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Imitate Optimal Policy: Prevail and Induce Action Collapse in Policy Gradient</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2026</span>
+              </summary>
+              <p class="pub-desc">Discovers "Action Collapse" in policy gradient networks &mdash; a structured convergence analogous to neural collapse. Fixing the action layer to a simplex ETF yields faster and more robust RL training.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2507.02173" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Data Diversification Methods In Alignment Enhance Math Performance In LLMs</strong></a>
+              </summary>
+              <p class="pub-desc">Diversified-ThinkSolve generates diverse reasoning paths for preference optimization, improving math performance by up to 7.1% on GSM8K at only 1.03x compute overhead &mdash; far cheaper than MCTS (5x cost).</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2506.18203" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Shrinking the Generation-Verification Gap with Weak Verifiers</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2025</span>
+              </summary>
+              <p class="pub-desc">Weaver ensembles multiple weak verifiers via weak supervision to approach oracle-level quality. Llama 3.3 70B + Weaver reaches 87.7% on reasoning tasks, matching o3-mini without finetuning.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2505.11462" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Disentangling Reasoning and Knowledge in Medical Large Language Models</strong></a>
+              </summary>
+              <p class="pub-desc">Separates medical QA into reasoning vs. knowledge subsets, finding only 32.8% require complex reasoning. BioMed-R1 trained on reasoning-heavy examples achieves strongest performance among similarly sized models.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2505.03059" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Improving Model Alignment Through Collective Intelligence of Open-Source LLMs</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2025</span>
+              </summary>
+              <p class="pub-desc">Distills collective intelligence from multiple open-source LLMs into smaller models. LLaMA-3.1-8B goes from 19.5 to 48.3 on Arena-Hard, creating a self-improving loop without proprietary dependencies.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2504.14391" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>How Well Can General Vision-Language Models Learn Medicine By Watching Videos?</strong></a>
+              </summary>
+              <p class="pub-desc">Fine-tuning VLMs on 1031 hours of curated YouTube biomedical videos yields up to 98.7% improvement on video tasks. Educational videos designed for humans are a surprisingly effective training signal.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2504.14047" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Think Deep, Think Fast: Investigating Efficiency of Verifier-free Inference-time-scaling</strong></a>
+              </summary>
+              <p class="pub-desc">For reasoning models, simple majority voting is generally as good or better than sophisticated methods like best-of-N or sequential revisions. Non-reasoning models cannot close the gap even with extreme budgets.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2504.12637" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Scaling Instruction-Tuned LLMs to Million-Token Contexts</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2025</span>
+              </summary>
+              <p class="pub-desc">Hierarchical synthetic data generation and step-by-step RoPE scaling enable instruction-tuned LLMs to handle up to 1M token contexts while maintaining general task performance.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2501.06589" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Ladder-residual: Parallelism-Aware Architecture for Accelerating Large Model Inference</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2025</span>
+              </summary>
+              <p class="pub-desc">Redesigns residual connections to overlap communication and computation in tensor parallelism. 29% end-to-end inference speedup for a 70B Transformer on 8 GPUs.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2408.14690" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Training-Free Activation Sparsity in Large Language Models (TEAL)</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2025</span>
+              </summary>
+              <p class="pub-desc">Applies magnitude-based activation sparsity without any training, achieving 40-50% model-wide sparsity with up to 1.8x decoding speedup. Compatible with weight quantization for compounding gains.</p>
+            </details>
+
+            <h4 style="margin-top: 25px; margin-bottom: 15px; color: #4ab0b0;">2024</h4>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2411.12372" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>RedPajama: an Open Dataset for Training Large Language Models</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; NeurIPS 2024</span>
+              </summary>
+              <p class="pub-desc">Two massive open datasets: V1 reproduces LLaMA training data, V2 provides 100T+ raw web tokens with quality signals. Adopted for training Snowflake Arctic, Salesforce XGen, and AI2's OLMo.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2406.06461" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Reasoning in Token Economies: Budget-Aware Evaluation of LLM Reasoning Strategies</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; EMNLP 2024</span>
+              </summary>
+              <p class="pub-desc">When controlling for compute budget, complex reasoning strategies (multi-agent debate, Reflexion) often fail to outperform simple chain-of-thought self-consistency. Some strategies even degrade with additional budget.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2406.04692" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Mixture-of-Agents Enhances Large Language Model Capabilities</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2025</span>
+              </summary>
+              <p class="pub-desc">Layered multi-agent architecture where open-source LLMs collaboratively refine outputs. Scored 65.1% on AlpacaEval 2.0, surpassing GPT-4o's 57.5%.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2406.00977" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Dragonfly: Multi-Resolution Zoom-In Encoding Enhances Vision-Language Models</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICLR 2025</span>
+              </summary>
+              <p class="pub-desc">Zooms in beyond native resolution via multi-crop sub-image features. Top-tier results among 7-8B VLMs on general and biomedical benchmarks, including 91.6% on SLAKE vs. 84.8% for Med-Gemini.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2403.08845" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Bifurcated Attention: Accelerating Massively Parallel Decoding with Shared Prefixes in LLMs</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2024</span>
+              </summary>
+              <p class="pub-desc">Splits attention into two GEMMs for shared-prefix and per-sequence KV caches, eliminating redundant memory IO. Over 2.1x speedup at 16 sequences, 6.2x at 32 sequences.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
+                <a href="https://arxiv.org/pdf/2403.08688" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Token Alignment via Character Matching for Subword Completion</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ACL 2024 (Findings)</span>
+              </summary>
+              <p class="pub-desc">Fixes tokenization artifacts in code/text completion by backtracking to the last complete token boundary and constraining generation to match the prompt character-by-character.</p>
+            </details>
+
+
+            <p style="margin-top: 15px; color: #888; font-size: 0.9em;">
+              For earlier publications, see <a href="https://scholar.google.com/citations?user=KZpZTTQAAAAJ&hl=en" target="_blank" style="color: #4ab0b0;">Google Scholar</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ML Research (Older) section hidden -->
+    <div class="arlo_tm_section" id="projects" style="display: none;">
+      <div class="arlo_tm_news arlo_tm_services">
+        <div class="container">
+          <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+            <span>ML Research (Older)</span>
           </div>
           <div class="news_list">
             <ul>
               <li class="wow fadeInLeft" data-wow-duration="1.5s">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="img/news/1a.jpg" alt="" />
-                    <div class="main" data-img-url="img/news/1a.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <img src="img/news/2.jpg" alt="" />
+                    <div class="main" data-img-url="img/news/2.jpg"></div>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Multi-lingual Evaluation of code-generation model - ICLR 2023 (spotlight)</a>
+                      <a>Multi-lingual Evaluation of code-generation model - ICLR 2023 (spotlight)</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a> et al.
+                      <a>Ben Athiwaratkun</a> et al.
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/2210.14868" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/2210.14868" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       We present MBXP, an execution-based code completion benchmark in 10+ programming languages. This
                       collection of datasets is generated by our conversion framework that translates prompts and test
                       cases from the original MBPP dataset
@@ -255,21 +727,21 @@
                       canonical solutions in several languages. These solutions can be used for other
                       code-related evaluations such as insertion-based, summarization, or code translation tasks where
                       we demonstrate results and release as part of our benchmark.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -279,25 +751,26 @@
               <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="img/news/2.png" alt="" />
-                    <div class="main" data-img-url="img/news/2.png"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <img src="img/ml/mbxp_conversion_bold.png" alt="" />
+                    <div class="main" data-img-url="img/ml/mbxp_conversion_bold.png"></div>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">ExecEval Data Release (Multi-lingual HumanEval, MBXP) + Evaluation Code</a>
+                      <a>ExecEval Data Release (Multi-lingual HumanEval, MBXP) + Evaluation Code</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun et al.</a>
+                      <a>Ben Athiwaratkun et al.</a>
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://github.com/amazon-science/mbxp-exec-eval" target="_blank">Link</a>
+                    <a href="https://github.com/amazon-science/mbxp-exec-eval" target="_blank"><img
+                        src="img/svg/social/github.svg" alt="" /></a>
                     <p>
                       This repository contains code to perform execution-based multi-lingual evaluation of code
                       generation capabilities and the corresponding data, namely, a multi-lingual benchmark MBXP,
                       multi-lingual MathQA and multi-lingual HumanEval. Results and findings can be found in the paper
-                      "Multi-lingual Evaluation of Code Generation Models"
+                      "Multi-lingual Evaluation of Code Generation Models".
                     </p>
                     <blockquote>
                       Our paper describes the language conversion framework, the synthetic solution generation, and many
@@ -308,16 +781,16 @@
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -327,22 +800,26 @@
               <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="img/news/8.jpg" alt="" />
-                    <div class="main" data-img-url="img/news/8.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <img src="img/news/structured_predictions.svg" alt="" />
+                    <div class="main" data-img-url="img/news/structured_predictions.svg"> </div>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Structured Prediction as Translation between Augmented Natural Languages - ICLR 2021 (spotlight)</a>
+                      <a>Structured Prediction as Translation between Augmented Natural Languages - ICLR 2021
+                        (spotlight)</a>
                     </h3>
                     <p class="date">
-                      Giovanni Paolini, <a href="#">Ben Athiwaratkun</a>, Jason Krone, Jie Ma, Alessandro Achille,
+                      Giovanni Paolini, <a>Ben Athiwaratkun</a>, Jason Krone, Jie Ma, Alessandro Achille,
                       Rishita Anubhai, Cicero Nogueira dos Santos, Bing Xiang, Stefano Soatto
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/2101.05779" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/2101.05779" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <a href="https://github.com/amazon-science/tanl" target="_blank"><img
+                        src="img/svg/social/github.svg" alt="" /></a>
+                    <blockquote>
                       We propose a new framework, Translation between Augmented Natural Languages (TANL), to solve many
                       structured prediction language tasks including joint entity and relation extraction, nested named
                       entity recognition, relation classification, semantic role labeling, event extraction, coreference
@@ -356,21 +833,21 @@
                       tasks and even when training a single model to solve all tasks at the same time (multi-task
                       learning). Finally, we show that our framework can also significantly improve the performance in a
                       low-resource regime, thanks to better use of label semantics.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -380,22 +857,23 @@
               <li class="wow fadeInLeft" data-wow-duration="1.5s">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="img/news/3.jpg" alt="" />
-                    <div class="main" data-img-url="img/news/3.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <img src="img/news/generative_sequence.svg" alt="" />
+                    <div class="main" data-img-url="img/news/generative_sequence.svg"></div>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Augmented Natural Language for Generative Sequence Labeling - EMNLP 2022 (oral)</a>
+                      <a>Augmented Natural Language for Generative Sequence Labeling - EMNLP 2022 (oral)</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>, Cicero Nogueira dos Santos, Jason Krone, Bing Xiang
+                      <a>Ben Athiwaratkun</a>, Cicero Nogueira dos Santos, Jason Krone, Bing Xiang
 
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/2009.13272" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/2009.13272" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       We propose a generative framework for joint sequence labeling and sentence-level classification.
                       Our model performs multiple sequence labeling tasks at once using a single, shared natural
                       language output space. Unlike prior discriminative methods, our model naturally incorporates label
@@ -408,21 +886,21 @@
                       incorporating label semantics. We also maintain competitive results on high-resource tasks,
                       performing within two points of the state-of-the-art on all tasks and setting a new
                       state-of-the-art on the SNIPS dataset.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -434,19 +912,20 @@
                   <div class="image">
                     <img src="img/news/6.jpg" alt="" />
                     <div class="main" data-img-url="img/news/6.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">There Are Many Consistent Explanations of Unlabeled Data: Why You Should Average</a>
+                      <a>There Are Many Consistent Explanations of Unlabeled Data: Why You Should Average - ICLR 2019</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>, Marc Finzi, Pavel Izmailov, Andrew Gordon Wilson
+                      <a>Ben Athiwaratkun</a>, Marc Finzi, Pavel Izmailov, Andrew Gordon Wilson
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/1806.05594" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/1806.05594" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       Presently the most successful approaches to semi-supervised learning are based on consistency
                       regularization, whereby a model is trained to be robust to small perturbations of its inputs and
                       parameters. To understand consistency regularization, we conceptually explore how loss geometry
@@ -461,21 +940,21 @@
                       CIFAR-100, over many different quantities of labeled training data. For example, we achieve 5.0%
                       error on CIFAR-10 with only 4000 labels, compared to the previous best result in the literature of
                       6.3%.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -487,20 +966,21 @@
                   <div class="image">
                     <img src="img/news/4.jpg" alt="" />
                     <div class="main" data-img-url="img/news/4.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Probabilistic FastText for Multi-Sense Word Embeddings</a>
+                      <a>Probabilistic FastText for Multi-Sense Word Embeddings - ACL 2018 (oral)</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>, Andrew Gordon Wilson, Anima Anandkumar
+                      <a>Ben Athiwaratkun</a>, Andrew Gordon Wilson, Anima Anandkumar
 
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/1806.02901" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/1806.02901" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       We introduce Probabilistic FastText, a new model for word embeddings that can capture multiple
                       word senses, sub-word structure, and uncertainty information. In particular, we represent each
                       word with a Gaussian mixture density, where the mean of a mixture component is given by the sum of
@@ -513,21 +993,21 @@
                       achieve state-of-art performance on benchmarks that measure ability to discern different meanings.
                       Thus, the proposed model is the first to achieve multi-sense representations while having enriched
                       semantics on rare words.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -537,22 +1017,24 @@
               <li class="wow fadeInLeft" data-wow-duration="1.5s">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="img/news/5.jpg" alt="" />
-                    <div class="main" data-img-url="img/news/5.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <img src="img/ml/ADAN.png" alt="" />
+                    <div class="main" data-img-url="img/ml/ADAN.png"></div>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Adversarial Deep Averaging Networks for Cross-Lingual Domain Adaptation - TACL 2018</a>
+                      <a>Adversarial Deep Averaging Networks for Cross-Lingual Domain Adaptation - TACL
+                        2018</a>
                     </h3>
                     <p class="date">
-                      Xilun Chen, Yu Sun, <a href="#">Ben Athiwaratkun</a>, Claire Cardie, Kilian Weinberger
+                      Xilun Chen, Yu Sun, <a>Ben Athiwaratkun</a>, Claire Cardie, Kilian Weinberger
 
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/1606.01614" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/1606.01614" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       In recent years great success has been achieved in sentiment classification for English, thanks in
                       part to the availability of copious annotated resources. Unfortunately, most languages do not
                       enjoy such an abundance of labeled data. To tackle the sentiment classification problem in
@@ -564,21 +1046,21 @@
                       indicative for the classification task and invariant across languages. Experiments on Chinese and
                       Arabic sentiment classification demonstrate that ADAN significantly outperforms state-of-the-art
                       systems.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -590,20 +1072,21 @@
                   <div class="image">
                     <img src="img/news/9.jpg" alt="" />
                     <div class="main" data-img-url="img/news/9.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Hierarchical Density Order Embeddings - ICLR 2018</a>
+                      <a>Hierarchical Density Order Embeddings - ICLR 2018</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>, Andrew Gordon Wilson
+                      <a>Ben Athiwaratkun</a>, Andrew Gordon Wilson
 
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/1804.09843" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/1804.09843" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       By representing words with probability densities rather than point vectors, probabilistic word
                       embeddings can capture rich and interpretable semantic information and uncertainty. The
                       uncertainty information can be particularly meaningful in capturing entailment relationships --
@@ -615,21 +1098,21 @@
                       approach provides state-of-the-art performance on the WordNet hypernym relationship prediction
                       task and the challenging HyperLex lexical entailment dataset -- while retaining a rich and
                       interpretable density representation.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -641,241 +1124,258 @@
                   <div class="image">
                     <img src="img/news/10.jpg" alt="" />
                     <div class="main" data-img-url="img/news/10.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Multimodal Word Distributions - ACL 2017</a>
+                      <a>Multimodal Word Distributions - ACL 2017</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>, Andrew Gordon Wilson
+                      <a>Ben Athiwaratkun</a>, Andrew Gordon Wilson
 
                     </p>
                   </div>
                   <div class="description">
-                    <a href="https://arxiv.org/pdf/1704.08424" target="_blank">PDF</a>
-                    <p>
+                    <a href="https://arxiv.org/pdf/1704.08424" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
                       Word embeddings provide point representations of words containing useful semantic information. We
                       introduce multimodal word distributions formed from Gaussian mixtures, for multiple word meanings,
                       entailment, and rich uncertainty information. To learn these distributions, we propose an
                       energy-based max-margin objective. We show that the resulting approach captures uniquely
                       expressive semantic information, and outperforms alternatives, such as word2vec skip-grams, and
                       Gaussian embeddings, on benchmark datasets such as word similarity and entailment.
-                    </p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
                   </div>
                 </div>
               </li>
-
-
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="arlo_tm_section" id="endeavors">
-      <div class="arlo_tm_news">
-        <div class="container">
-          <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-            <span>Along the Way Endeavors</span>
-          </div>
-          <p>
-            
-          </p>
-
-          <div class="news_list">
-            <ul>
-
-              <!-- Begin new item -->
-              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-                <div class="list_inner">
-                  <div class="image">
-                    <img src="img/news/0.jpg" alt="" />
-                    <div class="main"><iframe width="100%" height="100%" height="javascript:"
-                        src="https://www.youtube.com/embed/9mZframhEAw" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe></div>
-                  </div>
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">The Moment I Believed in Deep Learning: My First Q-Learning Implementation</a>
-                    </h3>
-                    <p class="date">
-                    </p>
-                  </div>
-                  <div class="description">
-                    <p>
-                      I remember the first time I got Q-learning to work. I literally jumped on my bed with elation, and I was convinced that deep learning was the way forward. At that time, some people still called deep learning a hype.
-                    </p>
-                    <p>
-                      This project was completed as part of a Machine Learning class taught by Ryan Adams at Harvard in 2014. The class was offered online to external students through Harvard Extension School. At the time, I had already taken Andrew Ng's Coursera course on introductory machine learning. I was grateful for all the MOOC (Massive Open Online Courses) efforts, which helped to open up access for a curious mind like mine.
-                    </p>
-
-                    <p>
-                      This video is to demonstrate the use of the Q-Learning Algorithm that trains the agent to play the Swingy
-                      Monkey game. The monkey receives a reward when it goes through the hoop and is penalized when it
-                      hits the tree or the floor/ceiling. Over time, the monkey is able to learn to navigate through the
-                      hoops and avoid the obstable better, as indicated by the constantly increasing scores in later
-                      epoch.
-                    </p>
-
-                    <a href="./docs/projects/swingy_monkey/harvard_e181_practical4.pdf" download="download" target="_blank">Problem</a>
-                    <a href="./docs/projects/swingy_monkey/Practical4_athiwaratkun.pdf" download="download" target="_blank">Writeup</a>
-                    <a href="https://github.com/benathi/SwingyMonkey" download="download" target="_blank">Code</a>
-                    
-
-
-                    <!-- <div class="share">
-                      <span>Share:</span>
-                      <ul class="social">
-                        <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
-                        </li>
-                        <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
-                        </li>
-                      </ul>
-                    </div> -->
-                  </div>
-                </div>
-              </li>
-
-              <!-- Begin new item -->
-              <!--
               <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
                 <div class="list_inner">
                   <div class="image">
-                    <img src="img/news/0.jpg" alt="" />
-                    <div class="main">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/zGypk4-bRnk"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    </div>
+                    <img src="img/news/tax_joint.svg" alt="" />
+                    <div class="main" data-img-url="img/news/tax_joint.svg"></div>
+                    <a class="arlo_tm_full_link"></a>
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">Pacman</a>
+                      <a>Joint Text and Label Generation for Spoken Language Understanding</a>
                     </h3>
                     <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>
+                      Yang Li, <a>Ben Athiwaratkun</a>, Cicero Nogueira dos Santos, Bing Xiang
                     </p>
                   </div>
                   <div class="description">
-                    <p>
-                      This Pacman is trained with machine learning algorithms to detect the ghosts and capsules and
-                      optimize the reward based on agents' and capsules' positions. This model won 2nd place at Harvard
-                      Machine Learning Final Project Tournament.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              -->
+                    <a href="https://arxiv.org/pdf/2105.05052.pdf" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
+                      Generalization is a central problem in machine learning, especially when data is limited. Using
+                      prior information to enforce
+                      constraints is the principled way of encouraging generalization. In this work, we propose to
+                      leverage the prior information
+                      embedded in pretrained language models (LM) to improve
+                      generalization for intent classification and slot labeling tasks
+                      with limited training data. Specifically, we extract prior knowledge from pretrained LM in the
+                      form of synthetic data, which
+                      encode the prior implicitly. We fine-tune the LM to generate an augmented language, which contains
+                      not only text but
+                      also encodes both intent labels and slot labels. The generated
+                      synthetic data can be used to train a classifier later. Since the
+                      generated data may contain noise, we rephrase the learning
+                      from generated data as learning with noisy labels. We then
+                      utilize the mixout regularization for the classifier and prove
+                      its effectiveness to resist label noise in generated data. Empirically, our method demonstrates
+                      superior performance and
+                      outperforms the baseline by a large margin.
 
-
-              <!-- Begin new item -->
-              <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                <div class="list_inner">
-                  <div class="image">
-                    <img src="./img/news/0.jpg" alt="">
-                    <div class="main" data-img-url="./img/news/11.jpg">
-                      <div class="arlo_tm_bubble">
-                        <iframe src="./BenPersonalWebsite-master/base.html" marginwidth="0" marginheight="0"
-                          scrolling="no"></iframe>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="details pt-5">
-                    <h3 class="title">
-                      <a href="#">My First Website with JavaScript D3</a>
-                    </h3>
-                    <p class="date">
-                    </p>
-                  </div>
-                  <div class="description">
-                    <!--<h5>Ben Personal Website</h5> -->
-                    <p>
-                      This website was my first foray into using D3. I encourage you to play around. Although I have since deprecated it since it is not quite user-friendly, I decided to keep it here because I still love its coolness factor. Look at all these bubbles bursting!
-                    </p>
-
-                    <p>
-At its core, the website is a simple concept. It represents all of its data, including project hierarchies, as a tree that is stored in a single JSON file. The script then uses D3 to render this tree as hierarchical bubbles that can be clicked on to navigate further down the tree. Users can traverse back up the tree by clicking the small back button. In effect, the website navigation is a tree traversal!
-                   </p>
-                    <!-- <p>This project set up requires</p>
-                    <ul>
-                      <li>defiant.js /defiant/defiant.min.js</li>
-                      <li>d3 /d3/d3.min.js</li>
-                    </ul>
-                    -->
-                  </div>
-                </div>
-              </li>
-
-              <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                <div class="list_inner">
-                  <div class="image">
-                    <img src="img/news/7.jpg" alt="" />
-                    <div class="main" data-img-url="img/news/7.jpg"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
-                  </div>
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">Undergraduate Honors Thesis: On Recurrence and Power Weakly Mixing Properties of Infinite Measure Preserving
-                        Transformations</a>
-                    </h3>
-                    <p class="date">
-                      <a href="#">Ben Athiwaratkun</a>
-                      , Cesar E. Silva
-                  </div>
-                  <div class="description">
-                    <a href="./ThesisFinalDraft.pdf" download="download" target="_blank">PDF</a>
-                    <p>
-                      We explore two properties of infinite measure preserving
-                      transformations. We examine a T that is recurrent but not 2-recurrent
-                      which implies that T x T is not conservative. We have added a proof
-                      that T x T^2 is also not conservative.
-                      In addition, we introduce conditions that imply power weak mixing
-                      property for cutting and stacking transformations with arbitrary number of cuts and tower spacers.
-                    </p>
-                    <p>This thesis was subsequently published as part of the following paper (<a
-                        href="https://arxiv.org/pdf/1702.01455.pdf" target="_blank">link</a>).</p>
+                    </blockquote>
                     <!-- <div class="share">
                       <span>Share:</span>
                       <ul class="social">
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/behance.svg" alt="" /></a>
                         </li>
                         <li>
-                          <a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                          <a ><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+                        </li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+              </li>
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+                <div class="list_inner">
+                  <div class="image">
+                    <img src="img/news/13.jpg" alt="" />
+                    <div class="main" data-img-url="img/news/13.jpg"></div>
+                    <a class="arlo_tm_full_link"></a>
+                  </div>
+                  <div class="details">
+                    <h3 class="title">
+                      <a>Improving Stability in Deep Reinforcement Learning with Weight Averaging</a>
+                    </h3>
+                    <p class="date">
+                      Evgenii Nikishin, Pavel Izmailov, <a>Ben Athiwaratkun</a>, Dmitrii Podoprikhin, Timur
+                      Garipov, Pavel Shvechikov, Dmitry Vetrov, Andrew Gordon Wilson
+                    </p>
+                  </div>
+                  <div class="description">
+                    <a href="http://www.gatsby.ucl.ac.uk/~balaji/udl-camera-ready/UDL-24.pdf" target="_blank"><img
+                        src="img/svg/social/pdf.svg" alt="" /></a>
+                    <blockquote>
+                      Deep reinforcement learning (RL) methods are
+                      notoriously unstable during training. In this
+                      paper, we focus on model-free RL algorithms
+                      where we observe that the average reward is
+                      unstable throughout the learning process and
+                      does not increase monotonically given more
+                      training steps. Furthermore, a highly rewarded
+                      policy, once learned, is often forgotten by an
+                      agent, leading to performance deterioration.
+                      These problems are partly caused by fundamental presence of noise in gradient estimators
+                      in RL. In order to reduce the effect of noise on
+                      training, we propose to apply stochastic weight
+                      averaging (SWA), a recent method that averages weights along the optimization trajectory.
+                      We show that SWA stabilizes the model solutions, alleviates the problem of forgetting the
+                      highly rewarded policy during training, and
+                      improves the average rewards on several Atari
+                      and MuJoCo environments.
+                    </blockquote>
+                    <!-- <div class="share">
+                      <span>Share:</span>
+                      <ul class="social">
+                        <li>
+                          <a><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                        </li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+              </li>
+              <!-- <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+                <div class="list_inner">
+                  <div class="image">
+                    <img src="img/news/0.jpg" alt="" />
+                    <div class="main" data-img-url="img/news/0.jpg"></div>
+                    <a class="arlo_tm_full_link"></a>
+                  </div>
+                  <div class="details">
+                    <h3 class="title">
+                      <a>Generative Context Pair Selection for Multi-hop Question Answering - EMNLP 2021</a>
+                    </h3>
+                    <p class="date">
+                      Dheeru Dua
+                      , Cicero Nogueira dos Santos
+                      , Patrick Ng <a>Ben Athiwaratkun</a>, Bing Xiang
+                      , Matt Gardner
+                      and Sameer Singh
+                    </p>
+                  </div>
+                  <div class="description">
+                    <a href="https://arxiv.org/pdf/2104.08744.pdf" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
+                      Compositional reasoning tasks like multi-hop
+                      question answering, require making latent decisions to get the final answer, given a question.
+                      However, crowdsourced datasets often capture
+                      only a slice of the underlying task distribution,
+                      which can induce unanticipated biases in models performing compositional reasoning. Furthermore,
+                      discriminatively trained models exploit such biases to get a better held-out performance, without
+                      learning the right way to
+                      reason, as they do not necessitate paying attention to the question representation (conditioning
+                      variable) in its entirety, to estimate the
+                      answer likelihood. In this work, we propose a
+                      generative context selection model for multihop question answering that reasons about
+                      how the given question could have been generated given a context pair. While being comparable to
+                      the state-of-the-art answering performance, our proposed generative passage selection model has a
+                      better performance (4.9%
+                      higher than baseline) on adversarial held-out
+                      set which tests robustness of model’s multihop reasoning capabilities.
+                    </blockquote>
+                    <div class="share">
+                      <span>Share:</span>
+                      <ul class="social">
+                        <li>
+                          <a class="twitter-share-button" target="_blank" rel="noopener noreferrer" data-size="large"
+                            href="https://twitter.com/intent/tweet?text=Generative Context Pair Selection for Multi-hop Question Answering"><img
+                              class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+                        </li>
+                      </ul>
+                    </div> 
+                  </div>
+                </div>
+              </li> -->
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+                <div class="list_inner">
+                  <div class="image">
+                    <img src="img/news/16.jpg" alt="" />
+                    <div class="main" data-img-url="img/news/16.jpg"></div>
+                    <a class="arlo_tm_full_link"></a>
+                  </div>
+                  <div class="details">
+                    <h3 class="title">
+                      <a>Malware classification with LSTM and GRU language models and a character-level CNN - ICASSP 2017</a>
+                    </h3>
+                    <p class="date">
+                      <a>Ben Athiwaratkun</a>, Jack W. Stokes
+                    </p>
+                  </div>
+                  <div class="description">
+                    <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2017/07/LstmGruCnnMalwareClassifier.pdf" target="_blank"><img src="img/svg/social/pdf.svg"
+                        alt="" /></a>
+                    <blockquote>
+                      Malicious software, or malware, continues to be a problem for computer users, corporations, and
+                      governments. Previous research [1]
+                      has explored training file-based, malware classifiers using a twostage approach. In the first
+                      stage, a malware language model is
+                      used to learn the feature representation which is then input to a second stage malware classifier.
+                      In Pascanu et al. [1], the language
+                      model is either a standard recurrent neural network (RNN) or an
+                      echo state network (ESN). In this work, we propose several new
+                      malware classification architectures which include a long short-term
+                      memory (LSTM) language model and a gated recurrent unit (GRU)
+                      language model. We also propose using an attention mechanism
+                      similar to [12] from the machine translation literature, in addition
+                      to temporal max pooling used in [1], as an alternative way to construct the file representation
+                      from neural features. Finally, we propose a new single-stage malware classifier based on a
+                      character-level
+                      convolutional neural network (CNN). Results show that the LSTM
+                      with temporal max pooling and logistic regression offers a 31.3%
+                      improvement in the true positive rate compared to the best system
+                      in [1] at a false positive rate of 1%.
+                      <br>
+                      <b>Index Terms</b>— Malware Classification, Neural Language
+                      Model, LSTM, GRU, CNN
+                    </blockquote>
+                    <!-- <div class="share">
+                      <span>Share:</span>
+                      <ul class="social">
+                        <li>
+                          <a class="twitter-share-button" target="_blank" rel="noopener noreferrer" data-size="large"
+                            href="https://twitter.com/intent/tweet?text=Generative Context Pair Selection for Multi-hop Question Answering"><img
+                              class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                         </li>
                       </ul>
                     </div> -->
@@ -884,203 +1384,24 @@ At its core, the website is a simple concept. It represents all of its data, inc
               </li>
 
 
-              <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                <div class="list_inner">
-                  <div class="image">
-                    <img src="img/news/7.jpg" alt="" />
-                    <div class="main" data-img-url="img/physics_olympiad/where_is_nutrino_ipho_2011.png"></div>
-                    <a class="arlo_tm_full_link" href="#"></a>
-                  </div>
-                  <div class="details">
-                    <h3 class="title">
-                      <a href="#">Physics Olympiad</a>
-                    </h3>
-                    <p class="date">
-                      <!-- <a href="#">Ben Athiwaratkun</a> -->
-                      
-                  </div>
-                  <div class="description">
-                    <p>
-                    I discovered my passion for Physics in high school and competed in the International Physics Olympiad in 2007, where I received a Silver Medal. At that moment, it was quite unbelievable I got that far. Deep down, I thanked my rather unpriviledged background that gave me so much drive. In fact, if it weren't for this moment, I may never have had the opportunity of coming to the US for college. Maybe I'll write about that journey someday!
-                    </p>
-
-                    <p>
-                    Back to Physics, the competition was really fun! Each country sent a team of 5 to Isfahan (Iran) who hosted the competition in 2007. We were there for around a week and there were two actual exam days, where the rest were sightseeing tours for students where the professors were grading and debating scores.
-                    </p>
-
-
-                    <p>
-                      The first exam day is a theoretical exam with analytic questions about black holes, mechanism of car air bag, and analysis of binary star orbits. The topics sound fancy but do not assume prior knowledge for the specifics, only a general understanding of physics, and sometimes a willingness to learn a new concept quickly, a good dose of creativity.
-                    </p>
-
-                    <p>
-                      The second exam day was a laboratory one. I could not find the problem online but I remember that I had to heat some gas in a vial which leads to change in refraction index, and had to analyze the gas, but that's all I could remember.
-                    </p>
-
-
-
-                    <p>
-                    For the theoretical problems, one can check them out  
-                    <a href="https://physprob.com/" download="download" target="_blank">here</a> for all International Physics Olympiad.
-
-                    I also participated in the Asian Physics Olympiad (exams of previous years <a href="https://apho.olimpicos.net/" download="download" target="_blank">here</a>). The experience was quite similar and was hosted in Shanghai!
-                    </p>
-
-                    <p>
-                    Photo credit: <a href="https://s3.eu-central-1.amazonaws.com/physprob.com/files/ipho/2018_Portugal_p2.pdf" download="download" target="_blank">Where is Nutrino?</a> from IPhO 2011
-                    </p>
-                  </div>
-                </div>
-              </li>
-
             </ul>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="arlo_tm_section" id="blogs">
-      <div class="arlo_tm_news arlo_tm_services">
-        <div class="container">
-          <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-            <span>Blogs</span>
-          </div>
-          <div class="news_list">
-            <div class="container blogs_inner wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-              <h1>Coming Soon</h1>
-              <img src="img/comming soon.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- end ML Research (Older) section -->
 
 
-    <!-- <div class="arlo_tm_section" id="services">
-            <div class="arlo_tm_services">
-                <div class="container">
-                    <div class="arlo_tm_main_title">
-                        <span>Services</span>
-                        <h3>Quality Services</h3>
-                    </div>
-                    <div class="service_inner">
-                        <ul>
-                            <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                                <div class="inner">
-                                    <img class="svg" src="img/svg/creativity.svg" alt="" />
-                                    <h3>Creative Design</h3>
-                                    <p>Web design is a similar process of creation, with the intention of presenting...
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                                <div class="inner">
-                                    <img class="svg" src="img/svg/code.svg" alt="" />
-                                    <h3>Web Development</h3>
-                                    <p>Web design is a similar process of creation, with the intention of presenting...
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                                <div class="inner">
-                                    <img class="svg" src="img/svg/telegram.svg" alt="" />
-                                    <h3>Brand Identity</h3>
-                                    <p>Web design is a similar process of creation, with the intention of presenting...
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                                <div class="inner">
-                                    <img class="svg" src="img/svg/photoshop.svg" alt="" />
-                                    <h3>Adobe Photoshop</h3>
-                                    <p>Web design is a similar process of creation, with the intention of presenting...
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                                <div class="inner">
-                                    <img class="svg" src="img/svg/ai.svg" alt="" />
-                                    <h3>Adobe Illustrator</h3>
-                                    <p>Web design is a similar process of creation, with the intention of presenting...
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                                <div class="inner">
-                                    <img class="svg" src="img/svg/share.svg" alt="" />
-                                    <h3>Social Media</h3>
-                                    <p>Web design is a similar process of creation, with the intention of presenting...
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-    <!-- <div class="arlo_tm_section" id="contact">
-      <div class="arlo_tm_contact">
-        <div class="container">
-          <div class="contact_inner">
-            <div class="arlo_tm_main_title">
-              <span>Contact</span>
-              <h3>Get in Touch</h3>
-            </div>
-            <div class="wrapper">
-              <div class="left wow fadeInLeft" data-wow-duration="1.5s">
-                <div class="map_wrap">
-                  <div class="map" id="ieatmaps">
-                    <img src="./img/contact/website-content-sections.png" alt="" srcset="">
-                  </div>
-                </div>
-              </div>
-              <div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-                <div class="fields">
-                  <form action="https://marketifythemes.net/" method="post" class="contact_form" id="contact_form">
-                    <div class="returnmessage" data-success="Your message has been received, We will contact you soon.">
-                    </div>
-                    <div class="empty_notice">
-                      <span>Please Fill Required Fields</span>
-                    </div>
-                    <div class="first">
-                      <ul>
-                        <li>
-                          <input id="name" type="text" placeholder="Name" autocomplete="off" />
-                        </li>
-                        <li>
-                          <input id="email" type="text" placeholder="Email" autocomplete="off" />
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="last">
-                      <textarea id="message" placeholder="Message"></textarea>
-                    </div>
-                    <div class="arlo_tm_button" data-color="dark">
-                      <a id="send_message" href="#">Send Message</a>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
+    <!-- footer -->
     <div class="arlo_tm_section">
       <div class="arlo_tm_copyright">
         <div class="container">
           <div class="inner">
             <div class="copy wow fadeInLeft" data-wow-duration="1.5s">
-              <p>&copy; Copyright 2023. All rights are reserved.</p>
+              <p>&copy; Copyright 2023, Ben Athiwaratkun. All rights reserved.</p>
             </div>
             <div class="social wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
               <ul>
-                <li>
-                  <a href="https://www.instagram.com/benathi/"><img class="svg" src="img/svg/social/instagram.svg"
-                      alt="" /></a>
-                </li>
                 <li>
                   <a href="https://twitter.com/ben_athi"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
                 </li>
@@ -1090,6 +1411,13 @@ At its core, the website is a simple concept. It represents all of its data, inc
                 </li>
                 <li>
                   <a href="linkedin.com/benathi"><img class="svg" src="img/svg/social/linkedin.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="https://github.com/benathi"><img class="svg" src="img/svg/social/github.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="mailto:ben.athiwaratkun@gmail.com"><img class="svg" src="img/svg/social/email.svg"
+                      alt="" /></a>
                 </li>
               </ul>
             </div>
@@ -1111,5 +1439,23 @@ At its core, the website is a simple concept. It represents all of its data, inc
     });
   </script>
 </body>
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-53653308-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
 
 </html>
