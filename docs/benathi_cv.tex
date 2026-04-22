@@ -51,38 +51,26 @@ My focus is full-stack inference efficiency---from low-level optimization like s
 \section{Current Role}
 
 \entrytitle{Senior Director of Research, Together AI}{2024--present}
-\entrysubtitle{Leading the Core ML (Turbo) Research team on full-stack inference efficiency.}
+\entrysubtitle{Core ML (Turbo) team --- full-stack inference efficiency. Built and grew the team to 15 research scientists and engineers.}
 
-\vspace{4pt}
 \noindent\textbf{Speculative Decoding.}
-Defined the technical direction for speculative decoding and built the team's capability from scratch. Evolved the approach from static, offline-trained drafters to a fully autonomous system that learns from live traffic and updates in production with zero downtime. This stack powers Together AI's serving infrastructure and delivered the world's fastest LLM inference on NVIDIA Blackwell.
+Set the technical direction and worked with tech leads to iterate on training recipes and proprietary speculative decoding methods, achieving the world's fastest inference on NVIDIA Blackwell---ranked \#1 across \href{https://www.together.ai/blog/fastest-inference-for-the-top-open-source-models}{top open-source models} and \href{https://www.together.ai/blog/fastest-inference-for-deepseek-r1-0528-with-nvidia-hgx-b200}{DeepSeek-R1} by independent benchmarks. Also built adaptive speculator systems with online training that continuously learn from live traffic and update in production with zero downtime, enabling Together AI to serve many open-source models efficiently.
 
 \vspace{6pt}
 \noindent\textbf{Quantization \& Compression.}
-Led the quantization research agenda across KV cache, weights, and attention. Pushed KV compression to 2-bit with 8x memory reduction, enabling significantly higher serving throughput. Drove the team's strategy on FP4 quantization for next-generation NVIDIA hardware. Established the principle that production-viable quantization must be co-designed with serving systems---not just optimized for offline accuracy.
+Shaped the quantization research agenda across KV cache, weights, and attention---working with tech leads to push KV compression to 2-bit with 8x memory reduction and develop FP4 quantization for next-generation NVIDIA hardware.
 
 \vspace{6pt}
 \noindent\textbf{Multi-Model Routing \& Orchestration.}
-Initiated the multi-model intelligence research direction, starting with the insight that ensembles of open-source models can outperform frontier models. Grew this into a portfolio spanning model collaboration, cost-optimal routing, and program-aware scheduling for agentic workloads. These systems reduce serving cost by 3x while maintaining quality.
+Initiated the multi-model intelligence direction and grew it into a portfolio spanning model collaboration, cost-optimal routing, and program-aware scheduling for agentic workloads. Working with tech leads, the team demonstrated that ensembles of open-source models can surpass frontier models, and built systems that reduce serving cost while maintaining quality.
+
+\vspace{6pt}
+\noindent\textbf{Efficient RL Training.}
+Identified RL training efficiency as a key bottleneck and set the research direction on accelerating RL training via speeding up rollouts---through shared-prefix parallel decoding for massively parallel rollouts, distribution-aware speculative decoding targeting long-tail trajectories (up to 50\% rollout time reduction), and adaptive drafters that co-evolve with shifting policy distributions.
 
 \vspace{6pt}
 \noindent\textbf{Architecture \& Generation Paradigms.}
-Drove research on inference-aware model architecture, including redesigning residual connections for 29\% speedup in tensor parallelism and building the first diffusion language model that matches autoregressive quality with 3.1x throughput. These represent bets on what inference looks like beyond autoregressive decoding.
-
-%--------------------------------------------------------------
-\section{Past Experience}
-
-\entrytitle{ML Scientist, AWS AI Labs}{Aug 2019--Jan 2024}
-Few-shot learning, language models for code generation, efficient inference, and structured prediction. 3 patents filed. Publications at ICLR (Spotlight), ICML, ACL, EMNLP (Oral).
-
-\vspace{4pt}
-\entrytitle{PhD, Cornell University}{2014--2019}
-Statistics with focus on machine learning. Advisor: Andrew Gordon Wilson. Publications at ICLR, ACL (Oral).
-
-\vspace{4pt}
-\entrytitle{BA, Williams College}{2008--2012}
-Mathematics and Economics. Silver Medal, International Physics Olympiad. Phi Beta Kappa.
-
+Guided research on inference-aware model architecture, including redesigning residual connections for 29\% speedup in tensor parallelism and building the first diffusion language model that matches autoregressive quality with 3.1x throughput.
 %--------------------------------------------------------------
 \section{Highlighted Publications}
 
@@ -136,6 +124,20 @@ Program-aware scheduling for agentic inference---co-schedules LLM calls, KV cach
 Redesigns residual connections to overlap communication and computation in tensor parallelism. 29\% inference speedup for 70B models across 8 GPUs---no retraining required.
 
 %--------------------------------------------------------------
+%--------------------------------------------------------------
+\section{Past Experience}
+
+\entrytitle{ML Scientist, AWS AI Labs}{Aug 2019--Jan 2024}
+Few-shot learning, language models for code generation, efficient inference, and structured prediction. 3 patents filed. Publications at ICLR (Spotlight), ICML, ACL, EMNLP (Oral).
+
+\vspace{4pt}
+\entrytitle{PhD, Cornell University}{2014--2019}
+Statistics with focus on machine learning. Advisor: Andrew Gordon Wilson. Publications at ICLR, ACL (Oral).
+
+\vspace{4pt}
+\entrytitle{BA, Williams College}{2008--2012}
+Mathematics and Economics. Silver Medal, International Physics Olympiad. Phi Beta Kappa.
+
 \newpage
 \section{Publications (2024--2026)}
 
