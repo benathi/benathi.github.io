@@ -75,7 +75,7 @@
             <ul class="anchor_nav">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#highlights">Highlights</a></li>
+              <li><a href="#highlights">Research</a></li>
               <li><a href="#publications">Publications</a></li>
               <!-- <li><a href="#projects">Projects</a></li> -->
               <li><a href="https://benathi.github.io/blog">Blog</a></li>
@@ -100,7 +100,7 @@
             <ul class="anchor_nav">
               <li class="current"><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#highlights">Highlights</a></li>
+              <li><a href="#highlights">Research</a></li>
               <li><a href="#publications">Publications</a></li>
               <!-- <li><a href="#projects">Projects</a></li> -->
               <li><a href="https://benathi.github.io/blog">Blog</a></li>
@@ -175,20 +175,9 @@
             </div>
           </div>
           <div class="right">
-            <div class="about_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-              <h3>
-                About Me
-              </h3>
-            </div>
             <div class="text wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
               <p>
-                My name is <span>Ben Athiwaratkun</span>. I am a Senior Director at <a href="https://www.together.ai" target="_blank">Together AI</a>, where I lead the Core ML (Turbo) Research team focusing on full-stack inference efficiency &mdash; from low-level optimization such as sparsity, quantization, efficient architecture, and speculative decoding, to high-level optimization such as smart routing and multi-model optimization.
-              </p>
-              <p>
-                Previously, I was an ML Scientist at AWS AI Labs. I completed my PhD in
-                Statistics and focus on machine learning from Cornell University, under the supervision of <a
-                  href="https://cims.nyu.edu/~andrewgw" target="_blank">Andrew Gordon Wilson.</a> Before my PhD, I
-                studied Mathematics, Physics, and Economics at Williams College.
+                <span>Ben Athiwaratkun</span> &mdash; research and technical leader specializing in frontier-model inference efficiency: speculative decoding, quantization, model architecture, routing, RL rollout efficiency, and kernel generation. Senior Director of Research at <a href="https://www.together.ai" target="_blank">Together AI</a>, where I built and lead the Core ML research team. My work bridges research and production by inventing algorithms and shipping them into high-throughput inference systems.
               </p>
             </div>
             <div class="social wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".6s">
@@ -250,72 +239,6 @@
       </div>
     </div>
 
-    <div class='education mb-50'>
-      <div class="container">
-        <div class='education__heading'>
-          <h4>Experience</h4>
-        </div>
-
-
-
-        <div class='education__content m-50'>
-          <div class="faqs-item ">
-            <span class='year'></span>
-            <a class="faqs-title">
-              <h5>Senior Director at Together AI</h5>
-              <p>Leading inference efficiency research and its path to production &mdash; from low-level optimization (speculative decoding, quantization, efficient architecture) to system-level intelligence (multi-model routing, agentic orchestration).</p>
-            </a>
-            <div class="faqs-content">
-              <div class="faqs-content-inside">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class='education__content m-50'>
-          <div class="faqs-item ">
-            <span class='year'></span>
-            <a class="faqs-title">
-              <h5>ML Scientist at AWS AI Labs</h5>
-              <p>Few-shot learning, language models for code generation, efficient inference, and structured prediction.</p>
-            </a>
-            <div class="faqs-content">
-              <div class="faqs-content-inside">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class='education__content m-50'>
-          <div class="faqs-item ">
-            <span class='year'></span>
-            <a class="faqs-title">
-              <h5>PhD, Cornell University</h5>
-              <p>Statistics with focus on machine learning. Advisor: Andrew Gordon Wilson.</p>
-            </a>
-            <div class="faqs-content">
-              <div class="faqs-content-inside">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class='education__content m-50'>
-          <div class="faqs-item ">
-            <span class='year'></span>
-            <a class="faqs-title">
-              <h5>Williams College</h5>
-              <p>Mathematics, Physics, and Economics. Physics Olympiad Medalist.</p>
-            </a>
-            <div class="faqs-content">
-              <div class="faqs-content-inside">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- <div id="bubbles" class="arlo_tm_bubbles">
         <iframe
           src="./base.html"
@@ -329,14 +252,21 @@
       <div class="arlo_tm_news arlo_tm_services">
         <div class="container">
           <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-            <span>Highlighted Work</span>
+            <span>Research Agenda &amp; Highlighted Work</span>
           </div>
           <div class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" style="padding: 0 20px;">
             <p style="margin-bottom: 25px;">
-              My research focuses on inference efficiency, ranging from low-level optimization such as attention, quantization, and KV compression, to high-level optimization such as routing and multi-model agent orchestration. Below are some highly impactful works that are widely adopted for real-world LLM efficiency.
+              My recent work focuses on frontier-model inference efficiency: speculative decoding, KV-cache and weight quantization, RL rollout acceleration, agentic routing, and architecture/system co-design. These projects are selected because they shipped into production systems, improved frontier-model serving efficiency, or opened new research directions for efficient test-time compute and RL rollouts.
             </p>
 
             <h4 style="margin-top: 0; margin-bottom: 15px; color: #4ab0b0;">Speculative Decoding</h4>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">World's Fastest DeepSeek-R1 Inference on NVIDIA Blackwell</h5>
+              <span style="color: #888; font-size: 0.85em;">Together AI blog, 2025</span>
+              &nbsp;<a href="https://www.together.ai/blog/fastest-inference-for-deepseek-r1-0528-with-nvidia-hgx-b200" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[blog]</a>
+              <p style="margin-top: 5px;">Independently benchmarked top-ranked inference for DeepSeek-R1-0528 on NVIDIA HGX B200, powered by in-house speculative decoding algorithms shipped directly into the production engine.</p>
+            </div>
 
             <div style="margin-bottom: 20px;">
               <h5 style="margin-bottom: 5px;">When RL Meets Adaptive Speculative Training: A Unified Training-Serving System</h5>
@@ -357,13 +287,6 @@
               <span style="color: #888; font-size: 0.85em;">Together AI blog, 2025</span>
               &nbsp;<a href="https://www.together.ai/blog/adaptive-learning-speculator-system-atlas" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[blog]</a>
               <p style="margin-top: 5px;">Production speculative decoding drafters that learn from live traffic with zero-downtime updates, keeping draft models aligned with shifting data distributions across multiple open-source models.</p>
-            </div>
-
-            <div style="margin-bottom: 20px;">
-              <h5 style="margin-bottom: 5px;">World's Fastest DeepSeek-R1 Inference on NVIDIA Blackwell</h5>
-              <span style="color: #888; font-size: 0.85em;">Together AI blog, 2025</span>
-              &nbsp;<a href="https://www.together.ai/blog/fastest-inference-for-deepseek-r1-0528-with-nvidia-hgx-b200" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[blog]</a>
-              <p style="margin-top: 5px;">Independently benchmarked top-ranked inference for DeepSeek-R1-0528 on NVIDIA HGX B200, powered by in-house speculative decoding algorithms shipped directly into the production engine.</p>
             </div>
 
             <h4 style="margin-top: 25px; margin-bottom: 15px; color: #4ab0b0;">Quantization &amp; Compression</h4>
@@ -442,6 +365,73 @@
               <p style="margin-top: 5px;">Splits attention into shared-prefix and per-sequence GEMMs to eliminate redundant memory IO. Crucial for massively parallel sampling and RL rollouts where thousands of candidate answers are sampled for verification and reward signaling.</p>
             </div>
 
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class='education mb-50'>
+      <div class="container">
+        <div class='education__heading'>
+          <h4>Experience</h4>
+        </div>
+
+
+
+        <div class='education__content m-50'>
+          <div class="faqs-item ">
+            <span class='year'></span>
+            <a class="faqs-title">
+              <h5>Senior Director of Research (Core ML), Together AI</h5>
+              <p>Built and lead the Core ML research team focused on frontier-model inference efficiency. Remain hands-on in high-leverage technical work: personally implementing key algorithms in the production inference engine, guiding major design decisions, and co-designing core architectural and algorithmic innovations.</p>
+            </a>
+            <div class="faqs-content">
+              <div class="faqs-content-inside">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='education__content m-50'>
+          <div class="faqs-item ">
+            <span class='year'></span>
+            <a class="faqs-title">
+              <h5>ML Scientist at AWS AI Labs</h5>
+              <p>Few-shot learning, language models for code generation, efficient inference, and structured prediction.</p>
+            </a>
+            <div class="faqs-content">
+              <div class="faqs-content-inside">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='education__content m-50'>
+          <div class="faqs-item ">
+            <span class='year'></span>
+            <a class="faqs-title">
+              <h5>PhD, Cornell University</h5>
+              <p>Statistics with focus on machine learning. Advisor: Andrew Gordon Wilson.</p>
+            </a>
+            <div class="faqs-content">
+              <div class="faqs-content-inside">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='education__content m-50'>
+          <div class="faqs-item ">
+            <span class='year'></span>
+            <a class="faqs-title">
+              <h5>Williams College</h5>
+              <p>Mathematics, Physics, and Economics. International Physics Olympiad Medalist.</p>
+            </a>
+            <div class="faqs-content">
+              <div class="faqs-content-inside">
+              </div>
+            </div>
           </div>
         </div>
       </div>
