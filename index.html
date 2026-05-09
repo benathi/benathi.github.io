@@ -305,7 +305,7 @@
             <span class='year'></span>
             <a class="faqs-title">
               <h5>Williams College</h5>
-              <p>Mathematics, Physics, and Economics. Honors Thesis in Ergodic Theory.</p>
+              <p>Mathematics, Physics, and Economics. Physics Olympiad Medalist.</p>
             </a>
             <div class="faqs-content">
               <div class="faqs-content-inside">
@@ -336,11 +336,42 @@
               My research focuses on inference efficiency, ranging from low-level optimization such as attention, quantization, and KV compression, to high-level optimization such as routing and multi-model agent orchestration. Below are some highly impactful works that are widely adopted for real-world LLM efficiency.
             </p>
 
+            <h4 style="margin-top: 0; margin-bottom: 15px; color: #4ab0b0;">Speculative Decoding</h4>
+
             <div style="margin-bottom: 20px;">
-              <h5 style="margin-bottom: 5px;">Bifurcated Attention: Accelerating Massively Parallel Decoding with Shared Prefixes in LLMs</h5>
-              <span style="color: #888; font-size: 0.85em;">ICML 2024</span>
-              &nbsp;<a href="https://arxiv.org/pdf/2403.08845" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              <p style="margin-top: 5px;">Crucial for parallel sampling &mdash; reduces KV cache memory and loading time. Enables massively parallel RL rollouts where thousands of candidate answers are sampled for verification and reward signaling.</p>
+              <h5 style="margin-bottom: 5px;">When RL Meets Adaptive Speculative Training: A Unified Training-Serving System</h5>
+              <span style="color: #888; font-size: 0.85em;">ICML 2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2602.06932" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Unified training-serving system that co-evolves speculative drafters with the RL policy, eliminating the train/serve distribution gap that degrades spec dec under shifting policy distributions.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Beat the Long Tail: Distribution-Aware Speculative Decoding for RL Training</h5>
+              <span style="color: #888; font-size: 0.85em;">MLSys 2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2511.13841" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Accelerates RL rollouts by targeting the long-tail of trajectory lengths that dominate wall-clock time. Allocates more aggressive speculative decoding budgets to slow trajectories. Up to 50% rollout time reduction.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">ATLAS: Adaptive Speculators for Production Inference</h5>
+              <span style="color: #888; font-size: 0.85em;">Together AI blog, 2025</span>
+              &nbsp;<a href="https://www.together.ai/blog/adaptive-learning-speculator-system-atlas" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[blog]</a>
+              <p style="margin-top: 5px;">Production speculative decoding drafters that learn from live traffic with zero-downtime updates, keeping draft models aligned with shifting data distributions across multiple open-source models.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">World's Fastest DeepSeek-R1 Inference on NVIDIA Blackwell</h5>
+              <span style="color: #888; font-size: 0.85em;">Together AI blog, 2025</span>
+              &nbsp;<a href="https://www.together.ai/blog/fastest-inference-for-deepseek-r1-0528-with-nvidia-hgx-b200" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[blog]</a>
+              <p style="margin-top: 5px;">Independently benchmarked top-ranked inference for DeepSeek-R1-0528 on NVIDIA HGX B200, powered by in-house speculative decoding algorithms shipped directly into the production engine.</p>
+            </div>
+
+            <h4 style="margin-top: 25px; margin-bottom: 15px; color: #4ab0b0;">Quantization &amp; Compression</h4>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">CoQuant: Covariance-Aware Rotation for 2-bit KV Cache Quantization</h5>
+              <span style="color: #888; font-size: 0.85em;">Under review at NeurIPS 2026</span>
+              <p style="margin-top: 5px;">Rotates the KV cache along covariance-informed axes before 2-bit quantization, decorrelating outliers so aggressive quantization preserves quality. Complements Kitty in the 2-bit KV serving roadmap.</p>
             </div>
 
             <div style="margin-bottom: 20px;">
@@ -350,59 +381,65 @@
             </div>
 
             <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Kitty: Accurate and Efficient 2-bit KV Cache Quantization with Dynamic Channel-wise Precision Boost</h5>
+              <span style="color: #888; font-size: 0.85em;">MLSys 2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2511.18643" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Pushes KV cache quantization to 2-bit with near-lossless quality by dynamically allocating higher precision to outlier channels. Direct path to next-generation low-bit memory serving.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
               <h5 style="margin-bottom: 5px;">Search Your NVFP4 Scales!</h5>
-              <span style="color: #888; font-size: 0.85em;">Under review at MLSys</span>
+              <span style="color: #888; font-size: 0.85em;">MLSys 2026</span>
               <p style="margin-top: 5px;">Smart searching of quantization scales to close the quality gap between NVFP4 and FP8/FP16. Directly applicable to frontier model weight quantization and FP4 attention.</p>
             </div>
+
+            <h4 style="margin-top: 25px; margin-bottom: 15px; color: #4ab0b0;">Routing &amp; Multi-Model Orchestration</h4>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Squeeze Evolve: Unified Multi-Model Orchestration for Verifier-Free Evolution</h5>
+              <span style="color: #888; font-size: 0.85em;">Preprint, 2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2604.07725" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              &nbsp;<a href="https://squeeze-evolve.github.io/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[project]</a>
+              <p style="margin-top: 5px;">Multi-model orchestration for evolutionary inference &mdash; allocating strong vs. cheap models by marginal utility at each stage. 3x cost reduction while matching verifier-based methods.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">ThunderAgent: A Simple, Fast and Program-Aware Agentic Inference System</h5>
+              <span style="color: #888; font-size: 0.85em;">ICML 2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2602.13692" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              &nbsp;<a href="https://thunderagent.ai/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[website]</a>
+              <p style="margin-top: 5px;">Program-aware scheduling for agentic inference &mdash; co-schedules LLM calls, KV caches, and tool execution. Increases cache hit rate and throughput across serving and RL workloads.</p>
+            </div>
+
+            <h4 style="margin-top: 25px; margin-bottom: 15px; color: #4ab0b0;">Architecture &amp; Inference Algorithms</h4>
 
             <div style="margin-bottom: 20px;">
               <h5 style="margin-bottom: 5px;">Introspective Diffusion Language Models</h5>
               <span style="color: #888; font-size: 0.85em;">Under review at COLM 2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2604.11035" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
               &nbsp;<a href="https://yifan1130.github.io/projects/introspective-diffusion-lm/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[project page]</a>
               <p style="margin-top: 5px;">A new generation paradigm that bridges autoregressive and diffusion models. Uses introspective strided decoding to perform verification and generation in the same forward pass, achieving 3.1x throughput while matching AR quality.</p>
             </div>
 
             <div style="margin-bottom: 20px;">
-              <h5 style="margin-bottom: 5px;">ATLAS and Aurora</h5>
-              <span style="color: #888; font-size: 0.85em;">2025&ndash;2026</span>
-              &nbsp;<a href="https://arxiv.org/pdf/2602.06932" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              <p style="margin-top: 5px;">Keeping speculative decoding drafters aligned with shifting data distributions. Critical for RL rollout where the policy updates frequently, requiring co-evolving draft models. Aurora frames this as an RL problem with continuous, zero-downtime updates.</p>
-            </div>
-
-            <div style="margin-bottom: 20px;">
-              <h5 style="margin-bottom: 5px;">Squeeze Evolve: Unified Multi-Model Orchestration for Verifier-Free Evolution</h5>
-              <span style="color: #888; font-size: 0.85em;">2026</span>
-              &nbsp;<a href="https://arxiv.org/pdf/2604.07725" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              <p style="margin-top: 5px;">Multi-model orchestration for evolutionary inference &mdash; allocating strong vs. cheap models by marginal utility at each stage. 3x cost reduction while matching verifier-based methods.</p>
-            </div>
-
-            <div style="margin-bottom: 20px;">
-              <h5 style="margin-bottom: 5px;">Beat the Long Tail: Distribution-Aware Speculative Decoding for RL Training</h5>
-              <span style="color: #888; font-size: 0.85em;">2025</span>
-              &nbsp;<a href="https://arxiv.org/pdf/2511.13841" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              <p style="margin-top: 5px;">Accelerates RL rollouts by targeting the long-tail of trajectory lengths that dominate wall-clock time. Allocates more aggressive speculative decoding budgets to slow trajectories. Up to 50% rollout time reduction.</p>
-            </div>
-
-            <div style="margin-bottom: 20px;">
-              <h5 style="margin-bottom: 5px;">Mixture of Agents</h5>
-              <span style="color: #888; font-size: 0.85em;">ICLR 2025</span>
-              &nbsp;<a href="https://arxiv.org/pdf/2406.04692" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              <p style="margin-top: 5px;">Pioneering work on multi-agent LLM systems. A layered architecture where open-source models collaboratively refine outputs, surpassing GPT-4o on AlpacaEval 2.0.</p>
-            </div>
-
-            <div style="margin-bottom: 20px;">
-              <h5 style="margin-bottom: 5px;">ThunderAgent: A Simple, Fast and Program-Aware Agentic Inference System</h5>
-              <span style="color: #888; font-size: 0.85em;">2026</span>
-              &nbsp;<a href="https://arxiv.org/pdf/2602.13692" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              &nbsp;<a href="https://thunderagent.ai/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[website]</a>
-              <p style="margin-top: 5px;">Program-aware scheduling for agentic inference &mdash; co-schedules LLM calls, KV caches, and tool execution. Increases cache hit rate and throughput across serving and RL workloads.</p>
+              <h5 style="margin-bottom: 5px;">Opportunistic Expert Activation: Batch-Aware Expert Routing for Faster Decode Without Retraining</h5>
+              <span style="color: #888; font-size: 0.85em;">ICML 2026</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2511.02237" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Batch-aware expert routing for MoE models that accelerates decode latency without retraining &mdash; exploits routing structure across concurrent requests in production serving.</p>
             </div>
 
             <div style="margin-bottom: 20px;">
               <h5 style="margin-bottom: 5px;">Ladder-Residual</h5>
               <span style="color: #888; font-size: 0.85em;">ICML 2025</span>
               &nbsp;<a href="https://arxiv.org/pdf/2501.06589" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
-              <p style="margin-top: 5px;">Redesigns residual connections to overlap communication and computation in tensor parallelism. 29% inference speedup for 70B models across 8 GPUs &mdash; no retraining required.</p>
+              <p style="margin-top: 5px;">Redesigns residual connections to overlap communication and computation in tensor parallelism. 29% inference speedup for 70B models across 8 GPUs.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h5 style="margin-bottom: 5px;">Bifurcated Attention: Accelerating Massively Parallel Decoding with Shared Prefixes in LLMs</h5>
+              <span style="color: #888; font-size: 0.85em;">ICML 2024</span>
+              &nbsp;<a href="https://arxiv.org/pdf/2403.08845" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[pdf]</a>
+              <p style="margin-top: 5px;">Splits attention into shared-prefix and per-sequence GEMMs to eliminate redundant memory IO. Crucial for massively parallel sampling and RL rollouts where thousands of candidate answers are sampled for verification and reward signaling.</p>
             </div>
 
           </div>
@@ -433,6 +470,7 @@
             <details class="pub-abstract">
               <summary>
                 <a href="https://arxiv.org/pdf/2604.07725" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Squeeze Evolve: Unified Multi-Model Orchestration for Verifier-Free Evolution</strong></a>
+                &nbsp;<a href="https://squeeze-evolve.github.io/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[project]</a>
               </summary>
               <p class="pub-desc">Multi-model orchestration for evolutionary inference that allocates strong vs. cheap models based on marginal utility. Reduces API cost by ~3x and increases throughput by ~10x while matching or exceeding verifier-based methods.</p>
             </details>
@@ -455,6 +493,7 @@
             <details class="pub-abstract">
               <summary>
                 <a href="https://arxiv.org/pdf/2602.06932" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Aurora: When RL Meets Adaptive Speculative Training</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2026</span>
               </summary>
               <p class="pub-desc">Continuously trains speculative decoding drafters from live inference traces using asynchronous RL. Supports day-0 deployment with 1.5x speedup and graceful adaptation to domain drift, with zero-downtime hot-swapping.</p>
             </details>
@@ -463,6 +502,7 @@
               <summary>
                 <a href="https://arxiv.org/pdf/2602.13692" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>ThunderAgent: A Simple, Fast and Program-Aware Agentic Inference System</strong></a>
                 &nbsp;<a href="https://thunderagent.ai/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[website]</a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2026</span>
               </summary>
               <p class="pub-desc">Program-aware system that co-schedules LLM inference and tool execution, achieving 1.5-3.6x throughput in serving, 1.8-3.9x in RL rollouts, and up to 4.2x disk memory savings.</p>
             </details>
@@ -477,16 +517,25 @@
 
             <details class="pub-abstract">
               <summary>
-                <a href="https://yifan1130.github.io/projects/introspective-diffusion-lm/" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Introspective Diffusion Language Models</strong></a>
-                <span style="color: #888; font-size: 0.85em;">&mdash; under review</span>
+                <a href="https://arxiv.org/pdf/2604.11035" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Introspective Diffusion Language Models</strong></a>
+                &nbsp;<a href="https://yifan1130.github.io/projects/introspective-diffusion-lm/" target="_blank" style="color: #4ab0b0; font-size: 0.85em;">[project page]</a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; under review at COLM 2026</span>
               </summary>
               <p class="pub-desc">First diffusion LM to match autoregressive quality at the same scale. Introspective strided decoding performs verification and generation in the same forward pass, achieving 3.1x higher throughput.</p>
             </details>
 
             <details class="pub-abstract">
               <summary>
+                <strong>CoQuant: Covariance-Aware Rotation for 2-bit KV Cache Quantization</strong>
+                <span style="color: #888; font-size: 0.85em;">&mdash; under review at NeurIPS 2026</span>
+              </summary>
+              <p class="pub-desc">Rotates the KV cache along covariance-informed axes before 2-bit quantization, decorrelating outliers so aggressive quantization preserves quality. Complements Kitty in the 2-bit KV serving roadmap.</p>
+            </details>
+
+            <details class="pub-abstract">
+              <summary>
                 <strong>System-Aware 4-Bit KV-Cache Quantization for Real-World LLM Serving</strong>
-                <span style="color: #888; font-size: 0.85em;">&mdash; under review</span>
+                <span style="color: #888; font-size: 0.85em;">&mdash; under review at COLM 2026</span>
               </summary>
               <p class="pub-desc">Identifies which KV cache quantization methods work under real serving constraints. Token-wise INT4 with block-diagonal Hadamard rotation consistently achieves the best accuracy-efficiency trade-off with zero overhead.</p>
             </details>
@@ -494,7 +543,7 @@
             <details class="pub-abstract">
               <summary>
                 <strong>Search Your NVFP4 Scales!</strong>
-                <span style="color: #888; font-size: 0.85em;">&mdash; under review</span>
+                <span style="color: #888; font-size: 0.85em;">&mdash; MLSys 2026</span>
               </summary>
               <p class="pub-desc">Searching for error-minimizing block scales in NVFP4 format reduces quantization error by 26%. Improves weight PTQ by up to 7.5 points (GPQA) and enables near-lossless FP4 attention on Tensor Cores.</p>
             </details>
@@ -518,6 +567,7 @@
             <details class="pub-abstract">
               <summary>
                 <a href="https://arxiv.org/pdf/2511.18643" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Kitty: Accurate and Efficient 2-bit KV Cache Quantization</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; MLSys 2026</span>
               </summary>
               <p class="pub-desc">Near-lossless 2-bit KV cache quantization via algorithm-system co-design. Cuts KV memory by ~8x with negligible accuracy loss, enabling up to 8x larger batches and 2.1-4.1x higher throughput.</p>
             </details>
@@ -525,6 +575,7 @@
             <details class="pub-abstract">
               <summary>
                 <a href="https://arxiv.org/pdf/2511.13841" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Beat the Long Tail: Distribution-Aware Speculative Decoding for RL Training</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; MLSys 2026</span>
               </summary>
               <p class="pub-desc">Targets the long-tail of RL rollout trajectory lengths that dominate wall-clock time. Builds adaptive drafters from historical rollouts and allocates more aggressive speculation to slow trajectories, reducing rollout time by up to 50%.</p>
             </details>
@@ -539,6 +590,7 @@
             <details class="pub-abstract">
               <summary>
                 <a href="https://arxiv.org/pdf/2511.02237" target="_blank" style="color: #333; text-decoration: none; border-bottom: 1px solid #ccc;"><strong>Opportunistic Expert Activation: Batch-Aware Expert Routing for Faster Decode</strong></a>
+                <span style="color: #888; font-size: 0.85em;">&mdash; ICML 2026</span>
               </summary>
               <p class="pub-desc">Dynamically re-routes tokens to piggyback on already-loaded MoE experts in the same batch. Reduces MoE layer decode latency by up to 39% with no accuracy loss and no retraining.</p>
             </details>
