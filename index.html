@@ -75,6 +75,7 @@
             <ul class="anchor_nav">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
+              <li><a href="#research">Research</a></li>
               <li><a href="#highlights">Highlights</a></li>
               <li><a href="#publications">Publications</a></li>
               <!-- <li><a href="#projects">Projects</a></li> -->
@@ -100,6 +101,7 @@
             <ul class="anchor_nav">
               <li class="current"><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
+              <li><a href="#research">Research</a></li>
               <li><a href="#highlights">Highlights</a></li>
               <li><a href="#publications">Publications</a></li>
               <!-- <li><a href="#projects">Projects</a></li> -->
@@ -182,7 +184,10 @@
             </div>
             <div class="text wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
               <p>
-                My name is <span>Ben Athiwaratkun</span>. I am a research and technical leader specializing in frontier-model inference efficiency: speculative decoding, quantization, model architecture, routing, RL rollout efficiency, and kernel generation. I am Senior Director of Research at <a href="https://www.together.ai" target="_blank">Together AI</a>, where I built and lead a 15-person Core ML team. My work bridges research and production by inventing algorithms and shipping them into high-throughput inference systems.
+                <span>Ben Athiwaratkun</span> &mdash; research and technical leader specializing in frontier-model inference efficiency: speculative decoding, quantization, model architecture, routing, RL rollout efficiency, and kernel generation. Senior Director of Research at <a href="https://www.together.ai" target="_blank">Together AI</a>, where I built and lead a 15-person Core ML team. My work bridges research and production by inventing algorithms and shipping them into high-throughput inference systems.
+              </p>
+              <p>
+                I am interested in inference efficiency as a frontier scaling axis: making test-time compute, RL rollouts, agentic inference, and production deployment efficient enough to change model capability and research velocity.
               </p>
               <p>
                 Previously, I was an ML Scientist at AWS AI Labs. I completed my PhD in
@@ -263,7 +268,7 @@
             <span class='year'></span>
             <a class="faqs-title">
               <h5>Senior Director of Research (Core ML), Together AI</h5>
-              <p>Built and lead a 15-person Core ML team focused on frontier-model inference efficiency. Remain hands-on in high-leverage technical work: personally implementing key algorithms in the production inference engine, guiding major design decisions, and co-designing core architectural and algorithmic innovations.</p>
+              <p>Built and lead a 15-person Core ML team focused on frontier-model inference efficiency. Remain hands-on in high-leverage technical work: personally implemented the production speculative-decoding algorithm behind Together AI's #1-ranked Blackwell inference, invented model stacking, and co-designed Ladder-Residual. Guide major design decisions across the team's research-to-production roadmap.</p>
             </a>
             <div class="faqs-content">
               <div class="faqs-content-inside">
@@ -325,6 +330,28 @@
         ></iframe>
       </div> -->
 
+    <div class="arlo_tm_section" id="research">
+      <div class="arlo_tm_news arlo_tm_services">
+        <div class="container">
+          <div class="arlo_tm_main_title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+            <span>Research Agenda</span>
+          </div>
+          <div class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" style="padding: 0 20px;">
+            <p style="margin-bottom: 18px;">
+              I work on inference efficiency as a core scaling axis for frontier models. The goal is not only to reduce serving cost, but to expand what is feasible during test-time compute, RL post-training, agentic inference, and production deployment. My recent work explores this through speculative decoding, low-bit quantization, efficient rollout systems, program-aware routing, and architecture/system co-design.
+            </p>
+            <ul style="margin-left: 20px; line-height: 1.7;">
+              <li style="margin-bottom: 10px;"><strong>Speculative decoding for shifting distributions:</strong> adaptive drafters, production hot-swapping, RL-policy drift.</li>
+              <li style="margin-bottom: 10px;"><strong>Quantization that survives real serving constraints:</strong> paged memory, fused attention, kernels, concurrency, MoE.</li>
+              <li style="margin-bottom: 10px;"><strong>Inference systems for RL and agents:</strong> rollout acceleration, program-aware routing, KV reuse, tool scheduling.</li>
+              <li style="margin-bottom: 10px;"><strong>Architecture/system co-design:</strong> designing models that are efficient to decode, quantize, route, and serve.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="arlo_tm_section" id="highlights">
       <div class="arlo_tm_news arlo_tm_services">
         <div class="container">
@@ -333,7 +360,7 @@
           </div>
           <div class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" style="padding: 0 20px;">
             <p style="margin-bottom: 25px;">
-              My research focuses on frontier-model inference efficiency: speculative decoding, quantization, model architecture, routing, and RL rollout efficiency. Below are highlighted works grouped by area.
+              My recent work focuses on frontier-model inference efficiency: speculative decoding, KV-cache and weight quantization, RL rollout acceleration, agentic routing, and architecture/system co-design. These are selected because they shipped into production systems, improved frontier-model serving efficiency, or opened new research directions for efficient test-time compute.
             </p>
 
             <h4 style="margin-top: 0; margin-bottom: 15px; color: #4ab0b0;">Speculative Decoding</h4>
