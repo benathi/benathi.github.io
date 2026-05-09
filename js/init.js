@@ -1,3 +1,6 @@
+setTimeout(function () {
+  jQuery(".arlo_tm_preloader").addClass("loaded");
+}, 1500);
 jQuery(document).ready(function () {
   "use strict";
   arlo_tm_color_switcher();
@@ -29,9 +32,6 @@ jQuery(document).ready(function () {
     arlo_tm_modalbox_news();
   });
   window.addEventListener("load", function () {
-    setTimeout(function () {
-      jQuery(".arlo_tm_preloader").addClass("loaded");
-    }, 1000);
     arlo_tm_isotope();
   });
 });
@@ -185,7 +185,7 @@ function arlo_tm_modalbox_news() {
       modalBox.addClass("opened");
       modalBox.find(".description_wrap").html(details);
       mainImage = modalBox.find(".main");
-      mainImage.css({ backgroundImage: "url(" + imgData + ")" });
+      mainImage.css({ backgroundImage: "url(" + imgData + ")", left: "0px" });
       title = modalBox.find(".title");
       title.html(titleHref);
       return false;
@@ -221,14 +221,12 @@ function arlo_tm_scrollable() {
   verMenu.css({ height: H - logoHeight - socialHeight });
   scrollable.each(function () {
     var element = jQuery(this);
-    element
-      .css({ height: H - logoHeight - socialHeight })
-      .niceScroll({
-        touchbehavior: false,
-        cursorwidth: 0,
-        autohidemode: true,
-        cursorborder: "0px solid #eee",
-      });
+    element.css({ height: H - logoHeight - socialHeight }).niceScroll({
+      touchbehavior: false,
+      cursorwidth: 0,
+      autohidemode: true,
+      cursorborder: "0px solid #eee",
+    });
   });
 }
 jQuery(".arlo_tm_counter").each(function () {
@@ -254,12 +252,15 @@ function arlo_tm_animate_text() {
   "use strict";
   var animateSpan = jQuery(".arlo_tm_animation_text_word");
   animateSpan.typed({
-    strings: ["Ben Athiwaratkun", "an AI researcher"],
-    loop: true,
+    strings: [
+      "ML Researcher",
+    ],
+    loop: false,
     startDelay: 1e3,
     backDelay: 2e3,
   });
 }
+
 function arlo_tm_popup() {
   "use strict";
   jQuery(".gallery_zoom").each(function () {
@@ -534,4 +535,22 @@ function arlo_tm_about_animation() {
       },
     });
   }
+}
+
+var acc = document.getElementsByClassName("faqs-title");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    // panel.style.maxHeight = panel.scrollHeight + 100 + "px";
+    if (panel.style.maxHeight != "0px") {
+      panel.style.height = "auto";
+      panel.style.maxHeight = "0px";
+    } else {
+      panel.style.height = "auto";
+      panel.style.maxHeight = panel.scrollHeight + 500 + "px";
+    }
+  });
 }
